@@ -1,0 +1,88 @@
+@{
+    ViewData["Title"] = "Layout";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/breakpoint.css">
+    <title>MilBR</title>
+  </head>
+  <body>
+    <div
+      class="navbar navbar-expand-lg p-2 bg-presentation justify-content-between noselect"
+      style="height: 7vh;"
+    >
+      <div class="article d-flex">
+        <div class="input-group article-whatsapp">
+          <div class="icon">
+            <img src="img/whatsapp.svg" draggable="false" />
+          </div>
+          <div class="text">Fale conosco pelo Whatsapp</div>
+        </div>
+        <div class="input-group article-subscriber">
+          <div class="icon">
+            <img src="img/subscriber.svg" draggable="false" />
+          </div>
+          <div class="text">Central do Assinante</div>
+        </div>
+      </div>
+      <div class="socialmedia d-flex">
+        <div class="tag">ACESSE NOSSAS REDES SOCIAIS</div>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/milbrnet/"><img src="img/socialmedia/instagram.png" draggable="false" /></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/Milbrnet/"><img src="img/socialmedia/facebook.png" draggable="false" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@@nocmilbr"><img src="img/socialmedia/youtube.png" draggable="false" /></a>
+            </li>
+            <li>
+              <a href=""><img src="img/socialmedia/telegram.png" draggable="false" /></a>
+            </li>
+            <li>
+              <!--<a target="_blank" href="https://icons8.com/icon/16713/whatsapp">WhatsApp</a><a target="_blank" href="https://icons8.com"></a>-->
+              <a href="https://wa.me/+553535715000"><img src="img/socialmedia/icons8-whatsapp.svg" style="height: 25px; width: 25px;" draggable="false" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="navbar shadow p-3 bg-white justify-content-between noselect kkk"
+      style="position: sticky; top: 0; z-index: 999 !important; min-height: 11vh;"
+    >
+      <div class="logo">
+        <img src="img/logo.png" draggable="false" />
+      </div>
+      <div class="menu" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+        <img src="img/logos/milbr.png">
+        <img src="img/logos/milbrti.png">
+        <img src="img/logos/milbrtd.png">
+        <img src="img/logos/milbrtv.png">
+      </div>
+      <div class="btn-area collapse" id="menu">
+        <button class="btn btn-second">PLANOS</button>
+        <button class="btn btn-second">SOBRE NÓS</button>
+        <button class="btn btn-second">SERVIÇOS</button>
+        <button class="btn btn-second">ÁREA DO CLIENTE</button>
+        @* <button class="btn btn-first"></button> *@
+      </div>
+      <main>
+        @RenderBody()
+      </main>
+    
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
