@@ -9,6 +9,8 @@
 
 :root {
     --background-color-white-main  : #FFFFFF;
+    --background-color-white-figma : #E5E5E5;
+    -background-color-blue-master  : #3C8BDB;
     --color-letter-blue-masterHead : #185787;
     --color-letter-blue-normalHead : #1159A4;
     --color-letter-gray-normalHead : #9FA9CF;
@@ -17,7 +19,7 @@
 
 
 a {
-    font-style: normal;
+    text-decoration: none;
     color: black;
     cursor: pointer;
 }
@@ -34,7 +36,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1px;
-    background-color: var(--background-color-white-main);
+    background-color: var(--background-color-white-figma);
 }
 
 header #cabecalho-milbr {
@@ -48,9 +50,10 @@ header .cabecalho-informacoes-contato {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
     gap: 1px;
-    padding-top: 1rem;
+    padding-top: 4px;
+    margin-right: 1rem;
 }
 
 header .cabecalho-informacoes-contato div {
@@ -81,10 +84,10 @@ header .cabecalho-informacoes-contato #cabecalho-informacoes-contato-redes-socia
 header .cabecalho-informacoes-contato #cabecalho-informacoes-contato-redes-sociais h3 {
     display: grid;
     place-items: center;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bolder;
     color: var(--color-letter-blue-normalHead);
-    max-width: 48%;
+    max-width: 40%;
     word-wrap: break-word;
     height: 100%;
 }
@@ -104,9 +107,46 @@ header #cabecalho-informacoes-contato-instagram:hover {transform: scale(1.2);}
 header #cabecalho-informacoes-contato-youtube:hover {transform: scale(1.2);}
 
 
+/* --------------------- + FIM CABEÇALHO DE CIMA+ ------------------------- */
 
 
 
+/* CABEÇALHO DE BAIXO */
+header .cabecalho-ux-acesso-links-diretos-de-acesso {
+    width: 100%;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1),
+                0px 3px 5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:  1rem;
+    padding-right: 1rem;
+    background-color: var(--background-color-white-main);
+}
 
-/* --------------------- ++ ------------------------- */
+header #cabecalho-ux-acesso-links-diretos-de-acesso-logos{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3.5rem;
+}
 
+header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    margin-right: 4rem;
+}
+
+header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis a {
+    text-decoration: none;
+    color: var(--color-letter-blue-normalHead);
+    font-size: 20em;
+    font-weight: bolder;
+}
+
+header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis a:hover {
+    color: var(--color-letter-gray-normalHead);
+}
