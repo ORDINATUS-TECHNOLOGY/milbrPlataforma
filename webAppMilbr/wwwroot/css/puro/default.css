@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* { 
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 67.5%;
+}
+
+:root {
+    --background-color-white-main  : #FFFFFF;
+    --color-letter-blue-masterHead : #185787;
+    --color-letter-blue-normalHead : #1159A4;
+    --color-letter-gray-normalHead : #9FA9CF;
+    
+}
+
+
+a {
+    font-style: normal;
+    color: black;
+    cursor: pointer;
+}
+
+body {
+    width: 100vw; height: 100vh;
+    background-color: var(--background-color-white-main);
+}
+
+/* ------------- ++ FORMATAÇÃO DO HEADER ++ ---------- */
+
+header {
+    width: 100%; height: 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: var(--background-color-white-main);
+}
+
+header #cabecalho-milbr {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 52px 62px;
+}
+
+header .cabecalho-informacoes-contato {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+}
+
+header .cabecalho-informacoes-contato div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+header h3 {
+    font-size: 16px;
+    font-weight: bolder;
+    color: var(--color-letter-blue-normalHead);
+}
+
+
+/* ---------- Parte dos links que tem lógica própria e separada --------- */
+
+
+header .cabecalho-informacoes-contato #cabecalho-informacoes-contato-redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+} 
+
+header .cabecalho-informacoes-contato #cabecalho-informacoes-contato-redes-sociais h3 {
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-weight: bolder;
+    color: var(--color-letter-blue-normalHead);
+    max-width: 48%;
+    word-wrap: break-word;
+    height: 100%;
+}
+
+
+header .cabecalho-informacoes-contato #cabecalho-informacoes-contato-link-individual {
+    max-width: 50%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
