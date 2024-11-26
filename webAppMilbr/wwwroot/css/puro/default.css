@@ -50,6 +50,7 @@ header .cabecalho-informacoes-contato {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
     gap: 1px;
+    padding-top: 1rem;
 }
 
 header .cabecalho-informacoes-contato div {
@@ -95,4 +96,17 @@ header .cabecalho-informacoes-contato #cabecalho-informacoes-contato-link-indivi
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
+
+header #cabecalho-informacoes-contato-facebook:hover {transform: scale(1.2);}
+header #cabecalho-informacoes-contato-instagram:hover {transform: scale(1.2);}
+header #cabecalho-informacoes-contato-youtube:hover {transform: scale(1.2);}
+
+
+
+
+
+
+/* --------------------- ++ ------------------------- */
+
