@@ -8,9 +8,14 @@
 }
 
 :root {
-    --background-color-white-main  : #FFFFFF;
-    --background-color-white-figma : #E5E5E5;
-    -background-color-blue-master  : #3C8BDB;
+    /* color backgrounds */
+    --background-color-white-main       : #FFFFFF;
+    --background-color-white-figma      : #E5E5E5;
+    --background-color-blue-master      : #3C8BDB;
+    --background-color-blue-footer      : #11559B;
+    --background-color-bottomFooter-blue: #333746;
+
+    /* color letter */
     --color-letter-blue-masterHead : #185787;
     --color-letter-blue-normalHead : #1159A4;
     --color-letter-gray-normalHead : #9FA9CF;
@@ -149,4 +154,146 @@ header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis a {
 
 header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis a:hover {
     color: var(--color-letter-gray-normalHead);
+}
+
+/* ------------------- CAMPO GERÁVEL MAIN ------------------ */
+
+main {
+    height: 1050px;
+    min-height: 1000px;
+    width: 100%;
+    background-color: var(--background-color-white-figma);
+}
+
+
+/* ------------ +++ ------------ */
+
+footer {
+    display: grid;
+    grid-template-rows: 261px 91px;
+    width: 100%;
+}
+
+footer table {
+    height: 100%; width: 220px;
+}
+
+footer td {
+    text-decoration: none;
+}
+
+footer tr {
+    margin-bottom: 7px;
+}
+
+/* Footer parte de cima */
+footer .footer-rodape-credits-milbr {
+    background-color: var(--background-color-blue-footer);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 1rem;
+}
+
+footer #footer-rodape-credits-milbr-tables {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+footer #footer-rodape-credits-milbr-tables a:hover{
+    color: var(--background-color-bottomFooter-blue);
+}
+
+footer #footer-rodape-credits-milbr-suporte {
+    height: 70%;
+    display: grid;
+    place-items: center;
+}
+
+footer #footer-rodape-credits-milbr-suporte a {
+    color: var(--background-color-white-main);
+    font-size: 20px;
+}
+
+footer #footer-rodape-credits-milbr-suporte b {
+    font-size: 20px;
+}
+
+footer #footer-rodape-credits-milbr-sobre {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-bottom: 3rem;
+}
+
+footer #footer-rodape-credits-milbr-sobre b {
+    font-size: 20px;
+    color: var(--background-color-white-main);
+}
+
+footer #footer-rodape-credits-milbr-logos {
+    height: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+footer #footer-rodape-credits-milbr-logos-faixa {
+    position: absolute;
+    top: 0.5rem;
+    right: 0px;
+    width: 100%;
+    height: 80%;
+}
+
+footer #footer-rodape-credits-milbr-logos-faixa img {
+    width: 100%;
+    height: 100%;
+}
+
+footer #footer-rodape-credits-milbr-logos-logo {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    right: 100px;
+}
+
+footer #footer-rodape-credits-milbr-logos-logo img {
+    width: 180px;
+    height: 180px;
+}
+
+/* Footer parte de baixo */
+footer .footer-rodape-credits-muzabin {
+    background-color: var(--background-color-bottomFooter-blue);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1rem; padding-bottom: 1rem;
+}
+
+footer #footer-rodape-credits-muzabin-cnpj, #footer-rodape-credits-muzabin-letter {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+}
+
+footer #footer-rodape-credits-muzabin-cnpj h2 {
+    color: var(--color-letter-gray-normalHead);
+    font-size: 14px;
+}
+
+footer #footer-rodape-credits-muzabin-letter h2 {
+    color: var(--color-letter-gray-normalHead);
+    font-size: 16px;
+    font-weight: bolder;
 }
