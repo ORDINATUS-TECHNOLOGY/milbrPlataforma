@@ -1,17 +1,3 @@
-:root {
-    /* color backgrounds */
-    --background-color-white-main       : #FFFFFF;
-    --background-color-white-figma      : #E5E5E5;
-    --background-color-blue-master      : #3C8BDB;
-    --background-color-blue-footer      : #11559B;
-    --background-color-bottomFooter-blue: #333746;
-
-    /* color letter */
-    --color-letter-blue-masterHead : #185787;
-    --color-letter-blue-normalHead : #1159A4;
-    --color-letter-gray-normalHead : #9FA9CF;
-}
-
 main .container-planos-responsividade {
     width: 100%;
     height: 100%;
@@ -230,9 +216,10 @@ main #container-planos-inicio-crescimento-desenvolvimento-e-conclusao p {
 main #container-planos-logos-predio {
     height: 410px;
     width: 100%;
+    text-align: center;
 }
 
 main #container-planos-logos-predio img {
-    width: 100%;
-    height: 100%;
+    width: 1118px;
+    height: 407px;
 }

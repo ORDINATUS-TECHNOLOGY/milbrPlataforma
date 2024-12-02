@@ -4,39 +4,100 @@
     Layout = "~/Pages/Shared/Layout.cshtml";
 }
 
-</div>
-      <div
-        id="carouselExampleSlidesOnly"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        style="height: 65vh; overflow: hidden; background-color: #306082"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block w-100 h-100"
-              src="img/download.svg"
-              alt="First slide"
-            />
+<div class="index-area-cliente-responsividade">
+    <div id="index-area-cliente-conteudo">
+        @* CARROSSEL *@
+        <div id="index-area-cliente-conteudo-carrossel"></div>
+
+        @* PLANOS *@
+        <div id="index-area-cliente-conteudo-conhecer-planos">
+          <div id="index-area-cliente-conteudo-conhecer-planos-titulo">
+            <h1>CONHEÇA NOSSOS PLANOS</h1>
           </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100 h-100"
-              src="img/download (1).svg"
-              alt="Second slide"
-            />
+
+          <!-- COLOCAR AÇÃO NOS BOTÕES LUIZ O.-->
+          <div id="index-area-cliente-conteudo-conhecer-planos-tipos-planos">
+            <button>RESIDENCIAL</button>
+            <button>COMERCIAL</button>
+            <button>CORPORATIVO</button>
+            <button>RURAL</button>
           </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100 h-100"
-              src="img/download.svg"
-              alt="Third slide"
-            />
+
+          @* deixei de forma normal, mas basicamente aqui que vai mudar as opções *@
+          <div id="index-area-cliente-conteudo-conhecer-ofertas">
+            @* ------------- ELEMENTS PARA IMPORT ------------------ *@
+            <div class="plano-apresentacao">
+              <div id="plano-apresentacao-titulo">MASTER</div>
+              <div id="plano-apresentacao-corpo">
+                <div id="plano-apresentacao-corpo-velocidade"><h1>600MB</h1></div>
+                <div id="plano-apresentacao-corpo-vantagens">
+                  <ul id="plano-apresentacao-corpo-vantagens-lista">
+                    <li><img src="img/socialmedia/fibra-icone.png" alt="icone-fibra" draggable="false">100% Fibra Óptica</li>
+                    <li><img src="img/socialmedia/milbr-facil.png" alt="icone-celular" draggable="false">APP Milbr +Fácil</li>
+                    <li><img src="img/socialmedia/milbrtv-icone.png" alt="icone-milbrtv" draggable="false">Milbr TV Grátis no APP</li>
+                    <li><img src="img/socialmedia/sem-fidelidade-icone.png" alt="icone-fidelidade" draggable="false">Sem contrato de Fidelidade</li>
+                    <li><img src="img/socialmedia/icone-suporte.png" alt="icone-suporte" draggable="false">Suporte Técnico</li>
+                  </ul>
+                </div>
+                <div id="plano-apresentacao-corpo-botao">
+                  <button>SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+
+            @* PLUS *@
+            <div class="plano-apresentacao" style="margin-bottom: 100px;">
+              <div id="plano-apresentacao-titulo">PLUS</div>
+              <div id="plano-apresentacao-corpo">
+                <div id="plano-apresentacao-corpo-velocidade"><h1>400MB</h1></div>
+                <div id="plano-apresentacao-corpo-vantagens">
+                  <ul id="plano-apresentacao-corpo-vantagens-lista">
+                    <li><img src="img/socialmedia/fibra-icone.png" alt="icone-fibra" draggable="false">100% Fibra Óptica</li>
+                    <li><img src="img/socialmedia/milbr-facil.png" alt="icone-celular" draggable="false">APP Milbr +Fácil</li>
+                    <li><img src="img/socialmedia/milbrtv-icone.png" alt="icone-milbrtv" draggable="false">Milbr TV Grátis no APP</li>
+                    <li><img src="img/socialmedia/sem-fidelidade-icone.png" alt="icone-fidelidade" draggable="false">Sem contrato de Fidelidade</li>
+                    <li><img src="img/socialmedia/icone-suporte.png" alt="icone-suporte" draggable="false">Suporte Técnico</li>
+                  </ul>
+                </div>
+                <div id="plano-apresentacao-corpo-botao">
+                  <button>SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+            
+            @* BASICO *@
+            <div class="plano-apresentacao">
+              <div id="plano-apresentacao-titulo">BÁSICO</div>
+              <div id="plano-apresentacao-corpo">
+                <div id="plano-apresentacao-corpo-velocidade"><h1>250MB</h1></div>
+                <div id="plano-apresentacao-corpo-vantagens">
+                  <ul id="plano-apresentacao-corpo-vantagens-lista">
+                    <li><img src="img/socialmedia/fibra-icone.png" alt="icone-fibra" draggable="false">100% Fibra Óptica</li>
+                    <li><img src="img/socialmedia/milbr-facil.png" alt="icone-celular" draggable="false">APP Milbr +Fácil</li>
+                    <li><img src="img/socialmedia/milbrtv-icone.png" alt="icone-milbrtv" draggable="false">Milbr TV Grátis no APP</li>
+                    <li><img src="img/socialmedia/sem-fidelidade-icone.png" alt="icone-fidelidade" draggable="false">Sem contrato de Fidelidade</li>
+                    <li><img src="img/socialmedia/icone-suporte.png" alt="icone-suporte" draggable="false">Suporte Técnico</li>
+                  </ul>
+                </div>
+                <div id="plano-apresentacao-corpo-botao">
+                  <button>SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+
+        @* NOSSAS VANTAGENS *@
+        <div id="index-area-cliente-conteudo-vantagens"></div>
+
+        @* AREA DO CLIENTE *@
+        <div id="index-area-cliente-conteudo-area-cliente"></div>
+
+        @* REDES *@
+        <div id="index-area-cliente-conteudo-redes-sociais"></div>
+
+        @* PERGUNTAS FREQUENTES *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes"></div>
     </div>
-    <div style="height: 88.6vh; padding-top: 26px">
-      <center style="color: #306082; font-weight: bold; font-size: 40px">
-        NOSSAS VANTAGENS
-      </center>
-    </div>
+</div>

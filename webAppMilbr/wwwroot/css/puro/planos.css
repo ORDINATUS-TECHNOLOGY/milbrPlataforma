@@ -1,0 +1,14 @@
+:root {
+    /* color backgrounds */
+    --background-color-white-main       : #FFFFFF;
+    --background-color-white-figma      : #E5E5E5;
+    --background-color-blue-master      : #3C8BDB;
+    --background-color-blue-footer      : #11559B;
+    --background-color-bottomFooter-blue: #333746;
+
+    /* color letter */
+    --color-letter-blue-masterHead : #185787;
+    --color-letter-blue-normalHead : #1159A4;
+    --color-letter-gray-normalHead : #9FA9CF;
+}
+
