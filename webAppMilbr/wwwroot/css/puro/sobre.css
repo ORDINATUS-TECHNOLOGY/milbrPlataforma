@@ -1,0 +1,166 @@
+:root {
+    /* color backgrounds */
+    --background-color-white-main       : #FFFFFF;
+    --background-color-white-figma      : #E5E5E5;
+    --background-color-blue-master      : #3C8BDB;
+    --background-color-blue-footer      : #11559B;
+    --background-color-bottomFooter-blue: #333746;
+
+    /* color letter */
+    --color-letter-blue-masterHead : #185787;
+    --color-letter-blue-normalHead : #1159A4;
+    --color-letter-gray-normalHead : #9FA9CF;
+}
+
+main {
+    height: 300rem;
+}
+
+main .container-planos-responsividade {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color-white-main);
+    display: grid; place-items: center;
+}
+
+main #container-planos-responsividade-limitador {
+    width: 1366px; max-width: 1366px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #container-planos-carrossel {
+    width: 100%;
+    height: 366px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--background-color-blue-master);
+}
+
+main #container-planos-carrossel-background-letreiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+main #container-planos-carrossel-background-letreiro-titulo {
+    height: 204px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+main #container-planos-carrossel-background-letreiro-titulo h1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: #71D2FF;
+    width: 670px;
+}
+
+main #container-planos-carrossel-background-letreiro-titulo-background-compilado {
+    padding-left: 1rem;
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 120px; width: 100%;
+}
+
+main #container-planos-carrossel-background-letreiro-titulo-background-compilado img {
+    width: 100%;
+    height: 100%;
+}
+
+main #container-planos-carrossel-background-letreiro-titulo-texto-flutuante {
+    position: absolute;
+}
+
+main #container-planos-carrossel-background-letreiro-titulo-texto-flutuante h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--background-color-white-main);
+}
+
+main #container-planos-carrossel-background-predio {
+    width: 100%;
+    height: 100%;
+}
+
+main #container-planos-carrossel-background-predio img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------- PARTE TEXTUAL ----------------------- */
+
+main #container-planos-titulo-historia {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+main #container-planos-titulo-historia h1 {
+    font-size: 50px;
+    color: var(--color-letter-blue-masterHead);
+    font-weight: 900;
+}
+
+/* tratando os paragrafos */
+
+main #container-planos-historia-empresa {
+    width: 100%;
+    height: 470px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
+    margin-top: 10rem;
+}
+
+main #container-planos-historia-empresa-texto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main #container-planos-historia-empresa-texto h2 {
+    font-size: 32px;
+    font-weight: bolder;
+    color: black;
+}
+
+main #container-planos-historia-empresa-texto-paragrafos {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+main #container-planos-historia-empresa-texto-paragrafos p {
+    font-size: 24px;
+    color: black;
+}
+
+main #container-planos-historia-empresa-imagem {
+    width: 100%;
+    height: 100%;
+    text-align: end;
+}
+
+/* CONTINUAÇÃO INICIO - CRESCIMENTO */
+
+main #container-planos-inicio-crescimento {
+    height: 400px; width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center; justify-content: center;
+}

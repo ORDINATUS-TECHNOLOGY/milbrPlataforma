@@ -12,16 +12,14 @@
   @* LINKS *@
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/puro/default.css">
-
-
+  <link rel="stylesheet" href="css/puro/processos.css"> <!-- Processos -->
+  <link rel="stylesheet" href="css/puro/sobre.css"> <!-- Sobre nós -->
 
   @* IMPORTS *@
   <!--- Open Sans import ---->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-
 </head>
   <body>
     @* CABEÇALHO DA PÁGINA *@
@@ -29,84 +27,95 @@
     <header>
       <div id="cabecalho-milbr">
         @* CABEÇALHO DE CIMA QUE CONTÉM AS INFORMAÇÕES DE CONTATO *@
-        <div class="cabecalho-informacoes-contato">
-          <div><img src="img/socialmedia/atendente.png" alt="cabecalho-informacoes-contato-logo-usuario" draggable="false"><h3>Central do assinante</h3></div>
-          <div></div>
-          <div><img src="img/socialmedia/sacLogo.png" alt="cabecalho-informacoes-contato-logo-sac" draggable="false"><h3>sac@grupomilbr.com.br</h3></div>
-          <div><img src="img/socialmedia/telefoneLogo.png" alt="cabecalho-informacoes-contato-logo-0800" draggable="false"><h3>0800 031 3571</h3></div>
-          <div><img src="img/socialmedia/whatsLogo.png" alt="cabecalho-informacoes-contato-logo-whatsapp" draggable="false"><h3>35 3571-5000</h3></div>
-          <div id="cabecalho-informacoes-contato-redes-sociais">
-            <h3>ACESSE NOSSAS REDES SOCIAIS</h3>
-            <div id="cabecalho-informacoes-contato-link-individual">
-              <div id="cabecalho-informacoes-contato-facebook"><a href="https://www.facebook.com/Milbrnet/"><img src="img/socialmedia/facebook.png" alt="cabecalho-informacoes-contato-facebook-icon" draggable="false"></a></div>
-              <div id="cabecalho-informacoes-contato-instagram"><a href="https://www.instagram.com/milbrnet/"><img src="img/socialmedia/instagram.png" alt="cabecalho-informacoes-contato-instagram-icon" draggable="false"></a></div>
-              <div id="cabecalho-informacoes-contato-youtube"><a href="https://www.youtube.com/@@nocmilbr"><img src="img/socialmedia/youtube.png" alt="cabecalho-informacoes-contato-youtube-icon" draggable="false"></a></div>
+        <div id="cabecalho-milbr-responsividade-agente">
+          <div class="cabecalho-informacoes-contato">
+            <div><img src="img/socialmedia/atendente.png" alt="cabecalho-informacoes-contato-logo-usuario" draggable="false"><h3>Central do assinante</h3></div>
+            <div></div>
+            <div><img src="img/socialmedia/sacLogo.png" alt="cabecalho-informacoes-contato-logo-sac" draggable="false"><h3>sac@grupomilbr.com.br</h3></div>
+            <div><img src="img/socialmedia/telefoneLogo.png" alt="cabecalho-informacoes-contato-logo-0800" draggable="false"><h3>0800 031 3571</h3></div>
+            <div><img src="img/socialmedia/whatsLogo.png" alt="cabecalho-informacoes-contato-logo-whatsapp" draggable="false"><h3>35 3571-5000</h3></div>
+            <div id="cabecalho-informacoes-contato-redes-sociais">
+              <h3>ACESSE NOSSAS REDES SOCIAIS</h3>
+              <div id="cabecalho-informacoes-contato-link-individual">
+                <div id="cabecalho-informacoes-contato-facebook"><a href="https://www.facebook.com/Milbrnet/"><img src="img/socialmedia/facebook.png" alt="cabecalho-informacoes-contato-facebook-icon" draggable="false"></a></div>
+                <div id="cabecalho-informacoes-contato-instagram"><a href="https://www.instagram.com/milbrnet/"><img src="img/socialmedia/instagram.png" alt="cabecalho-informacoes-contato-instagram-icon" draggable="false"></a></div>
+                <div id="cabecalho-informacoes-contato-youtube"><a href="https://www.youtube.com/@@nocmilbr"><img src="img/socialmedia/youtube.png" alt="cabecalho-informacoes-contato-youtube-icon" draggable="false"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        @* CABEÇALHO DE BAIXO QUE CONTÉM AS LOGOS E LINKS DIRETOS DE ACESSO *@
+        <div id="cabecalho-ux-acesso-links-diretos-de-acesso-responsividade-agente">
+            <div class="cabecalho-ux-acesso-links-diretos-de-acesso">
+            @* logos milbr *@
+            <div id="cabecalho-ux-acesso-links-diretos-de-acesso-logos">
+              <img src="img/logos/milbr.png" alt="cabecalho-ux-acesso-links-diretos-de-acesso-logos-milbrnet" draggable="false">
+              <img src="img/logos/milbrti.png" alt="cabecalho-ux-acesso-links-diretos-de-acesso-logos-milbrti" draggable="false">
+              <img src="img/logos/milbrtd.png" alt="cabecalho-ux-acesso-links-diretos-de-acesso-logos-milbrtd" draggable="false">
+              <img src="img/logos/milbrtv.png" alt="cabecalho-ux-acesso-links-diretos-de-acesso-logos-milbrtv" draggable="false">
+            </div>
+
+            @* Navegação da página *@
+            <div id="cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis">
+              <div><a href="/Planos">PLANOS</a></div>
+              <div><a href="/Sobre">SOBRE NÓS</a></div>
+              <div><a href="/Processos">SERVIÇOS</a></div>
+              <div><a href="/Index">ÁREA DO CLIENTE</a></div>
             </div>
           </div>
         </div>
         
-        @* CABEÇALHO DE BAIXO QUE CONTÉM AS LOGOS E LINKS DIRETOS DE ACESSO *@
-        <div class="cabecalho-ux-acesso-links-diretos-de-acesso">
-          @* logos milbr *@
-          <div id="cabecalho-ux-acesso-links-diretos-de-acesso-logos">
-            <img src="img/logos/milbr.png" alt="cabecalho-ux-acesso-links-diretos-de-acesso-logos-milbrnet" draggable="false">
-            <img src="img/logos/milbrti.png" alt="cabecalho-ux-acesso-links-diretos-de-acesso-logos-milbrti" draggable="false">
-            <img src="img/logos/milbrtd.png" alt="cabecalho-ux-acesso-links-diretos-de-acesso-logos-milbrtd" draggable="false">
-            <img src="img/logos/milbrtv.png" alt="cabecalho-ux-acesso-links-diretos-de-acesso-logos-milbrtv" draggable="false">
-          </div>
-
-          @* Navegação da página *@
-          <div id="cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis">
-            <div><a href="">PLANOS</a></div>
-            <div><a href="">SOBRE NÓS</a></div>
-            <div><a href="">SERVIÇOS</a></div>
-            <div><a href="">ÁREA DO CLIENTE</a></div>
-          </div>
-        </div>
       </div>
-    </header  <div class="footer-rodape-credits-milbr"></div>
-    </header  <div class="footer-rodape-credits-muzabin"></div>
+    </header>
+
 
     @* ONDE CARREGA O CONTEUDO PRINCIPAL DE CADA LINK *@
     <main>
       @RenderBody()
     </main>
     
-    @* PARTE FINAL DA PAGINA *@
+    @* +--------------------------------- footer -----------------------------------------+ *@
     <footer>
       @* PARTE DE CIMA *@
-      <div class="footer-rodape-credits-milbr">
-        <div id="footer-rodape-credits-milbr-tables">
-          <table id="footer-rodape-credits-milbr-suporte">
-            <tr><td><a href=""><b>Suporte</b></a></td></tr>
-            <tr><td><a href="">FAQ</a></td></tr>
-            <tr><td><a href="">Trabalhe Conosco</a></td></tr>
-            <tr><td><a href="">Ouvidoria</a></td></tr>
-          </table>
+      <div id="footer-responsividade-cima">
+        <div class="footer-rodape-credits-milbr">
+          <div id="footer-rodape-credits-milbr-tables">
+            <table id="footer-rodape-credits-milbr-suporte">
+              <tr><td><a href=""><b>Suporte</b></a></td></tr>
+              <tr><td><a href="">FAQ</a></td></tr>
+              <tr><td><a href="">Trabalhe Conosco</a></td></tr>
+              <tr><td><a href="">Ouvidoria</a></td></tr>
+            </table>
 
-          <table id="footer-rodape-credits-milbr-sobre">
-            <tr><td><a href=""><b>Sobre nós</b></a></td></tr>
-            <tr><td><a href=""><b>Política de privacidade</b></a></td></tr>
-          </table>
-        </div>
-        
+            <table id="footer-rodape-credits-milbr-sobre">
+              <tr><td><a href=""><b>Sobre nós</b></a></td></tr>
+              <tr><td><a href=""><b>Política de privacidade</b></a></td></tr>
+            </table>
+          </div>
+          
 
-        <div id="footer-rodape-credits-milbr-logos">
-          <div id="footer-rodape-credits-milbr-logos-faixa">
-            <img src="img/joker/fitaFooter.png" alt="footer-rodape-credits-milbr-logos-faixa-adaptada">
+          <div id="footer-rodape-credits-milbr-logos">
+            <div id="footer-rodape-credits-milbr-logos-faixa">
+              <img src="img/joker/fitaFooter.png" alt="footer-rodape-credits-milbr-logos-faixa-adaptada">
+            </div>
+            <div id="footer-rodape-credits-milbr-logos-logo">
+              <img src="img/joker/logoMilbr.png" alt="footer-rodape-credits-milbr-logos-logo-png">
+            </div>
           </div>
-          <div id="footer-rodape-credits-milbr-logos-logo">
-            <img src="img/joker/logoMilbr.png" alt="footer-rodape-credits-milbr-logos-logo-png">
-          </div>
-        </div>
+        </div>      
       </div>
+
+
       @* PARTE DE BAIXO *@
-      <div class="footer-rodape-credits-muzabin">
-        <div id="footer-rodape-credits-muzabin-cnpj">
-          <h2>Muzambinho - CNPJ 06.118.716/0001-74 / Cabo Verde - CNPJ 06.118.716/0004-17 / Juruaia - CNPJ  06.118.716/0002-55 /  Nova Resende - CNPJ 06.118.716/0005-06</h2>
-        </div>
-        <div id="footer-rodape-credits-muzabin-letter">
-          <h2>2024 © Copyright - Design and development by: Muzabin, Enterprise</h2>
+      <div id="footer-responsividade-baixo">
+        <div class="footer-rodape-credits-muzabin">
+          <div id="footer-rodape-credits-muzabin-cnpj">
+            <h2>Muzambinho - CNPJ 06.118.716/0001-74 / Cabo Verde - CNPJ 06.118.716/0004-17 / Juruaia - CNPJ  06.118.716/0002-55 /  Nova Resende - CNPJ 06.118.716/0005-06</h2>
+          </div>
+          <div id="footer-rodape-credits-muzabin-letter">
+            <h2>2024 © Copyright - Design and development by: Muzabin, Enterprise</h2>
+          </div>
         </div>
       </div>
     </footer>
