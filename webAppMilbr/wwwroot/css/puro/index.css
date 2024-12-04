@@ -134,7 +134,7 @@ main #index-area-cliente-conteudo-conhecer-ofertas:nth-child(2) {
 .plano-apresentacao li {
     width: 60%;
     height: 40px;
-    border-bottom: 1px solid #979797;
+    border-bottom: 1px solid #ebebeb;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -260,7 +260,6 @@ main #index-area-cliente-conteudo-area-cliente {
     display: flex; flex-direction: column;
     align-items: center;
     padding-top: 4rem;
-    padding-bottom: 10rem;
 }
 
 
@@ -330,3 +329,127 @@ main #index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-text
 main #index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto a:hover {
     color: #333746;
 }
+
+
+/* ----------------------- + SIGA NOSSAS REDES + ----------------------------- */
+
+main #index-area-cliente-conteudo-redes-sociais {
+    width: 100%;
+    height: 800px;
+    display: flex; flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+} 
+
+main #index-area-cliente-conteudo-redes-sociais-titulo {
+    width: 840px;
+    height: 105px;
+    display: grid;
+    place-items: center;
+    background: var(--background-color-white-main);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), /* Sombra principal suave */
+                0px 4px 6px rgba(0, 0, 0, 0.1);     
+    border-radius: 2px;
+}
+
+main #index-area-cliente-conteudo-redes-sociais-titulo h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--color-letter-blue-normalHead);
+}
+
+main #index-area-cliente-conteudo-redes-sociais-publicacoes {
+    margin-top: 10rem; 
+    width: 100%; height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem; padding-right: 1rem;
+}
+
+main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicao {
+    width: 300px; height: 400px;
+    border-radius: 5px;
+}
+
+main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicao img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+/* ------------------ + PERGUNTAS FREQUENTES + ------------------- */
+    
+main #index-area-cliente-conteudo-perguntas-frequentes {
+    width: 100%;
+    height: 800px;
+    display: flex; flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-titulo {
+    width: 840px;
+    height: 105px;
+    display: grid;
+    place-items: center;
+    background: var(--background-color-white-main);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), /* Sombra principal suave */
+                0px 4px 6px rgba(0, 0, 0, 0.1);     
+    border-radius: 2px;
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-titulo h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--color-letter-blue-normalHead);
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-lista {
+    width: 100%;
+    height: 90%;
+    padding-top: 10rem;
+}
+
+details {
+    background-color: var(--color-letter-blue-normalHead);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-left: 10px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
+}
+
+#index-area-cliente-conteudo-perguntas-frequentes-lista p {
+    font-size: 24px;
+    text-align: justify;
+    margin-top: 1rem;
+    background: #6CC7F1;
+    width: 100%;
+    margin-left: -10px;
+    width: calc(100% + 10px);
+    padding-left: 1rem;
+}
+
+summary::after {
+    /* content: '▼'; */
+    content: none;
+    font-size: 18px;
+    position: absolute;  /* Remover a seta do fluxo normal */
+    right: 10px; /* Definir a posição exata da seta à direita */
+}
+
+details[open] summary::after {
+    /* content: '▲'; */
+    content: none;
+}
+  
