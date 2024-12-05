@@ -384,7 +384,7 @@ main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicao img {
     
 main #index-area-cliente-conteudo-perguntas-frequentes {
     width: 100%;
-    height: 800px;
+    height: auto; min-height: 1500px;
     display: flex; flex-direction: column;
     align-items: center;
     padding-top: 4rem;
@@ -412,44 +412,73 @@ main #index-area-cliente-conteudo-perguntas-frequentes-lista {
     width: 100%;
     height: 90%;
     padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
 }
 
-details {
+/* Estilo do container principal */
+main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao {
+    width: 100%;
+    overflow: hidden;
     background-color: var(--color-letter-blue-normalHead);
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    padding-left: 10px;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: height 0.3s ease, padding 0.3s ease; /* Transição suave ao abrir/fechar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-summary {
-    font-weight: bold;
+main #faq-questao-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
     cursor: pointer;
+    height: 60px; /* Altura fixa do título */
+}
+
+main #faq-questao-titulo h1 {
+    color: var(--background-color-white-main);
     font-size: 24px;
     font-weight: bolder;
-    color: black;
+    margin: 0;
 }
 
-#index-area-cliente-conteudo-perguntas-frequentes-lista p {
-    font-size: 24px;
-    text-align: justify;
-    margin-top: 1rem;
-    background: #6CC7F1;
-    width: 100%;
-    margin-left: -10px;
-    width: calc(100% + 10px);
-    padding-left: 1rem;
+main #faq-questao-titulo i {
+    color: var(--background-color-white-main);
+    font-size: 4rem;
+    transition: transform 0.3s ease; /* Suavidade para a rotação */
 }
 
-summary::after {
-    /* content: '▼'; */
-    content: none;
-    font-size: 18px;
-    position: absolute;  /* Remover a seta do fluxo normal */
-    right: 10px; /* Definir a posição exata da seta à direita */
+main #faq-questao-resposta {
+    color: var(--background-color-white-main);
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 1rem;
+    padding-top: 1rem;
+    height: 0; /* Inicialmente invisível */
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease; /* Suavidade para aparecer/desaparecer */
 }
 
-details[open] summary::after {
-    /* content: '▲'; */
-    content: none;
+main #faq-questao-resposta p {
+    color: var(--background-color-white-main);
+    font-size: 20px;
 }
-  
+
+main #faq-questao-resposta i {
+    color: var(--background-color-white-main);
+    font-size: 7px;
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao.open #faq-questao-resposta {
+    height: auto; /* Altura automática */
+    opacity: 1; 
+    padding: 1rem;
+    background-color: var(--new-color-here); /* Adicione a cor desejada */
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao.open #faq-questao-titulo i {
+    transform: rotate(180deg); 
+}
