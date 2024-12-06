@@ -12,3 +12,233 @@
     --color-letter-gray-normalHead : #9FA9CF;
 }
 
+main #planos-conteudo-responsividade {
+    height: auto;
+    width: 100%;
+    min-height: 2200px;
+    display: grid;
+    place-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main .planos-conteudo-responsividade-conteudo {
+    width: 1366px;
+    height: 100%;
+    background-color: var(--background-color-white-main);
+}
+
+/* ----------------------------= IMAGEM PROMOCIONAL= ------------------------- */
+
+main #planos-conteudo-imagem-promocional {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+main #planos-conteudo-imagem-promocional img {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* parte do texto flutuante */
+
+main #planos-conteudo-imagem-promocional-texto {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    bottom: 40px;
+    left: 3rem;
+    height: auto;
+    width: 630px;
+    word-wrap: break-word;
+}
+
+main #planos-conteudo-imagem-promocional-texto h1 {
+    color: #1961AC;
+    text-align: justify;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+main #planos-conteudo-imagem-promocional-texto h3 {
+    color: var(--background-color-white-main);
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 600;
+    height: auto;
+    max-width: 430px;
+}
+
+
+/* ----------------------------- + PLANOS RESIDENCIAIS + --------------------------------- */
+
+main #planos-conteudo-imagem-planos-residenciais {
+    width: 100%;
+    height: 850px;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-titulo {
+    width: 100%; height: auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-titulo h1 {
+    font-size: 50px;
+    color: var(--color-letter-blue-normalHead);
+    font-weight: bolder;
+}
+
+main .planos-conteudo-fita {
+    width: 200px; height: 53px;
+    display: grid;
+    place-items: center;
+    top: 2rem;
+    left: -1rem;
+    position: absolute;
+    background-color: #3F9DD2; /* Azul */
+    border-radius: 5px;
+}
+
+main .planos-conteudo-fita h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* PARTE DOS PLANOS */
+
+main #planos-conteudo-imagem-planos-residenciais-planos {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: 95%;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano {
+    width: 350px;
+    height: 600px;
+    border-radius: 15px;
+    display: flex; flex-direction: column;
+    justify-content: start;
+    box-shadow: 
+    0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #F9F9F9;
+    position: relative;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-titulo {
+    font-size: 64px;
+    font-weight: bold;
+    height: auto; width: 100%;
+    color: black;
+    margin-top: 7rem;
+    text-align: center;
+    text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+}
+
+
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos {
+    width: 100%;
+    height: 340px;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos ul {
+    list-style: none;
+    width: 190px; height: 260px;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos li {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    gap: 1rem;
+    height: auto; min-height: 28px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding-top: 3px; padding-bottom: 3px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos li img {
+    height: 25px; width: 25px;
+}
+
+/* PREÇO MAIOR DESCRITO */
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco {
+    height: 60px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-int {
+    width: auto;
+    height: 100%;
+    display: flex;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-int h1 {
+    font-size: 36px;
+    font-weight: 600;
+    height: 100%;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-int h2 {
+    font-weight: 500;
+    font-size: 20px;
+    height: 100%;
+    text-align: end;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-float-mensal {
+    width: auto;
+    height: 100%;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-float-mensal h2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora a {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    place-items: center;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora button {
+    width: 200px;
+    height: 50px;
+    border-radius: 1.5rem;
+    background-color: #1983C9;
+    color: var(--background-color-white-main);
+    font-weight: bolder;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora button:hover {
+    color: var(--color-letter-blue-masterHead);
+}
