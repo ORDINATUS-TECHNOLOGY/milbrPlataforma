@@ -77,20 +77,23 @@ main #planos-conteudo-imagem-promocional-texto h3 {
 
 main #planos-conteudo-imagem-planos-residenciais {
     width: 100%;
-    height: 850px;
+    height: 950px;
     display: flex; flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 main #planos-conteudo-imagem-planos-residenciais-titulo {
     width: 100%; height: auto;
     text-align: center;
     margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 main #planos-conteudo-imagem-planos-residenciais-titulo h1 {
     font-size: 50px;
     color: var(--color-letter-blue-normalHead);
+    text-shadow: 1px 0 var(--color-letter-blue-normalHead), -1px 0 var(--color-letter-blue-normalHead), 0 1px var(--color-letter-blue-normalHead), 0 -1px var(--color-letter-blue-normalHead);
     font-weight: bolder;
 }
 
@@ -117,7 +120,7 @@ main #planos-conteudo-imagem-planos-residenciais-planos {
     display: flex;
     justify-content: space-around;
     align-items: end;
-    height: 95%;
+    height: auto;
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -242,3 +245,160 @@ main #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora butto
 main #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora button:hover {
     color: var(--color-letter-blue-masterHead);
 }
+
+main #planos-conteudo-imagem-planos-residenciais-observacao {
+    height: 85px;
+    width: 774px;
+    background-color: rgba(108, 199, 241, 0.6); /* Fundo com 60% de opacidade */
+    border-radius: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 1rem;
+    padding-top: 4px;
+    opacity: 60%;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-observacao p {
+    margin-top: 3px;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* ----------------------------- + PLANOS RURAIS + --------------------------------- */
+
+main #planos-conteudo-imagem-planos-rurais {
+    width: 100%; height: 700px;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+main #planos-conteudo-imagem-planos-rurais-titulo {
+    height: auto;
+    width: auto;
+}
+
+main #planos-conteudo-imagem-planos-rurais-titulo h1 {
+    color: var(--color-letter-blue-normalHead);
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 1px 0 var(--color-letter-blue-normalHead), -1px 0 var(--color-letter-blue-normalHead), 0 1px var(--color-letter-blue-normalHead), 0 -1px var(--color-letter-blue-normalHead);
+}
+
+/* CONFIGURAÇÃO DO ELEMENTOR */
+main #planos-conteudo-imagem-planos-rurais-plano #planos-conteudo-imagem-planos-residenciais-planos-plano {
+    height: 540px ;
+}
+
+main #planos-conteudo-imagem-planos-rurais-plano #planos-conteudo-imagem-planos-residenciais-planos-plano ul {
+    height: auto ;
+}
+
+main #planos-conteudo-imagem-planos-rurais-plano #planos-conteudo-imagem-planos-residenciais-planos-plano-precos {
+    justify-content: start;
+    gap: 3px;
+    height: 270px;
+}
+
+
+/* FIM DA CONFIGURAÇÃO DO ELEMENTOR */
+
+
+main #planos-conteudo-imagem-planos-rurais-conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+main #planos-conteudo-imagem-planos-rurais-plano {
+    display: grid;
+    place-items: center;
+}
+
+main #planos-conteudo-imagem-planos-rurais-imagem-promocional {
+    height: 650px;
+    width: 50%;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+main #planos-conteudo-imagem-planos-rurais-imagem-promocional img {
+    height: 500px;
+    width: 600px;
+}
+
+main #planos-conteudo-imagem-planos-rurais-imagem-promocional-descricoes {
+    width: 100%;
+    height: auto;
+}
+
+main #planos-conteudo-imagem-planos-rurais-imagem-promocional-descricoes p {
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+}
+
+main #planos-conteudo-imagem-planos-rurais-imagem-promocional-descricoes i {
+    font-size: 4px;
+}
+
+
+/* ----------------------------- + PLANO COMERCIAL + --------------------------------- */
+
+main #planos-conteudo-imagem-plano-comercial {
+    display: flex; flex-direction: column;
+    width: 100%;
+    height: 685px;
+    margin-top: 3rem;
+}
+
+main #planos-conteudo-imagem-plano-comercial-titulo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+main #planos-conteudo-imagem-plano-comercial-titulo h1 {
+    color: var(--color-letter-blue-normalHead);
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 1px 0 var(--color-letter-blue-normalHead), -1px 0 var(--color-letter-blue-normalHead), 0 1px var(--color-letter-blue-normalHead), 0 -1px var(--color-letter-blue-normalHead);
+}
+
+main #planos-conteudo-imagem-plano-comercial-conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main #planos-conteudo-imagem-plano-comercial-conteudo img {
+    width: 600px; height: 550px;
+}
+
+/* CUIDANDO DO ELEMENTOR */
+main #planos-conteudo-imagem-plano-comercial #planos-conteudo-imagem-planos-residenciais-planos-plano {
+    justify-content: center;
+    height: 540px;
+}
+
+main #planos-conteudo-imagem-plano-comercial #planos-conteudo-imagem-planos-residenciais-planos-plano-precos {
+    justify-content: space-between;
+    height: 400px;
+}
+
+main #planos-conteudo-imagem-plano-comercial #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora {
+    margin-bottom: 1rem;
+}
+
+/* FIM DO ELEMENTOR */
