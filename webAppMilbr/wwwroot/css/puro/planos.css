@@ -402,3 +402,95 @@ main #planos-conteudo-imagem-plano-comercial #planos-conteudo-imagem-planos-resi
 }
 
 /* FIM DO ELEMENTOR */
+
+
+/* ---------------------------------- = PLANO CORPORATIVO = ------------------------------- */
+
+main #planos-conteudo-imagem-plano-corporativo {
+    height: 700px; width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+main #planos-conteudo-imagem-plano-corporativo h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--background-color-blue-footer);
+    text-shadow: 1px 0 #4BC8F5, -1px 0 #4BC8F5, 0 1px #4BC8F5, 0 -1px #4BC8F5;
+    z-index: 2;
+}
+
+main #planos-conteudo-imagem-plano-corporativo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2px;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao {
+    height: 600px;
+    width: 50%;
+    display: flex; flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 4rem;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao h1 {
+    font-size: 64px;
+    color: var(--background-color-white-main);
+    /* color: black; */
+    font-weight: bolder;
+    text-align: justify;
+    text-shadow: none;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao p {
+    font-size: 500;
+    color: var(--background-color-white-main);
+    font-size: 32px;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao-imagem {
+    width: 50%;
+    height: 100%;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao-imagem img {
+    z-index: 1;
+    width: 600px; height: 550px;
+    border-radius: 5px;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao-button {
+    height: auto;
+    width: 50%;
+    text-align: start;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao-button button {
+    height: 50px; width: 175px;
+    color: var(--background-color-white-main);
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #36A3F4;
+    font-size: 15px;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao-button button:hover {
+    color: #185787;
+}
