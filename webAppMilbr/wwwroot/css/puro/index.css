@@ -23,11 +23,15 @@ main #index-area-cliente-conteudo-carrossel {
     display: none;
     width: 100%; 
     height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 #index-area-cliente-conteudo-carrossel img.selected {
     display: block;
+    opacity: 1;
 }
+
 
 /* --------------------------- + TRATANDO DOS PLANOS + -------------------------------- */
 
@@ -164,17 +168,20 @@ main #index-area-cliente-conteudo-conhecer-ofertas:nth-child(2) {
 }
 
 .plano-apresentacao #plano-apresentacao-corpo-botao button {
-    font-size: 20px;
-    font-weight: bolder;
     border-radius: 1rem;
     background-color: #0D5E94;
-    color: white;
     height: 100%;
     width: 176px;
-    cursor: pointer;
 }
 
-.plano-apresentacao #plano-apresentacao-corpo-botao button:hover {
+.plano-apresentacao #plano-apresentacao-corpo-botao a {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.plano-apresentacao #plano-apresentacao-corpo-botao a:hover {
     color: var(--color-letter-gray-normalHead);
 }
 
@@ -186,8 +193,7 @@ main #index-area-cliente-conteudo-vantagens {
     height: 900px;
     display: flex; flex-direction: column;
     align-items: center;
-    padding-top: 4rem;
-    padding-bottom: 10rem;
+    padding-top: 4rem; padding-bottom: 10rem;
 }
 
 main #index-area-cliente-conteudo-vantagens-titulo {
@@ -214,6 +220,8 @@ main #index-area-cliente-conteudo-vantagens-icones {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 main #index-area-cliente-conteudo-vantagens-icone {
@@ -222,7 +230,7 @@ main #index-area-cliente-conteudo-vantagens-icone {
     gap: 1rem;
     justify-content: space-between;
     word-wrap: break-word;
-    padding-left: 1rem;
+    padding-left: 3rem;
     padding-right: 1rem;
 }
 
