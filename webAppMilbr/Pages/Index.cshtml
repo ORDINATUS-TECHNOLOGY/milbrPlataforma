@@ -1,42 +1,544 @@
 @page
 @model webAppMilbr.Pages.Index
 @{
-    Layout = "~/Pages/Shared/Layout.cshtml";
+  Layout = "~/Pages/Shared/Layout.cshtml";
 }
 
-</div>
-      <div
-        id="carouselExampleSlidesOnly"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        style="height: 65vh; overflow: hidden; background-color: #306082"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block w-100 h-100"
-              src="img/download.svg"
-              alt="First slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100 h-100"
-              src="img/download (1).svg"
-              alt="Second slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100 h-100"
-              src="img/download.svg"
-              alt="Third slide"
-            />
+<div class="index-area-cliente-responsividade">
+  <div id="index-area-cliente-conteudo">
+    @* CARROSSEL *@
+    <div id="index-area-cliente-conteudo-carrossel"></div>
+
+    @* PLANOS *@
+    <div id="index-area-cliente-conteudo-conhecer-planos">
+      <div id="index-area-cliente-conteudo-conhecer-planos-titulo">
+        <h1>CONHEÇA NOSSOS PLANOS</h1>
+      </div>
+
+      <!-- COLOCAR AÇÃO NOS BOTÕES LUIZ O.-->
+      <div id="index-area-cliente-conteudo-conhecer-planos-tipos-planos">
+        <button>RESIDENCIAL</button>
+        <button>COMERCIAL</button>
+        <button>CORPORATIVO</button>
+        <button>RURAL</button>
+      </div>
+
+      @* deixei de forma normal, mas basicamente aqui que vai mudar as opções *@
+      <div id="index-area-cliente-conteudo-conhecer-ofertas">
+        @* ------------- ELEMENTS PARA IMPORT ------------------ *@
+        <div class="plano-apresentacao">
+          <div id="plano-apresentacao-titulo">MASTER</div>
+          <div id="plano-apresentacao-corpo">
+            <div id="plano-apresentacao-corpo-velocidade">
+              <h1>600MB</h1>
+            </div>
+            <div id="plano-apresentacao-corpo-vantagens">
+              <ul id="plano-apresentacao-corpo-vantagens-lista">
+                <li><img src="img/socialmedia/fibra-icone.png" alt="icone-fibra" draggable="false">100% Fibra Óptica
+                </li>
+                <li><img src="img/socialmedia/milbr-facil.png" alt="icone-celular" draggable="false">APP Milbr +Fácil
+                </li>
+                <li><img src="img/socialmedia/milbrtv-icone.png" alt="icone-milbrtv" draggable="false">Milbr TV Grátis
+                  no APP</li>
+                <li><img src="img/socialmedia/sem-fidelidade-icone.png" alt="icone-fidelidade" draggable="false">Sem
+                  contrato de Fidelidade</li>
+                <li><img src="img/socialmedia/icone-suporte.png" alt="icone-suporte" draggable="false">Suporte Técnico
+                </li>
+              </ul>
+            </div>
+            <div id="plano-apresentacao-corpo-botao">
+              <button>SAIBA MAIS</button>
+            </div>
           </div>
         </div>
+
+        <div class="plano-apresentacao" style="margin-bottom: 100px;">
+          <div id="plano-apresentacao-titulo">PLUS</div>
+          <div id="plano-apresentacao-corpo">
+            <div id="plano-apresentacao-corpo-velocidade">
+              <h1>400MB</h1>
+            </div>
+            <div id="plano-apresentacao-corpo-vantagens">
+              <ul id="plano-apresentacao-corpo-vantagens-lista">
+                <li><img src="img/socialmedia/fibra-icone.png" alt="icone-fibra" draggable="false">100% Fibra Óptica
+                </li>
+                <li><img src="img/socialmedia/milbr-facil.png" alt="icone-celular" draggable="false">APP Milbr +Fácil
+                </li>
+                <li><img src="img/socialmedia/milbrtv-icone.png" alt="icone-milbrtv" draggable="false">Milbr TV Grátis
+                  no APP</li>
+                <li><img src="img/socialmedia/sem-fidelidade-icone.png" alt="icone-fidelidade" draggable="false">Sem
+                  contrato de Fidelidade</li>
+                <li><img src="img/socialmedia/icone-suporte.png" alt="icone-suporte" draggable="false">Suporte Técnico
+                </li>
+              </ul>
+            </div>
+            <div id="plano-apresentacao-corpo-botao">
+              <button>SAIBA MAIS</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="plano-apresentacao">
+          <div id="plano-apresentacao-titulo">BÁSICO</div>
+          <div id="plano-apresentacao-corpo">
+            <div id="plano-apresentacao-corpo-velocidade">
+              <h1>250MB</h1>
+            </div>
+            <div id="plano-apresentacao-corpo-vantagens">
+              <ul id="plano-apresentacao-corpo-vantagens-lista">
+                <li><img src="img/socialmedia/fibra-icone.png" alt="icone-fibra" draggable="false">100% Fibra Óptica
+                </li>
+                <li><img src="img/socialmedia/milbr-facil.png" alt="icone-celular" draggable="false">APP Milbr +Fácil
+                </li>
+                <li><img src="img/socialmedia/milbrtv-icone.png" alt="icone-milbrtv" draggable="false">Milbr TV Grátis
+                  no APP</li>
+                <li><img src="img/socialmedia/sem-fidelidade-icone.png" alt="icone-fidelidade" draggable="false">Sem
+                  contrato de Fidelidade</li>
+                <li><img src="img/socialmedia/icone-suporte.png" alt="icone-suporte" draggable="false">Suporte Técnico
+                </li>
+              </ul>
+            </div>
+            <div id="plano-apresentacao-corpo-botao">
+              <button>SAIBA MAIS</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div style="height: 88.6vh; padding-top: 26px">
-      <center style="color: #306082; font-weight: bold; font-size: 40px">
-        NOSSAS VANTAGENS
-      </center>
+
+    <div id="index-area-cliente-conteudo-vantagens">
+      <div id="index-area-cliente-conteudo-vantagens-titulo">
+        <h1>NOSSAS VANTAGENS</h1>
+      </div>
+      <div id="index-area-cliente-conteudo-vantagens-icones">
+        <!-- ESTRUTURA DE UM ICONE -->
+        @* Fibra ótica *@
+        <div id="index-area-cliente-conteudo-vantagens-icone">
+          <div class="icone-icon">
+            <img src="img/socialmedia/iconesIndex/fibra.png" alt="icone-icon-img" draggable="false">
+          </div>
+          <div id="icone-titulo">
+            <h2>100% Fibra Óptica</h2>
+          </div>
+          <div id="icone-descricao">Internet 100% fibra óptica na zona urbana</div>
+        </div>
+
+        @* milbrtv *@
+        <div id="index-area-cliente-conteudo-vantagens-icone">
+          <div class="icone-icon">
+            <img src="img/socialmedia/iconesIndex/televisao.png" alt="icone-icon-img" draggable="false">
+          </div>
+          <div id="icone-titulo">
+            <h2>Milbr TV</h2>
+          </div>
+          <div id="icone-descricao">Instale a Milbr TV em sua televisão. Grátis no app!</div>
+        </div>
+
+        @* telefonia *@
+        <div id="index-area-cliente-conteudo-vantagens-icone">
+          <div class="icone-icon">
+            <img src="img/socialmedia/iconesIndex/telefonia.png" alt="icone-icon-img" draggable="false">
+          </div>
+          <div id="icone-titulo">
+            <h2>Milbr TD</h2>
+          </div>
+          <div id="icone-descricao">Portabilidade e ligações ilimitadas para qualquer operadora e DDD.</div>
+        </div>
+
+        @* aplicativo *@
+        <div id="index-area-cliente-conteudo-vantagens-icone">
+          <div class="icone-icon">
+            <img src="img/socialmedia/iconesIndex/milbrFacil.png" alt="icone-icon-img" draggable="false">
+          </div>
+          <div id="icone-titulo">
+            <h2>APP Milbr +Fácil</h2>
+          </div>
+          <div id="icone-descricao">Sua conexão na palma da mão!</div>
+        </div>
+
+        @* Atendimento Personalizado *@
+        <div id="index-area-cliente-conteudo-vantagens-icone">
+          <div class="icone-icon">
+            <img src="img/socialmedia/iconesIndex/instalacaoPersonalizada.png" alt="icone-icon-img" draggable="false">
+          </div>
+          <div id="icone-titulo">
+            <h2>Atendimento especializado</h2>
+          </div>
+          <div id="icone-descricao">Atendimento técnico especializado pra melhor lhe atender.</div>
+        </div>
+
+        @* Instalação personalizada *@
+        <div id="index-area-cliente-conteudo-vantagens-icone">
+          <div class="icone-icon">
+            <img src="img/socialmedia/iconesIndex/instalacaoPersonalizada.png" alt="icone-icon-img" draggable="false">
+          </div>
+          <div id="icone-titulo">
+            <h2>Instalação Personalizada</h2>
+          </div>
+          <div id="icone-descricao">Serviços personalizados conforme a necessidade do ambiente.</div>
+        </div>
+
+        @* Sem Fidelidade *@
+        <div id="index-area-cliente-conteudo-vantagens-icone">
+          <div class="icone-icon">
+            <img src="img/socialmedia/iconesIndex/fidelidade.png" alt="icone-icon-img" draggable="false">
+          </div>
+          <div id="icone-titulo">
+            <h2>Sem fidelidade</h2>
+          </div>
+          <div id="icone-descricao">Você Livre! Não possuímos contrato de fidelidade.</div>
+        </div>
+
+        @* Qualidade garantida *@
+        <div id="index-area-cliente-conteudo-vantagens-icone">
+          <div class="icone-icon">
+            <img src="img/socialmedia/iconesIndex/qualidade.png" alt="icone-icon-img" draggable="false">
+          </div>
+          <div id="icone-titulo">
+            <h2>Qualidade garantida</h2>
+          </div>
+          <div id="icone-descricao">Qualidade da conexão comprovada e garantida.</div>
+        </div>
+
+      </div>
     </div>
+
+    @* AREA DO CLIENTE *@
+    <div id="index-area-cliente-conteudo-area-cliente">
+      <div id="index-area-cliente-conteudo-area-cliente-links-uteis-titulo">
+        <h1>ÁREA DO CLIENTE</h1>
+      </div>
+
+      <!-- icones -->
+      <div id="index-area-cliente-conteudo-area-cliente-links-uteis">
+        @* fatura *@
+        <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click">
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone">
+            <img src="img/socialmedia/iconesIndex/fatura.png"
+              alt="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone-png" draggable="false">
+          </div>
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto">
+            <a href="http://milbr.com.br/FATURAFACIL">PAGUE SUA FATURA</a>
+          </div>
+        </div>
+
+        @* teste de velocidade *@
+        <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click">
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone">
+            <img src="img/socialmedia/iconesIndex/testeVelocidade.png"
+              alt="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone-png" draggable="false">
+          </div>
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto">
+            <a href="https://fast.com/pt/">TESTE DE VELOCIDADE</a>
+          </div>
+        </div>
+
+        @* donwload *@
+        <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click">
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone">
+            <img src="img/socialmedia/iconesIndex/donwload.png"
+              alt="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone-png" draggable="false">
+          </div>
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto">DOWNLOADS</div>
+        </div>
+
+        @* webmail *@
+        <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click">
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone">
+            <img src="img/socialmedia/iconesIndex/email.png"
+              alt="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone-png" draggable="false">
+          </div>
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto">WEBMAIL MILBR</div>
+        </div>
+
+        @* links uteis *@
+        <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click">
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone">
+            <img src="img/socialmedia/iconesIndex/iconesUteis.png"
+              alt="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone-png" draggable="false">
+          </div>
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto">LINKS ÚTEIS</div>
+        </div>
+
+        @* contrato de serviço *@
+        <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click">
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone">
+            <img src="img/socialmedia/iconesIndex/contrato.png"
+              alt="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone-png" draggable="false">
+          </div>
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto">
+            <a href="#">CONTRATO DE SERVIÇO</a>
+          </div>
+        </div>
+
+        @* se liga na dica *@
+        <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click">
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone">
+            <img src="img/socialmedia/iconesIndex/dica.png"
+              alt="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone-png" draggable="false">
+          </div>
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto">SE LIGA NA DICA</div>
+        </div>
+
+
+        @* histórico de promoçoes *@
+        <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click">
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone">
+            <img src="img/socialmedia/iconesIndex/promoçoes.png"
+              alt="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone-png" draggable="false">
+          </div>
+          <div id="index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto">HISTÓRICO DE PROMOÇÕES
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @* REDES SOCIAIS *@
+    <div id="index-area-cliente-conteudo-redes-sociais">
+      <div id="index-area-cliente-conteudo-redes-sociais-titulo">
+        <h1>SIGA NOSSAS REDES</h1>
+      </div>
+
+      <div id="index-area-cliente-conteudo-redes-sociais-publicacoes">
+        <div id="index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao">
+          <img src="img/socialmedia/Promocao3.png" alt="index-area-cliente-conteudo-redes-sociais-publicacoes-png"
+            draggable="false">
+        </div>
+        <div id="index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao">
+          <img src="img/socialmedia/Promocao2.png" alt="index-area-cliente-conteudo-redes-sociais-publicacoes-png"
+            draggable="false" style="margin-bottom: 200px;">
+        </div>
+        <div id="index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao">
+          <img src="img/socialmedia/Promocao1.png" alt="index-area-cliente-conteudo-redes-sociais-publicacoes-png"
+            draggable="false">
+        </div>
+      </div>
+
+    </div>
+
+    @* PERGUNTAS FREQUENTES *@
+    <div id="index-area-cliente-conteudo-perguntas-frequentes">
+      <div id="index-area-cliente-conteudo-perguntas-frequentes-titulo">
+        <h1>PERGUNTAS FREQUENTES</h1>
+      </div>
+
+      <div id="index-area-cliente-conteudo-perguntas-frequentes-lista">
+        @* COMO CONTRATAR *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>COMO FAÇO PARA CONTRATAR UM PLANO DE INTERNET?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            Entre em contato com nosso atendimento através do (35) 3571-5000 que também é Whatsapp.
+          </div>
+        </div>
+
+        @* PASSAR CADASTRO *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>POSSO PASSAR MEU CADASTRO PARA OUTRA PESSOA?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            Sim. Entre em contato com nosso atendimento através do (35) 3571-5000 que também é Whatsapp ou visite uma de
+            nossas lojas (Muzambinho / Juruaia / Cabo Verde / Nova Resende).
+          </div>
+        </div>
+
+        @* FORMAS DE PAGAMENTO *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>PRECISO EFETUAR O PAGAMENTO, QUAIS AS FORMAS POSSÍVEIS?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            As formas de pagamento possíveis atualmente são:
+            <p>
+              <i class='bx bxs-circle'></i> Através do aplicativo MILBR + FÁCIL, disponível para ANDROID e IOS, sendo o
+              primeiro acesso feito com o CPF do titular como usuário e senha;
+            </p>
+            <p>
+              <i class='bx bxs-circle'></i> Através do portal FATURA FÁCIL, utilizando o CPF do titular para acessar os
+              débitos;
+            </p>
+            <p>
+              <i class='bx bxs-circle'></i> Visitando uma de nossas lojas (Muzambinho / Juruaia / Cabo Verde / Nova
+              Resende).
+            </p>
+          </div>
+        </div>
+
+        @* HORÁRIO DE FUNCIONAMENTO *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>QUAL HORÁRIO DE FUNCIONAMENTO DA MILBR?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            Nossas lojas físicas estão abertas de segunda à sexta, das 08h às 18h.
+          </div>
+        </div>
+
+        @* SEM INTERNET *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>FIQUEI SEM INTERNET, O QUE FAÇO?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            Inicialmente confirme se seus equipamentos de internet estão ligados corretamente. Caso os equipamentos
+            estejam ligados normalmente, retire-os da tomada por no mínimo 1 minuto. Se após religar os equipamentos na
+            energia a conexão não for reestabelecida em até 5 minutos, entre em contato com nosso atendimento através do
+            (35) 3571-5000 que também é Whatsapp.
+          </div>
+        </div>
+
+
+        @* REDUÇÃO DE INTERNET *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>POSSO PASSAR MEU CADASTRO PARA OUTRA PESSOA?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            Sim. Entre em contato com nosso atendimento através do (35) 3571-5000 que também é Whatsapp ou visite uma de
+            nossas lojas (Muzambinho / Juruaia / Cabo Verde / Nova Resende).
+          </div>
+        </div>
+
+        @* LIMITE DE TRÁFEGO *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>TEM LIMITE PARA DOWNLOAD E UPLOAD?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            Os planos são ilimitados para uso de dados.
+          </div>
+        </div>
+
+        @* TESTE DE VELOCIDADE *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>COMO TESTAR A VELOCIDADE DO PLANO CONTRATADO?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            Para uma verificação de forma mais precisa da velocidade, é indicado acessar através de um computador
+            conectado via cabo um medidor de velocidade pelo navegador do dispositivo. Um medidor bastante utilizado e
+            seguro é o Fast (fast.com).
+          </div>
+        </div>
+
+        @* TESTE PELO WIFI *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>CONSIGO TESTAR A VELOCIDADE ATRAVÉS DO WIFI?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            Sim, é possível. Porém pelo fato do teste ser sem fio, sofre mais com variações de velocidade nos
+            resultados. A forma mais precisa de efetuar o teste de velocidade sem fio é conectar na rede 5GHZ.
+          </div>
+        </div>
+
+        @* QUANTIDADE DE DISPOSITIVOS X LENTIDAO *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>A QUANTIDADE DE DISPOSITIVOS CONECTADOS AO WIFI DEIXAM A CONEXÃO MAIS LENTA?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            Sim, quanto maior o número de dispositivos conectados e utilizando a internet de forma simultanea, maior
+            variação na velocidade da conexão.
+          </div>
+        </div>
+
+        @* FREQUENCIA DE REDE *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>A QUANTIDADE DE DISPOSITIVOS CONECTADOS AO WIFI DEIXAM A CONEXÃO MAIS LENTA?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            Redes 2.4GHz enfrentam mais interferências de dispositivos como micro-ondas e telefones sem fio, resultando
+            em maior alcance, mas com menor qualidade de sinal. Já as redes 5GHz têm menos interferência e oferecem
+            maior taxa de transmissão, mas têm alcance reduzido, pois as ondas de 5GHz têm mais dificuldade em
+            atravessar obstáculos.
+          </div>
+        </div>
+
+        @* MILBRTV *@
+        <div id="index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao" class="close">
+          <div id="faq-questao-titulo">
+            <h1>QUAIS AS DIFERENÇAS DE REDE 2.4GHZ E 5GHZ?</h1>
+            <i class='bx bx-chevron-down'></i>
+          </div>
+          <div id="faq-questao-resposta">
+            Sim. Entre em contato com nosso atendimento através do (35) 3571-5000 que também é Whatsapp ou visite uma de
+            nossas lojas (Muzambinho / Juruaia / Cabo Verde / Nova Resende).
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    @* LOCALIZAÇÃO *@
+    <div id="index-area-cliente-conteudo-localizacao-responsividade">
+      <div id="index-area-cliente-conteudo-localizacao">
+
+        <div id="index-area-cliente-conteudo-localizacao-titulo">
+          <h1>LOCALIZAÇÃO</h1>
+        </div>
+
+        <div id="index-area-cliente-conteudo-localizacao-cidades">
+          <button id="index-botao-cidade-selecionada-Muzambinho">Muzambinho</button>
+          <button id="index-botao-cidade-selecionada-CaboVerde">Cabo Verde</button>
+          <button id="index-botao-cidade-selecionada-Juruaia">Juruaia</button>
+          <button id="index-botao-cidade-selecionada-NovaResende">Nova Resende</button>
+        </div>
+
+        <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis">
+          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.834951122016!2d-46.52361620983103!3d-21.363511851403775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b63fdc57675715%3A0xc8b95898def3e37b!2sMilbr.Net!5e0!3m2!1spt-BR!2sbr!4v1733390243721!5m2!1spt-BR!2sbr"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+
+          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes">
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida">
+              <img src="img/socialmedia/iconesIndex/localizacao.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida-png" draggable="false">
+              <p>Rua Merry, 360</p>
+            </div>
+
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento">
+              <img src="img/socialmedia/iconesIndex/horario.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento-png" draggable="false">
+              <div id="texto-dividido-time">
+                <p>Horário de funcionamento: </p>
+                <p>Seg - Sex: 08:00 ás 11:30 e 12:45 ás 18:00</p>
+                <p>Sab - Dom: Fechado</p>
+              </div>
+            </div>
+
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato">
+              <img src="img/socialmedia/iconesIndex/telefone.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato-png" draggable="false">
+              <div id="texto-dividido-time">
+                <p>(35) 3571-5800</p>
+                <p>0800 031 3571</p>
+              </div>
+            </div>
+
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp">
+              <img src="img/socialmedia/iconesIndex/whatsapp.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp-png" draggable="false">
+              <p>sac@grupomilbr.com.br</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

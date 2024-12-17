@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* { 
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 67.5%;
+}
+
+:root {
+    /* color backgrounds */
+    --background-color-white-main       : #FFFFFF;
+    --background-color-white-figma      : #E5E5E5;
+    --background-color-blue-master      : #3C8BDB;
+    --background-color-blue-footer      : #11559B;
+    --background-color-bottomFooter-blue: #333746;
+
+    /* color letter */
+    --color-letter-blue-masterHead : #185787;
+    --color-letter-blue-normalHead : #1159A4;
+    --color-letter-gray-normalHead : #9FA9CF;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+body {
+    width: 100vw; height: 100vh;
+    background-color: var(--background-color-white-main);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ------------- ++ FORMATAÇÃO DO HEADER ++ ---------- */
+
+header {
+    width: 100%; height: 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: var(--background-color-white-figma);
+}
+
+header #cabecalho-milbr {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 52px 62px;
+}
+
+header #cabecalho-milbr-responsividade-agente {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+header .cabecalho-informacoes-contato {
+    width: 1366px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    padding-top: 4px;
+    margin-right: 1rem;
+}
+
+header .cabecalho-informacoes-contato div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+header h3 {
+    font-size: 16px;
+    font-weight: bolder;
+    color: var(--color-letter-blue-normalHead);
+}
+
+
+/* ---------- Parte dos links que tem lógica própria e separada --------- */
+
+
+header .cabecalho-informacoes-contato #cabecalho-informacoes-contato-redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+} 
+
+header .cabecalho-informacoes-contato #cabecalho-informacoes-contato-redes-sociais h3 {
+    display: grid;
+    place-items: center;
+    font-size: 10px;
+    font-weight: bolder;
+    color: var(--color-letter-blue-normalHead);
+    max-width: 40%;
+    word-wrap: break-word;
+    height: 100%;
+}
+
+
+header .cabecalho-informacoes-contato #cabecalho-informacoes-contato-link-individual {
+    max-width: 50%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+header #cabecalho-informacoes-contato-facebook:hover {transform: scale(1.2);}
+header #cabecalho-informacoes-contato-instagram:hover {transform: scale(1.2);}
+header #cabecalho-informacoes-contato-youtube:hover {transform: scale(1.2);}
+
+
+/* --------------------- + FIM CABEÇALHO DE CIMA+ ------------------------- */
+
+
+
+/* CABEÇALHO DE BAIXO */
+
+header #cabecalho-ux-acesso-links-diretos-de-acesso-responsividade-agente {
+    width: 100%;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1),
+    0px 3px 5px rgba(0, 0, 0, 0.15);
+    background-color: var(--background-color-white-main);
+    display: grid;
+    place-items: center;
+}
+
+header .cabecalho-ux-acesso-links-diretos-de-acesso {
+    width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+header #cabecalho-ux-acesso-links-diretos-de-acesso-logos{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    margin-right: 4rem;
+}
+
+header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis a {
+    text-decoration: none;
+    color: var(--color-letter-blue-normalHead);
+    font-size: 20em;
+    font-weight: bolder;
+}
+
+header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis a:hover {
+    color: var(--color-letter-gray-normalHead);
+}
+
+/* ------------------- CAMPO GERÁVEL MAIN ------------------ */
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--background-color-white-figma);
+}
+
+
+/* ------------ +++ ------------ */
+
+footer {
+    display: grid;
+    grid-template-rows: 261px 91px;
+    width: 100%;
+}
+
+footer table {
+    height: 100%; width: 220px;
+}
+
+footer td {
+    text-decoration: none;
+}
+
+footer tr {
+    margin-bottom: 7px;
+}
+
+/* Footer parte de cima */
+
+footer #footer-responsividade-cima {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color-blue-footer);
+    display: grid;
+    place-items: center;
+}
+
+footer .footer-rodape-credits-milbr {
+    width: 1366px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 1rem;
+}
+
+footer #footer-rodape-credits-milbr-tables {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+footer #footer-rodape-credits-milbr-tables a:hover{
+    color: var(--background-color-bottomFooter-blue);
+}
+
+footer #footer-rodape-credits-milbr-suporte {
+    height: 70%;
+    display: grid;
+    place-items: center;
+}
+
+footer #footer-rodape-credits-milbr-suporte a {
+    color: var(--background-color-white-main);
+    font-size: 20px;
+}
+
+footer #footer-rodape-credits-milbr-suporte b {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+footer #footer-rodape-credits-milbr-sobre {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-bottom: 3rem;
+}
+
+footer #footer-rodape-credits-milbr-sobre b {
+    font-size: 20px;
+    color: var(--background-color-white-main);
+}
+
+footer #footer-rodape-credits-milbr-logos {
+    height: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+footer #footer-rodape-credits-milbr-logos-faixa {
+    position: absolute;
+    top: 0.5rem;
+    right: 0px;
+    width: 100%;
+    height: 80%;
+}
+
+footer #footer-rodape-credits-milbr-logos-faixa img {
+    width: 100%;
+    height: 100%;
+}
+
+footer #footer-rodape-credits-milbr-logos-logo {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    right: 100px;
+}
+
+footer #footer-rodape-credits-milbr-logos-logo img {
+    width: 180px;
+    height: 180px;
+}
+
+footer #footer-responsividade-baixo {
+    height: 100%; width: 100%;
+    background-color: var(--background-color-bottomFooter-blue);
+    display: grid; place-items: center;
+}
+
+/* Footer parte de baixo */
+footer .footer-rodape-credits-muzabin {
+    width: 1366px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1rem; padding-bottom: 1rem;
+}
+
+footer #footer-rodape-credits-muzabin-cnpj, #footer-rodape-credits-muzabin-letter {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+}
+
+footer #footer-rodape-credits-muzabin-cnpj h2 {
+    color: var(--color-letter-gray-normalHead);
+    font-size: 14px;
+}
+
+footer #footer-rodape-credits-muzabin-letter h2 {
+    color: var(--color-letter-gray-normalHead);
+    font-size: 16px;
+    font-weight: bolder;
+}

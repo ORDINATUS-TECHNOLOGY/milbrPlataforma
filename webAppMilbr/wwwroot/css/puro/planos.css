@@ -1,0 +1,496 @@
+:root {
+    /* color backgrounds */
+    --background-color-white-main       : #FFFFFF;
+    --background-color-white-figma      : #E5E5E5;
+    --background-color-blue-master      : #3C8BDB;
+    --background-color-blue-footer      : #11559B;
+    --background-color-bottomFooter-blue: #333746;
+
+    /* color letter */
+    --color-letter-blue-masterHead : #185787;
+    --color-letter-blue-normalHead : #1159A4;
+    --color-letter-gray-normalHead : #9FA9CF;
+}
+
+main #planos-conteudo-responsividade {
+    height: auto;
+    width: 100%;
+    min-height: 2200px;
+    display: grid;
+    place-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main .planos-conteudo-responsividade-conteudo {
+    width: 1366px;
+    height: 100%;
+    background-color: var(--background-color-white-main);
+}
+
+/* ----------------------------= IMAGEM PROMOCIONAL= ------------------------- */
+
+main #planos-conteudo-imagem-promocional {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+main #planos-conteudo-imagem-promocional img {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* parte do texto flutuante */
+
+main #planos-conteudo-imagem-promocional-texto {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    bottom: 40px;
+    left: 3rem;
+    height: auto;
+    width: 630px;
+    word-wrap: break-word;
+}
+
+main #planos-conteudo-imagem-promocional-texto h1 {
+    color: #1961AC;
+    text-align: justify;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+main #planos-conteudo-imagem-promocional-texto h3 {
+    color: var(--background-color-white-main);
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 600;
+    height: auto;
+    max-width: 430px;
+}
+
+
+/* ----------------------------- + PLANOS RESIDENCIAIS + --------------------------------- */
+
+main #planos-conteudo-imagem-planos-residenciais {
+    width: 100%;
+    height: 950px;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-titulo {
+    width: 100%; height: auto;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-titulo h1 {
+    font-size: 50px;
+    color: var(--color-letter-blue-normalHead);
+    text-shadow: 1px 0 var(--color-letter-blue-normalHead), -1px 0 var(--color-letter-blue-normalHead), 0 1px var(--color-letter-blue-normalHead), 0 -1px var(--color-letter-blue-normalHead);
+    font-weight: bolder;
+}
+
+main .planos-conteudo-fita {
+    width: 200px; height: 53px;
+    display: grid;
+    place-items: center;
+    top: 2rem;
+    left: -1rem;
+    position: absolute;
+    background-color: #3F9DD2; /* Azul */
+    border-radius: 5px;
+}
+
+main .planos-conteudo-fita h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* PARTE DOS PLANOS */
+
+main #planos-conteudo-imagem-planos-residenciais-planos {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: auto;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano {
+    width: 350px;
+    height: 600px;
+    border-radius: 15px;
+    display: flex; flex-direction: column;
+    justify-content: start;
+    box-shadow: 
+    0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #F9F9F9;
+    position: relative;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-titulo {
+    font-size: 64px;
+    font-weight: bold;
+    height: auto; width: 100%;
+    color: black;
+    margin-top: 7rem;
+    text-align: center;
+    text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+}
+
+
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos {
+    width: 100%;
+    height: 340px;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos ul {
+    list-style: none;
+    width: 190px; height: 260px;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos li {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    gap: 1rem;
+    height: auto; min-height: 28px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding-top: 3px; padding-bottom: 3px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos li img {
+    height: 25px; width: 25px;
+}
+
+/* PREÇO MAIOR DESCRITO */
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco {
+    height: 60px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-int {
+    width: auto;
+    height: 100%;
+    display: flex;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-int h1 {
+    font-size: 36px;
+    font-weight: 600;
+    height: 100%;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-int h2 {
+    font-weight: 500;
+    font-size: 20px;
+    height: 100%;
+    text-align: end;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-float-mensal {
+    width: auto;
+    height: 100%;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-float-mensal h2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora a {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    place-items: center;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora button {
+    width: 200px;
+    height: 50px;
+    border-radius: 1.5rem;
+    background-color: #1983C9;
+    color: var(--background-color-white-main);
+    font-weight: bolder;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora button:hover {
+    color: var(--color-letter-blue-masterHead);
+}
+
+main #planos-conteudo-imagem-planos-residenciais-observacao {
+    height: 85px;
+    width: 774px;
+    background-color: rgba(108, 199, 241, 0.6); /* Fundo com 60% de opacidade */
+    border-radius: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 1rem;
+    padding-top: 4px;
+    opacity: 60%;
+}
+
+main #planos-conteudo-imagem-planos-residenciais-observacao p {
+    margin-top: 3px;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* ----------------------------- + PLANOS RURAIS + --------------------------------- */
+
+main #planos-conteudo-imagem-planos-rurais {
+    width: 100%; height: 700px;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+main #planos-conteudo-imagem-planos-rurais-titulo {
+    height: auto;
+    width: auto;
+}
+
+main #planos-conteudo-imagem-planos-rurais-titulo h1 {
+    color: var(--color-letter-blue-normalHead);
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 1px 0 var(--color-letter-blue-normalHead), -1px 0 var(--color-letter-blue-normalHead), 0 1px var(--color-letter-blue-normalHead), 0 -1px var(--color-letter-blue-normalHead);
+}
+
+/* CONFIGURAÇÃO DO ELEMENTOR */
+main #planos-conteudo-imagem-planos-rurais-plano #planos-conteudo-imagem-planos-residenciais-planos-plano {
+    height: 540px ;
+}
+
+main #planos-conteudo-imagem-planos-rurais-plano #planos-conteudo-imagem-planos-residenciais-planos-plano ul {
+    height: auto ;
+}
+
+main #planos-conteudo-imagem-planos-rurais-plano #planos-conteudo-imagem-planos-residenciais-planos-plano-precos {
+    justify-content: start;
+    gap: 3px;
+    height: 270px;
+}
+
+
+/* FIM DA CONFIGURAÇÃO DO ELEMENTOR */
+
+
+main #planos-conteudo-imagem-planos-rurais-conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+main #planos-conteudo-imagem-planos-rurais-plano {
+    display: grid;
+    place-items: center;
+}
+
+main #planos-conteudo-imagem-planos-rurais-imagem-promocional {
+    height: 650px;
+    width: 50%;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+main #planos-conteudo-imagem-planos-rurais-imagem-promocional img {
+    height: 500px;
+    width: 600px;
+}
+
+main #planos-conteudo-imagem-planos-rurais-imagem-promocional-descricoes {
+    width: 100%;
+    height: auto;
+}
+
+main #planos-conteudo-imagem-planos-rurais-imagem-promocional-descricoes p {
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+}
+
+main #planos-conteudo-imagem-planos-rurais-imagem-promocional-descricoes i {
+    font-size: 4px;
+}
+
+
+/* ----------------------------- + PLANO COMERCIAL + --------------------------------- */
+
+main #planos-conteudo-imagem-plano-comercial {
+    display: flex; flex-direction: column;
+    width: 100%;
+    height: 685px;
+    margin-top: 3rem;
+}
+
+main #planos-conteudo-imagem-plano-comercial-titulo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+main #planos-conteudo-imagem-plano-comercial-titulo h1 {
+    color: var(--color-letter-blue-normalHead);
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 1px 0 var(--color-letter-blue-normalHead), -1px 0 var(--color-letter-blue-normalHead), 0 1px var(--color-letter-blue-normalHead), 0 -1px var(--color-letter-blue-normalHead);
+}
+
+main #planos-conteudo-imagem-plano-comercial-conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main #planos-conteudo-imagem-plano-comercial-conteudo img {
+    width: 600px; height: 550px;
+}
+
+/* CUIDANDO DO ELEMENTOR */
+main #planos-conteudo-imagem-plano-comercial #planos-conteudo-imagem-planos-residenciais-planos-plano {
+    justify-content: center;
+    height: 540px;
+}
+
+main #planos-conteudo-imagem-plano-comercial #planos-conteudo-imagem-planos-residenciais-planos-plano-precos {
+    justify-content: space-between;
+    height: 400px;
+}
+
+main #planos-conteudo-imagem-plano-comercial #planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora {
+    margin-bottom: 1rem;
+}
+
+/* FIM DO ELEMENTOR */
+
+
+/* ---------------------------------- = PLANO CORPORATIVO = ------------------------------- */
+
+main #planos-conteudo-imagem-plano-corporativo {
+    height: 700px; width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+main #planos-conteudo-imagem-plano-corporativo h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--background-color-blue-footer);
+    text-shadow: 1px 0 #4BC8F5, -1px 0 #4BC8F5, 0 1px #4BC8F5, 0 -1px #4BC8F5;
+    z-index: 2;
+}
+
+main #planos-conteudo-imagem-plano-corporativo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2px;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao {
+    height: 600px;
+    width: 50%;
+    display: flex; flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 4rem;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao h1 {
+    font-size: 64px;
+    color: var(--background-color-white-main);
+    /* color: black; */
+    font-weight: bolder;
+    text-align: justify;
+    text-shadow: none;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao p {
+    font-size: 500;
+    color: var(--background-color-white-main);
+    font-size: 32px;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao-imagem {
+    width: 50%;
+    height: 100%;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao-imagem img {
+    z-index: 1;
+    width: 600px; height: 550px;
+    border-radius: 5px;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao-button {
+    height: auto;
+    width: 50%;
+    text-align: start;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao-button button {
+    height: 50px; width: 175px;
+    color: var(--background-color-white-main);
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #36A3F4;
+    font-size: 15px;
+}
+
+main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao-button button:hover {
+    color: #185787;
+}
