@@ -152,9 +152,9 @@ header #cabecalho-ux-acesso-links-diretos-de-acesso-logos{
 
 header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 40%;
     margin-right: 4rem;
 }
 
