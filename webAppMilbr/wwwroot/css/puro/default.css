@@ -5,6 +5,7 @@
     border: none;
     margin: 0;
     font-size: 67.5%;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -67,6 +68,8 @@ header .cabecalho-informacoes-contato {
     gap: 1px;
     padding-top: 4px;
     margin-right: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 header .cabecalho-informacoes-contato div {
@@ -144,7 +147,7 @@ header .cabecalho-ux-acesso-links-diretos-de-acesso {
 }
 
 header #cabecalho-ux-acesso-links-diretos-de-acesso-logos{
-    width: 45%;
+    width: 45%; height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,8 +157,30 @@ header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
     width: 40%;
     margin-right: 4rem;
+}
+
+header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis div {
+    cursor: pointer;
+    position: relative; /* Necessário para o pseudo-elemento */
+    padding-bottom: 5px; /* Espaço extra para o pseudo-elemento */
+}
+
+header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis div::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--color-letter-blue-normalHead);
+    transition: width 0.3s ease-in-out;
+}
+
+header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis div:hover::after {
+    width: 100%;
 }
 
 header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis a {
