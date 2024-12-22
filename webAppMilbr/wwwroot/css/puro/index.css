@@ -5,7 +5,6 @@ main .index-area-cliente-responsividade {
     background-color: var(--background-color-white-main);
 }
 
-
 /* ----------------------------------+ ESPAÇO DESIGNADO AO CARROSSEL +-----------------------------------  */
 
 main #index-area-cliente-conteudo {
@@ -41,7 +40,7 @@ main #index-area-cliente-conteudo-conhecer-planos {
     display: flex; flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(243, 242, 242); /* Branco aplicado de teste */ 
+    background-color: #F5F5F5; /* Branco aplicado de teste */ 
 }
 
 main #index-area-cliente-conteudo-conhecer-planos-titulo {
@@ -263,6 +262,7 @@ main #index-area-cliente-conteudo-area-cliente {
     display: flex; flex-direction: column;
     align-items: center;
     padding-top: 4rem;
+    background-color: #F5F5F5;
 }
 
 
@@ -394,11 +394,13 @@ main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao img {
     
 main #index-area-cliente-conteudo-perguntas-frequentes {
     width: 100%;
-    height: auto; min-height: 1300px;
+    height: auto; min-height: 1200px;
     display: flex; flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding-top: 4rem;
     padding-bottom: 10rem;
+    background-color: #F5F5F5;
 }
 
 main #index-area-cliente-conteudo-perguntas-frequentes-titulo {
@@ -500,7 +502,8 @@ main #index-area-cliente-conteudo-localizacao-responsividade {
     height: 56rem;
     display: grid;
     place-items: center;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
 }
 
 main #index-area-cliente-conteudo-localizacao{

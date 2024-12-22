@@ -67,9 +67,7 @@ header .cabecalho-informacoes-contato {
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
     gap: 1px;
     padding-top: 4px;
-    margin-right: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    background-color: var(--background-color-white-figma);
 }
 
 header .cabecalho-informacoes-contato div {
@@ -143,7 +141,6 @@ header .cabecalho-ux-acesso-links-diretos-de-acesso {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 1rem;
 }
 
 header #cabecalho-ux-acesso-links-diretos-de-acesso-logos{
@@ -230,7 +227,6 @@ footer tr {
 footer #footer-responsividade-cima {
     width: 100%;
     height: 100%;
-    background-color: var(--background-color-blue-footer);
     display: grid;
     place-items: center;
 }
@@ -239,6 +235,7 @@ footer .footer-rodape-credits-milbr {
     width: 1366px;
     height: 100%;
     display: grid;
+    background-color: var(--background-color-blue-footer);
     grid-template-columns: 3fr 7fr;
     gap: 1rem;
 }
@@ -320,7 +317,6 @@ footer #footer-rodape-credits-milbr-logos-logo img {
 
 footer #footer-responsividade-baixo {
     height: 100%; width: 100%;
-    background-color: var(--background-color-bottomFooter-blue);
     display: grid; place-items: center;
 }
 
@@ -332,6 +328,7 @@ footer .footer-rodape-credits-muzabin {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: var(--background-color-bottomFooter-blue);
     padding-top: 1rem; padding-bottom: 1rem;
 }
 
