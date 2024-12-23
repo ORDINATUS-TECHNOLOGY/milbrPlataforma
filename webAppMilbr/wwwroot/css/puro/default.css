@@ -288,11 +288,9 @@ footer #footer-rodape-credits-milbr-suporte b {
 }
 
 footer #footer-rodape-credits-milbr-sobre {
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: end;
-    padding-bottom: 3rem;
+    height: 70%;
+    display: grid;
+    place-items: center;
 }
 
 footer #footer-rodape-credits-milbr-sobre b {

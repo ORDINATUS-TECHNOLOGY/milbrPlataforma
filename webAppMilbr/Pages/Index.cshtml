@@ -770,55 +770,181 @@
 
     @* LOCALIZAÇÃO *@
     <div id="index-area-cliente-conteudo-localizacao-responsividade">
+    <!-- RESPONSIVIDADE DENTRO DE LOCALIZAÇÃO -->
       <div id="index-area-cliente-conteudo-localizacao">
-
+        <!-- TÍTULO DA LOCALIZAÇÃO -->
         <div id="index-area-cliente-conteudo-localizacao-titulo">
           <h1>LOCALIZAÇÃO</h1>
         </div>
 
+        <!-- MENU DE BOTÕES DE CIDADES SELECIONÁVEIS -->
         <div id="index-area-cliente-conteudo-localizacao-cidades">
-          <button id="index-botao-cidade-selecionada-Muzambinho">Muzambinho</button>
-          <button id="index-botao-cidade-selecionada-CaboVerde">Cabo Verde</button>
-          <button id="index-botao-cidade-selecionada-Juruaia">Juruaia</button>
-          <button id="index-botao-cidade-selecionada-NovaResende">Nova Resende</button>
+          <button id="index-botao-cidade-selecionada-Muzambinho" class="btn-loc">Muzambinho</button>
+          <button id="index-botao-cidade-selecionada-CaboVerde" class="btn-loc">Cabo Verde</button>
+          <button id="index-botao-cidade-selecionada-Juruaia" class="btn-loc">Juruaia</button>
+          <button id="index-botao-cidade-selecionada-NovaResende" class="btn-loc">Nova Resende</button>
         </div>
-
+        
+        <!--------------- + CONTEÚDO GERÁVEL + --------------->
         <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis">
-          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.834951122016!2d-46.52361620983103!3d-21.363511851403775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b63fdc57675715%3A0xc8b95898def3e37b!2sMilbr.Net!5e0!3m2!1spt-BR!2sbr!4v1733390243721!5m2!1spt-BR!2sbr"
-              style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          @* CONTEUDO GERAVEL MUZAMBINHO *@          
+          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps-muzambinho" class="mapa-filho">
+            <!---------------------- = IMPORT DO IFRAME DO GOOGLE = --------------------------->
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.834951122016!2d-46.52361620983103!3d-21.363511851403775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b63fdc57675715%3A0xc8b95898def3e37b!2sMilbr.Net!5e0!3m2!1spt-BR!2sbr!4v1733390243721!5m2!1spt-BR!2sbr"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <!------------------------------ = INFORMAÇÕES POR ESCRITO = --------------------->
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes">
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida">
+                <img src="img/socialmedia/iconesIndex/localizacao.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida-png" draggable="false">
+                <p>Rua Merry, 360</p>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento">
+                <img src="img/socialmedia/iconesIndex/horario.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento-png" draggable="false">
+                <div id="texto-dividido-time">
+                  <p>Horário de funcionamento: </p>
+                  <p>Seg - Sex: 08:00 ás 11:30 e 12:45 ás 18:00</p>
+                  <p>Sab - Dom: Fechado</p>
+                </div>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato">
+                <img src="img/socialmedia/iconesIndex/telefone.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato-png" draggable="false">
+                <div id="texto-dividido-time">
+                  <p>(35) 3571-5800</p>
+                  <p>0800 031 3571</p>
+                </div>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp">
+                <img src="img/socialmedia/iconesIndex/whatsapp.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp-png" draggable="false">
+                <p>sac@grupomilbr.com.br</p>
+              </div>
+            </div>
           </div>
 
-
-          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes">
-            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida">
-              <img src="img/socialmedia/iconesIndex/localizacao.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida-png" draggable="false">
-              <p>Rua Merry, 360</p>
+          @* CONTEUDO GERAVEL CABO VERDE *@  
+          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps-caboVerde" class="mapa-filho" style="display: none;">
+            <!---------------------- = IMPORT DO IFRAME DO GOOGLE = --------------------------->
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps">
+              <iframe src="https://www.google.com/maps/embed?pb=!4v1734916512835!6m8!1m7!1sstJ9diri6AyqOB1b932z6Q!2m2!1d-21.47017509551706!2d-46.40110512462944!3f38.20794326312419!4f-13.344502346314442!5f1.4007642509932832" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento">
-              <img src="img/socialmedia/iconesIndex/horario.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento-png" draggable="false">
-              <div id="texto-dividido-time">
-                <p>Horário de funcionamento: </p>
-                <p>Seg - Sex: 08:00 ás 11:30 e 12:45 ás 18:00</p>
-                <p>Sab - Dom: Fechado</p>
+            <!------------------------------ = INFORMAÇÕES POR ESCRITO = --------------------->
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes">
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida">
+                <img src="img/socialmedia/iconesIndex/localizacao.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida-png" draggable="false">
+                <p>Av. Dr. Antônio de Souza Melo, 452 A - Loja 01</p>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento">
+                <img src="img/socialmedia/iconesIndex/horario.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento-png" draggable="false">
+                <div id="texto-dividido-time">
+                  <p>Horário de funcionamento: </p>
+                  <p>Seg - Sex: 08:00 ás 11:30 e 12:45 ás 18:00</p>
+                  <p>Sab - Dom: Fechado</p>
+                </div>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato">
+                <img src="img/socialmedia/iconesIndex/telefone.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato-png" draggable="false">
+                <div id="texto-dividido-time">
+                  <p>(35) 3571-5800</p>
+                  <p>0800 031 3571</p>
+                </div>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp">
+                <img src="img/socialmedia/iconesIndex/whatsapp.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp-png" draggable="false">
+                <p>sac@grupomilbr.com.br</p>
               </div>
             </div>
 
-            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato">
-              <img src="img/socialmedia/iconesIndex/telefone.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato-png" draggable="false">
-              <div id="texto-dividido-time">
-                <p>(35) 3571-5800</p>
-                <p>0800 031 3571</p>
+          </div>
+
+          @* CONTEUDO GERAVEL JURUAIA *@
+          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps-juruaia" class="mapa-filho" style="display: none;">
+            <!---------------------- = IMPORT DO IFRAME DO GOOGLE = --------------------------->
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps">
+              <iframe src="https://www.google.com/maps/embed?pb=!4v1734916303599!6m8!1m7!1spd8dM5WPXDRbo5rypg10NQ!2m2!1d-21.2534348590906!2d-46.58179262052879!3f2.9383357460840673!4f-16.691406514786607!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>
+
+            <!------------------------------ = INFORMAÇÕES POR ESCRITO = --------------------->
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes">
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida">
+                <img src="img/socialmedia/iconesIndex/localizacao.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida-png" draggable="false">
+                <p>Rua Ver Alberto Mario Segreti, n° 86 - Loja B - Mirantes</p>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento">
+                <img src="img/socialmedia/iconesIndex/horario.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento-png" draggable="false">
+                <div id="texto-dividido-time">
+                  <p>Horário de funcionamento: </p>
+                  <p>Seg - Sex: 08:00 ás 11:30 e 12:45 ás 18:00</p>
+                  <p>Sab - Dom: Fechado</p>
+                </div>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato">
+                <img src="img/socialmedia/iconesIndex/telefone.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato-png" draggable="false">
+                <div id="texto-dividido-time">
+                  <p>(35) 3571-5800</p>
+                  <p>0800 031 3571</p>
+                </div>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp">
+                <img src="img/socialmedia/iconesIndex/whatsapp.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp-png" draggable="false">
+                <p>sac@grupomilbr.com.br</p>
               </div>
             </div>
 
-            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp">
-              <img src="img/socialmedia/iconesIndex/whatsapp.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp-png" draggable="false">
-              <p>sac@grupomilbr.com.br</p>
+          </div>
+
+          @* CONTEUDO GERAVEL NOVA RESENDE *@
+          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps-novaResende" class="mapa-filho" style="display: none;">
+            <!---------------------- = IMPORT DO IFRAME DO GOOGLE = --------------------------->
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.5447336540947!2d-46.428759724740644!3d-21.13070928054428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b6652997ff5e8f%3A0x8922c2de4675039c!2sMilbr.Net%20(Nova%20Resende)!5e0!3m2!1spt-BR!2sbr!4v1734916621379!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
+            <!------------------------------ = INFORMAÇÕES POR ESCRITO = --------------------->
+            <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes">
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida">
+                <img src="img/socialmedia/iconesIndex/localizacao.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida-png" draggable="false">
+                <p>Rod. Osvaldo Américo dos Réis, 683 - Centro</p>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento">
+                <img src="img/socialmedia/iconesIndex/horario.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento-png" draggable="false">
+                <div id="texto-dividido-time">
+                  <p>Horário de funcionamento: </p>
+                  <p>Seg - Sex: 08:00 ás 11:30 e 12:45 ás 18:00</p>
+                  <p>Sab - Dom: Fechado</p>
+                </div>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato">
+                <img src="img/socialmedia/iconesIndex/telefone.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato-png" draggable="false">
+                <div id="texto-dividido-time">
+                  <p>(35) 3571-5800</p>
+                  <p>0800 031 3571</p>
+                </div>
+              </div>
+
+              <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp">
+                <img src="img/socialmedia/iconesIndex/whatsapp.png" alt="index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp-png" draggable="false">
+                <p>sac@grupomilbr.com.br</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -828,3 +954,6 @@
 
 <script src="js/carrossel.js"></script>
 <script src="js/navegacaoButton.js"></script>
+
+<!-- IFRAME NOVA RESENDE -->
+

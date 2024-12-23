@@ -1,3 +1,5 @@
+// TROCA DE CONTEUDO COM BASE NOS PLANOS
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault(); // Impede o comportamento padrão do link
@@ -14,3 +16,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+
+//  TROCA DE MAPAS COM BASE NA CIDADE
