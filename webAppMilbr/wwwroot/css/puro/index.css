@@ -40,7 +40,8 @@ main #index-area-cliente-conteudo-conhecer-planos {
     display: flex; flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #F5F5F5; /* Branco aplicado de teste */ 
+    gap: 2rem;
+    background-color: var(--background-color-white-second); 
 }
 
 main #index-area-cliente-conteudo-conhecer-planos-titulo {
@@ -80,20 +81,56 @@ main #index-area-cliente-conteudo-conhecer-planos-tipos-planos button:hover {
     color: #333746;
 }
 
-main #index-area-cliente-conteudo-conhecer-ofertas
+/* ---------------------------- = Conteúdos filtrados via js = --------------------------------- */
+
+main #index-area-cliente-conteudo-conhecer-ofertas {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+main #index-area-cliente-conteudo-conhecer-ofertas:nth-child(2) {
+    margin-bottom: 2rem;
+}
+
+.conteudo {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s ease 0.3s;
+}
+
+.conteudo.open {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+main #index-area-cliente-conteudo-conhecer-ofertas {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+main #index-area-cliente-conteudo-conhecer-ofertas-geravel-residencial,
+#index-area-cliente-conteudo-conhecer-ofertas-geravel-comercial,
+#index-area-cliente-conteudo-conhecer-ofertas-geravel-corporativo,
+#index-area-cliente-conteudo-conhecer-ofertas-geravel-rural
 {
     width: 100%;
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 4rem;
+    gap: 6rem;
+    margin-top: 2rem;
 }
 
-main #index-area-cliente-conteudo-conhecer-ofertas:nth-child(2) {
-    margin-bottom: 2rem;
-}
+
+/* -------------------------------------- + + ------------------------------------------------ */
 
 /* Mexendo com elements */
 .plano-apresentacao {
@@ -262,7 +299,7 @@ main #index-area-cliente-conteudo-area-cliente {
     display: flex; flex-direction: column;
     align-items: center;
     padding-top: 4rem;
-    background-color: #F5F5F5;
+    background-color: var(--background-color-white-second);
 }
 
 
@@ -400,7 +437,7 @@ main #index-area-cliente-conteudo-perguntas-frequentes {
     align-items: center;
     padding-top: 4rem;
     padding-bottom: 10rem;
-    background-color: #F5F5F5;
+    background-color: var(--background-color-white-second);
 }
 
 main #index-area-cliente-conteudo-perguntas-frequentes-titulo {
