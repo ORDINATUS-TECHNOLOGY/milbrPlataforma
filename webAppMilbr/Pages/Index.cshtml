@@ -779,17 +779,17 @@
 
         <!-- MENU DE BOTÕES DE CIDADES SELECIONÁVEIS -->
         <div id="index-area-cliente-conteudo-localizacao-cidades">
-          <button id="index-botao-cidade-selecionada-Muzambinho" class="btn-loc">Muzambinho</button>
-          <button id="index-botao-cidade-selecionada-CaboVerde" class="btn-loc">Cabo Verde</button>
-          <button id="index-botao-cidade-selecionada-Juruaia" class="btn-loc">Juruaia</button>
-          <button id="index-botao-cidade-selecionada-NovaResende" class="btn-loc">Nova Resende</button>
+          <button data-target="index-botao-cidade-selecionada-Muzambinho"   class="nav-loc">Muzambinho</button>
+          <button data-target="index-botao-cidade-selecionada-CaboVerde"    class="nav-loc">Cabo Verde</button>
+          <button data-target="index-botao-cidade-selecionada-Juruaia"      class="nav-loc">Juruaia</button>
+          <button data-target="index-botao-cidade-selecionada-NovaResende"  class="nav-loc">Nova Resende</button>
         </div>
         
         <!--------------- + CONTEÚDO GERÁVEL + --------------->
         <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis">
           
           @* CONTEUDO GERAVEL MUZAMBINHO *@          
-          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps-muzambinho" class="mapa-filho">
+          <div id="index-botao-cidade-selecionada-Muzambinho" class="mapa-filho open">
             <!---------------------- = IMPORT DO IFRAME DO GOOGLE = --------------------------->
             <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps">
               <iframe
@@ -831,10 +831,10 @@
           </div>
 
           @* CONTEUDO GERAVEL CABO VERDE *@  
-          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps-caboVerde" class="mapa-filho" style="display: none;">
+          <div id="index-botao-cidade-selecionada-CaboVerde" class="mapa-filho close">
             <!---------------------- = IMPORT DO IFRAME DO GOOGLE = --------------------------->
             <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps">
-              <iframe src="https://www.google.com/maps/embed?pb=!4v1734916512835!6m8!1m7!1sstJ9diri6AyqOB1b932z6Q!2m2!1d-21.47017509551706!2d-46.40110512462944!3f38.20794326312419!4f-13.344502346314442!5f1.4007642509932832" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.9597221269887!2d-46.40370872399675!3d-21.470096980291984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b61a602ae69491%3A0xb1712605b751040b!2sMilbr.Net!5e0!3m2!1spt-BR!2sbr!4v1737384519121!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <!------------------------------ = INFORMAÇÕES POR ESCRITO = --------------------->
@@ -870,10 +870,10 @@
           </div>
 
           @* CONTEUDO GERAVEL JURUAIA *@
-          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps-juruaia" class="mapa-filho" style="display: none;">
+          <div id="index-botao-cidade-selecionada-Juruaia" class="mapa-filho close">
             <!---------------------- = IMPORT DO IFRAME DO GOOGLE = --------------------------->
             <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps">
-              <iframe src="https://www.google.com/maps/embed?pb=!4v1734916303599!6m8!1m7!1spd8dM5WPXDRbo5rypg10NQ!2m2!1d-21.2534348590906!2d-46.58179262052879!3f2.9383357460840673!4f-16.691406514786607!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.005875157781!2d-46.5832458648021!3d-21.25349606553157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b6439b97fb4a15%3A0x6f7c36ce8900afd0!2sMilbr%20(JURUAIA-MG)!5e0!3m2!1spt-BR!2sbr!4v1737384621115!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <!------------------------------ = INFORMAÇÕES POR ESCRITO = --------------------->
@@ -909,7 +909,7 @@
           </div>
 
           @* CONTEUDO GERAVEL NOVA RESENDE *@
-          <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps-novaResende" class="mapa-filho" style="display: none;">
+          <div id="index-botao-cidade-selecionada-NovaResende" class="mapa-filho close">
             <!---------------------- = IMPORT DO IFRAME DO GOOGLE = --------------------------->
             <div id="index-area-cliente-conteudo-localizacao-mapas-geraveis-gps">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.5447336540947!2d-46.428759724740644!3d-21.13070928054428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b6652997ff5e8f%3A0x8922c2de4675039c!2sMilbr.Net%20(Nova%20Resende)!5e0!3m2!1spt-BR!2sbr!4v1734916621379!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

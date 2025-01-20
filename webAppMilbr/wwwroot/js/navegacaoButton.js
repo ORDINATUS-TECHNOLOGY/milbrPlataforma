@@ -1,10 +1,4 @@
-// ---------------------------------------- + CONHEÇA NOSSOS PLANOS + --------------------------------------
-
-// -- BUTTON --
-const buttonResidencial = document.getElementById("index-area-cliente-conteudo-conhecer-planos-tipos-planos-residencial");
-const buttonComercial   = document.getElementById("index-area-cliente-conteudo-conhecer-planos-tipos-planos-comercial");
-const buttonCorporativo = document.getElementById("index-area-cliente-conteudo-conhecer-planos-tipos-planos-corporativo");
-const buttonRural       = document.getElementById('index-area-cliente-conteudo-conhecer-planos-tipos-planos-rural'); 
+// TIPOS DE PLANOS
 
 document.querySelectorAll('.nav-btn').forEach(button => {
     button.addEventListener('click', function() {
@@ -22,9 +16,19 @@ document.querySelectorAll('.nav-btn').forEach(button => {
 });
 
 
+// LOCALIZAÇÃO GPS
 
+document.querySelectorAll('.nav-loc').forEach(button => {
+    button.addEventListener('click', function() {
+        // Remove a classe 'open' de todos os conteúdos e adiciona 'close'
+        document.querySelectorAll('.mapa-filho').forEach(content => {
+            content.classList.remove('open');
+            content.classList.add('close');
+        });
 
-// ---------------------------------------- + SIGA NOSSAS REDES + --------------------------------------
-
-
-// ---------------------------------------- + PERGUNTAS FREQUENTES + --------------------------------------
+        // Mostra o conteúdo alvo
+        const targetContent = document.getElementById(this.getAttribute('data-target'));
+        targetContent.classList.add('open');
+        targetContent.classList.remove('close');  // Remove 'close' para garantir que o conteúdo seja exibido
+    });
+});

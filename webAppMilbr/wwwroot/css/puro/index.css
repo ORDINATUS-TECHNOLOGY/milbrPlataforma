@@ -1,0 +1,669 @@
+main .index-area-cliente-responsividade {
+    width: 100%;
+    height: auto;
+    display: grid; place-items: center;
+    background-color: var(--background-color-white-main);
+}
+
+/* ----------------------------------+ ESPAÇO DESIGNADO AO CARROSSEL +-----------------------------------  */
+
+main #index-area-cliente-conteudo {
+    width: 1366px; max-width: 1366px;
+    height: auto;
+}
+
+main #index-area-cliente-conteudo-carrossel {
+    width: 100%;
+    height: 550px;
+    background-color: var(--color-letter-blue-normalHead);
+}
+
+#index-area-cliente-conteudo-carrossel img {
+    display: none;
+    width: 100%; 
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#index-area-cliente-conteudo-carrossel img.selected {
+    display: block;
+    opacity: 1;
+}
+
+
+/* --------------------------- + TRATANDO DOS PLANOS + -------------------------------- */
+
+main #index-area-cliente-conteudo-conhecer-planos {
+    width: 100%;
+    height: 880px;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--background-color-white-second); 
+}
+
+main #index-area-cliente-conteudo-conhecer-planos-titulo {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+main #index-area-cliente-conteudo-conhecer-planos-titulo h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--color-letter-blue-normalHead);
+}
+
+main #index-area-cliente-conteudo-conhecer-planos-tipos-planos {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+main #index-area-cliente-conteudo-conhecer-planos-tipos-planos button {
+    font-size: 27px;
+    color: var(--background-color-white-main);
+    font-weight: bolder;
+    background-color: #4DA4DD;
+    border-radius: 10px;
+    height: 55px;
+    width: 210px;
+    cursor: pointer;
+}
+
+main #index-area-cliente-conteudo-conhecer-planos-tipos-planos button:hover {
+    color: #333746;
+}
+
+/* ---------------------------- = Conteúdos filtrados via js = --------------------------------- */
+
+main #index-area-cliente-conteudo-conhecer-ofertas {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+main #index-area-cliente-conteudo-conhecer-ofertas:nth-child(2) {
+    margin-bottom: 2rem;
+}
+
+.conteudo {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s ease 0.3s;
+}
+
+.conteudo.open {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+main #index-area-cliente-conteudo-conhecer-ofertas {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+main #index-area-cliente-conteudo-conhecer-ofertas-geravel-residencial,
+#index-area-cliente-conteudo-conhecer-ofertas-geravel-comercial,
+#index-area-cliente-conteudo-conhecer-ofertas-geravel-corporativo,
+#index-area-cliente-conteudo-conhecer-ofertas-geravel-rural
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 2rem;
+}
+
+
+/* -------------------------------------- + + ------------------------------------------------ */
+
+/* Mexendo com elements */
+.plano-apresentacao {
+    height: 450px;
+    width: 300px;
+    display: flex; 
+    flex-direction: column;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), /* Sombra principal suave */
+              0px 4px 6px rgba(0, 0, 0, 0.1);   /* Sombra adicional mais leve */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: var(--background-color-white-main);
+}
+
+.plano-apresentacao #plano-apresentacao-titulo {
+    width: 100%;
+    height: 100px;
+    display: grid; place-items: center;
+    font-size: 40px;
+    color: var(--background-color-white-main);
+    font-weight: 500;
+    background: linear-gradient(90deg, 
+    rgba(28, 94, 138, 0.94) 0%, 
+    rgba(39, 121, 183, 0.96) 58%, 
+    rgba(25, 86, 126, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+.plano-apresentacao ul{
+    width: 100%;
+    list-style: none;
+    display: grid; place-items: center;
+    padding-top: 0.3rem;
+}
+
+.plano-apresentacao li {
+    width: 60%;
+    height: 40px;
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.plano-apresentacao #plano-apresentacao-corpo {
+    height: calc(100% - 100px);
+    width: 100%;
+    text-align: center;
+}
+
+.plano-apresentacao #plano-apresentacao-corpo-velocidade {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.plano-apresentacao #plano-apresentacao-corpo-velocidade h1 {
+    font-size: 56px;
+    color: black;
+    font-weight: bolder;
+}
+
+.plano-apresentacao #plano-apresentacao-corpo-botao {
+    width: 100%; height: 40px;
+    color: var(--background-color-white-main);
+    margin-top: 1rem;
+}
+
+.plano-apresentacao #plano-apresentacao-corpo-botao button {
+    border-radius: 1rem;
+    background-color: #0D5E94;
+    height: 100%;
+    width: 176px;
+}
+
+.plano-apresentacao #plano-apresentacao-corpo-botao a {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.plano-apresentacao #plano-apresentacao-corpo-botao a:hover {
+    color: var(--color-letter-gray-normalHead);
+}
+
+/* --------------------- NOSSAS VANTAGENS ------------------------------- */
+
+/* área do título */
+main #index-area-cliente-conteudo-vantagens {
+    width: 100%;
+    height: 900px;
+    display: flex; flex-direction: column;
+    align-items: center;
+    padding-top: 4rem; padding-bottom: 10rem;
+}
+
+main #index-area-cliente-conteudo-vantagens-titulo {
+    width: 840px;
+    height: 105px;
+    display: grid;
+    place-items: center;
+    background: var(--background-color-white-main);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), /* Sombra principal suave */
+                0px 4px 6px rgba(0, 0, 0, 0.1);     
+    border-radius: 2px;
+}
+
+main #index-area-cliente-conteudo-vantagens-titulo h1 {
+    font-size: 50px;
+    color: var(--color-letter-blue-normalHead);
+    font-weight: bolder;
+}
+
+main #index-area-cliente-conteudo-vantagens-icones {
+    height: 90%;
+    width: 100%;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+main #index-area-cliente-conteudo-vantagens-icone {
+    width: 250px; height: 190px;
+    display: flex; flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    word-wrap: break-word;
+    padding-left: 3rem;
+    padding-right: 1rem;
+}
+
+main #icone-icon {
+    height: 65px; width: 65px;
+}
+
+main #icone-icon img {
+    height: 100%; width:100%;
+}
+
+main #icone-titulo h2 {
+    font-weight: bolder;
+    font-size: 21px;
+    color: var(--color-letter-blue-normalHead);
+}
+
+main #icone-descricao {
+    width: 100%; height: auto;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* --------------------- + ÁREA DO CLIENTE + ------------------ */
+main #index-area-cliente-conteudo-area-cliente {
+    width: 100%;
+    height: 800px;
+    display: flex; flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    background-color: var(--background-color-white-second);
+}
+
+
+main #index-area-cliente-conteudo-area-cliente-links-uteis-titulo{
+    width: 840px;
+    height: 105px;
+    display: grid;
+    place-items: center;
+    background: var(--background-color-white-main);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), /* Sombra principal suave */
+                0px 4px 6px rgba(0, 0, 0, 0.1);     
+    border-radius: 2px;
+}
+
+main #index-area-cliente-conteudo-area-cliente-links-uteis-titulo h1 {
+    font-size: 50px;
+    color: var(--color-letter-blue-normalHead);
+    font-weight: bolder;
+}
+
+main #index-area-cliente-conteudo-area-cliente-links-uteis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 1rem;
+    margin-top: 6rem;
+    width: 100%; height: 90%;
+}
+
+main #index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click {
+    height: 140px;
+    width: 110px;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+main #index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone {
+    height: 70px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+main #index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-icone img {
+    width: 70px;
+    height: 100%;
+}
+
+main #index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto {
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+}
+
+main #index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto a {
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+}
+
+main #index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click-texto a:hover {
+    color: #333746;
+}
+
+
+/* ----------------------- + SIGA NOSSAS REDES + ----------------------------- */
+
+main #index-area-cliente-conteudo-redes-sociais {
+    width: 100%;
+    height: 800px;
+    display: flex; flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+} 
+
+main #index-area-cliente-conteudo-redes-sociais-titulo {
+    width: 840px;
+    height: 105px;
+    display: grid;
+    place-items: center;
+    background: var(--background-color-white-main);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), /* Sombra principal suave */
+                0px 4px 6px rgba(0, 0, 0, 0.1);     
+    border-radius: 2px;
+}
+
+main #index-area-cliente-conteudo-redes-sociais-titulo h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--color-letter-blue-normalHead);
+}
+
+main #index-area-cliente-conteudo-redes-sociais-publicacoes {
+    margin-top: 10rem; 
+    width: 100%; height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem; padding-right: 1rem;
+}
+
+main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao {
+    width: 400px; height: 500px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao:hover {
+    margin-bottom: 10rem;
+}
+
+main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* vendo se sobe */
+
+
+/* ------------------ + PERGUNTAS FREQUENTES + ------------------- */
+    
+main #index-area-cliente-conteudo-perguntas-frequentes {
+    width: 100%;
+    height: auto; min-height: 1200px;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+    background-color: var(--background-color-white-second);
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-titulo {
+    width: 840px;
+    height: 105px;
+    display: grid;
+    place-items: center;
+    background: var(--background-color-white-main);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), /* Sombra principal suave */
+                0px 4px 6px rgba(0, 0, 0, 0.1);     
+    border-radius: 2px;
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-titulo h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--color-letter-blue-normalHead);
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-lista {
+    width: 100%;
+    height: 90%;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+/* Estilo do container principal */
+main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-letter-blue-normalHead);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: height 0.3s ease, padding 0.3s ease; /* Transição suave ao abrir/fechar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main #faq-questao-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    cursor: pointer;
+    height: 60px; /* Altura fixa do título */
+}
+
+main #faq-questao-titulo h1 {
+    color: var(--background-color-white-main);
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+main #faq-questao-titulo i {
+    color: var(--background-color-white-main);
+    font-size: 4rem;
+    transition: transform 0.3s ease; /* Suavidade para a rotação */
+}
+
+main #faq-questao-resposta {
+    color: var(--background-color-white-main);
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 1rem;
+    padding-top: 1rem;
+    height: 0; /* Inicialmente invisível */
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease; /* Suavidade para aparecer/desaparecer */
+}
+
+main #faq-questao-resposta p {
+    color: var(--background-color-white-main);
+    font-size: 20px;
+}
+
+main #faq-questao-resposta i {
+    color: var(--background-color-white-main);
+    font-size: 7px;
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao.open #faq-questao-resposta {
+    height: auto; /* Altura automática */
+    opacity: 1; 
+    padding: 1rem;
+    background-color: var(--new-color-here); /* Adicione a cor desejada */
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao.open #faq-questao-titulo i {
+    transform: rotate(180deg); 
+}
+
+/* ----------------------+ LOCALIZAÇÃO DA MILBR +------------------------------- */
+
+main #index-area-cliente-conteudo-localizacao-responsividade {
+    width: 100%;
+    height: 56rem;
+    display: grid;
+    place-items: center;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+
+main #index-area-cliente-conteudo-localizacao{
+    width: 120rem;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex; flex-direction: column;
+    justify-content: center; 
+    gap: 2rem;
+    align-items: center;
+    box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 4px 6px rgba(0, 0, 0, 0.1),  
+    0 1px 10px rgba(0, 0, 0, 0.08);
+}
+
+main #index-area-cliente-conteudo-localizacao-titulo {
+    width: 100%; height: 72px;
+    text-align: center;
+}
+
+main #index-area-cliente-conteudo-localizacao-titulo h1 {
+    font-size: 50px;
+    color: var(--color-letter-blue-normalHead);
+    font-weight: bolder;
+}
+
+main #index-area-cliente-conteudo-localizacao-cidades {
+    margin-top: 2rem;
+    width: 50%; height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+}
+
+main #index-area-cliente-conteudo-localizacao-cidades button {
+    height: 34px;
+    border-radius: 10px;
+    color: var(--background-color-white-main);
+    font-size: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: #41ABEC;
+}
+
+main #index-area-cliente-conteudo-localizacao-cidades button:hover {
+    color: black;
+}
+
+main #index-area-cliente-conteudo-localizacao-cidades button:focus {
+    background-color: var(--color-letter-blue-normalHead);
+}
+
+/* --------------------- = CONTEÚDO GERÁVEL POR JS = ------------------ */
+
+main #index-area-cliente-conteudo-localizacao-mapas-geraveis {
+    width: 100%;
+    height: 350px;
+    display: grid;
+    place-items: center;
+}
+
+main #index-area-cliente-conteudo-localizacao-mapas-geraveis iframe {
+    width: 520px; height: 346px;
+}
+
+.mapa-filho.close {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s ease;
+}
+
+.mapa-filho.open {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s ease;
+}
+
+main    #index-botao-cidade-selecionada-Muzambinho,
+        #index-botao-cidade-selecionada-CaboVerde,
+        #index-botao-cidade-selecionada-Juruaia,
+        #index-botao-cidade-selecionada-NovaResende 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+main #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes {
+    width: 380px; height: 280px;
+    border-radius: 4px;
+    margin-left: -8rem;
+    background-color: var(--background-color-white-main);
+    box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 4px 6px rgba(0, 0, 0, 0.1),  
+    0 1px 10px rgba(0, 0, 0, 0.08);
+    padding-left: 1rem;
+    padding-top: 2rem;
+    display: flex; flex-direction: column;
+    justify-content: space-around;
+}
+
+main #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes p {
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 1rem;
+}
+
+main #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida,
+     #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-horario-funcionamento,
+     #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-contato,
+     #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-whatsapp
+    {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+main #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes-avenida img {
+    width: 30px; height: 30px;
+}
