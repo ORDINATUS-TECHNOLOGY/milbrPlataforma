@@ -3,6 +3,18 @@
 
 @{
     Layout = "~/Pages/Shared/Layout.cshtml";
+
+    @* VÁRIAVEIS DE AMBIENTE, AJUDANDO NA PESQUISA *@
+    ViewData["campo1"] = "RESIDENCIAIS";
+    ViewData["campo2"] = "RURAIS";
+    ViewData["campo3"] = "COMERCIAL";
+    ViewData["campo4"] = "CORPORATIVO";
+
+    @* VARIAVEIS DE NAVEGAÇÃO ENTRE PAGES *@
+    ViewData["link1"] = "#planos-conteudo-imagem-planos-residenciais-titulo";
+    ViewData["link2"] = "#planos-conteudo-imagem-planos-rurais-titulo";
+    ViewData["link3"] = "#planos-conteudo-imagem-plano-comercial-titulo";
+    ViewData["link4"] = "#planos-conteudo-imagem-plano-corporativo";
 }
 
 <div id="planos-conteudo-responsividade">

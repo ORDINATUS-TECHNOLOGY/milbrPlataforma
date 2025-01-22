@@ -2,6 +2,20 @@
 @model webAppMilbr.Pages.Index
 @{
   Layout = "~/Pages/Shared/Layout.cshtml";
+
+  @* VÁRIAVEIS DE AMBIENTE, AJUDANDO NA PESQUISA *@
+  ViewData["campo1"] = "PLANOS";
+  ViewData["campo2"] = "VANTAGENS";
+  ViewData["campo3"] = "ÁREA DO CLIENTE";
+  ViewData["campo4"] = "FAQ";
+  ViewData["campo5"] = "LOCALIZAÇÃO";
+
+  @* VARIAVEIS DE NAVEGAÇÃO ENTRE PAGES *@
+  ViewData["link1"] = "#index-area-cliente-conteudo-conhecer-planos-titulo";
+  ViewData["link2"] = "#index-area-cliente-conteudo-vantagens-titulo";
+  ViewData["link3"] = "#index-area-cliente-conteudo-area-cliente-links-uteis-titulo";
+  ViewData["link4"] = "#index-area-cliente-conteudo-perguntas-frequentes-titulo";
+  ViewData["link5"] = "#index-area-cliente-conteudo-localizacao-titulo";
 }
 
 <div class="index-area-cliente-responsividade">
