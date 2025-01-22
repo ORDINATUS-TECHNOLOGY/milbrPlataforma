@@ -10,6 +10,7 @@ main .index-area-cliente-responsividade {
 main #index-area-cliente-conteudo {
     width: 1366px; max-width: 1366px;
     height: auto;
+    padding-left: 3rem; padding-right: 3rem;
 }
 
 main #index-area-cliente-conteudo-carrossel {
@@ -41,7 +42,7 @@ main #index-area-cliente-conteudo-conhecer-planos {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    background-color: var(--background-color-white-second); 
+    background-color: var(--background-color-white-second);
 }
 
 main #index-area-cliente-conteudo-conhecer-planos-titulo {
