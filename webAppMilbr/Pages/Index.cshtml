@@ -1,5 +1,6 @@
 @page
 @model webAppMilbr.Pages.Index
+
 @{
   Layout = "~/Pages/Shared/Layout.cshtml";
 
@@ -22,7 +23,21 @@
   <div id="index-area-cliente-conteudo">
     @* CARROSSEL *@
     <div id="index-area-cliente-conteudo-carrossel">
-      <img src="img/socialmedia/painel4.png" alt="terceira-imagem-carrossel" draggable="false" class="selected">
+
+      @* Janelinha do cookie *@
+      <div class="index-area-cliente-conteudo-carrossel-cookie" id="semCookie">
+        <h3>
+          Nosso site usa cookies para personalizar anúncios 
+          e melhorar a sua experiência de navegaçao. 
+          Ao clicar em "Aceitar e Fechar", você concorda
+          com a nossa política de privacidade.
+          <a href="#">Saiba mais</a>
+        </h3>
+
+        <button onclick="sumirCookies()">Aceitar e Fechar</button>
+      </div>
+
+      <img src="img/socialmedia/planosIdentificacao.png" alt="terceira-imagem-carrossel" draggable="false" class="selected">
       <img src="img/socialmedia/painel1.png" alt="primeira-imagem-carrossel2" draggable="false">
       <img src="img/socialmedia/painel2.png" alt="segunda-imagem-carrossel3" draggable="false">
       <img src="img/socialmedia/painel3.png" alt="terceira-imagem-carrossel4" draggable="false">
@@ -49,10 +64,10 @@
         <div id="index-area-cliente-conteudo-conhecer-ofertas-geravel-residencial" class="conteudo open">
           <!-- elemento flutuante 1 -->
           <div class="plano-apresentacao">
-            <div id="plano-apresentacao-titulo">MASTER</div>
+            <div id="plano-apresentacao-titulo">TURBO</div>
             <div id="plano-apresentacao-corpo">
               <div id="plano-apresentacao-corpo-velocidade">
-                <h1>600MB</h1>
+                <h1>800MB</h1>
               </div>
 
               <div id="plano-apresentacao-corpo-vantagens">
@@ -81,10 +96,10 @@
 
           <!-- elemento flutuante 2 -->
           <div class="plano-apresentacao" style="margin-bottom: 100px;">
-            <div id="plano-apresentacao-titulo">PLUS</div>
+            <div id="plano-apresentacao-titulo">PRO</div>
             <div id="plano-apresentacao-corpo">
               <div id="plano-apresentacao-corpo-velocidade">
-                <h1>400MB</h1>
+                <h1>600MB</h1>
               </div>
               <div id="plano-apresentacao-corpo-vantagens">
                 <ul id="plano-apresentacao-corpo-vantagens-lista">
@@ -111,7 +126,7 @@
             <div id="plano-apresentacao-titulo">BÁSICO</div>
             <div id="plano-apresentacao-corpo">
               <div id="plano-apresentacao-corpo-velocidade">
-                <h1>250MB</h1>
+                <h1>300MB</h1>
               </div>
               <div id="plano-apresentacao-corpo-vantagens">
                 <ul id="plano-apresentacao-corpo-vantagens-lista">
@@ -968,6 +983,4 @@
 
 <script src="js/carrossel.js"></script>
 <script src="js/navegacaoButton.js"></script>
-
-<!-- IFRAME NOVA RESENDE -->
-
+<script src="js/cookiesExternos.js"></script>

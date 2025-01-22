@@ -1,4 +1,4 @@
-// TROCA DE CONTEUDO COM BASE NOS PLANOS
+// IMPEDE QUE LINKS DE NAVEGAÇÃO OU SEM FINALIDADE E href = "#" fique alterando a URL
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -18,4 +18,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-//  TROCA DE MAPAS COM BASE NA CIDADE

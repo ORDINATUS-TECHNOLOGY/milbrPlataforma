@@ -17,6 +17,7 @@ main #index-area-cliente-conteudo-carrossel {
     width: 100%;
     height: 550px;
     background-color: var(--color-letter-blue-normalHead);
+    position: relative;
 }
 
 #index-area-cliente-conteudo-carrossel img {
@@ -30,6 +31,71 @@ main #index-area-cliente-conteudo-carrossel {
 #index-area-cliente-conteudo-carrossel img.selected {
     display: block;
     opacity: 1;
+}
+
+
+/* cookies */
+
+main .index-area-cliente-conteudo-carrossel-cookie {
+    position: absolute;
+    width: 320px; height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    bottom: 4px;
+    left: 4px;
+    border: 1px solid black;
+    z-index: 10;
+    text-align: justify;
+    gap: 1rem;
+}
+
+main .index-area-cliente-conteudo-carrossel-cookie h3 {
+    font-size: 1.1rem;
+}
+
+main .index-area-cliente-conteudo-carrossel-cookie a {
+    cursor: pointer;
+    color: #2B83EA;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+}
+
+main .index-area-cliente-conteudo-carrossel-cookie a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2B83EA;
+    transition: width 1s ease;
+}
+
+main .index-area-cliente-conteudo-carrossel-cookie a:hover::before {
+    width: 100%;
+}
+
+main .index-area-cliente-conteudo-carrossel-cookie button {
+    width: 125px;
+    height: 35px;
+    background-color: #1159A4;
+    border-radius: 0.7rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+main .index-area-cliente-conteudo-carrossel-cookie button:hover {
+    color: #333746;
 }
 
 
