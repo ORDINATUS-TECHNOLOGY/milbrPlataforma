@@ -297,7 +297,7 @@ main #index-area-cliente-conteudo-vantagens {
     height: 900px;
     display: flex; flex-direction: column;
     align-items: center;
-    padding-top: 4rem; padding-bottom: 10rem;
+    padding-top: 4rem;
 }
 
 main #index-area-cliente-conteudo-vantagens-titulo {
@@ -319,13 +319,11 @@ main #index-area-cliente-conteudo-vantagens-titulo h1 {
 
 main #index-area-cliente-conteudo-vantagens-icones {
     height: 90%;
-    width: 100%;
+    width: 94%;
     margin-top: 10rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
 }
 
 main #index-area-cliente-conteudo-vantagens-icone {
@@ -469,7 +467,7 @@ main #index-area-cliente-conteudo-redes-sociais-titulo h1 {
 
 main #index-area-cliente-conteudo-redes-sociais-publicacoes {
     margin-top: 10rem; 
-    width: 100%; height: 90%;
+    width: 94%; height: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -477,7 +475,7 @@ main #index-area-cliente-conteudo-redes-sociais-publicacoes {
 }
 
 main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao {
-    width: 400px; height: 500px;
+    width: 390px; height: 500px;
     border-radius: 5px;
     cursor: pointer;
 }

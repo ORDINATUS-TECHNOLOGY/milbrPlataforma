@@ -86,10 +86,7 @@ header .cabecalho-informacoes-contato {
     place-items: center;
     grid-template-columns: 1fr 1fr 1.2fr 1fr 1fr 1fr 1.5fr;
     gap: 1px;
-    padding-top: 4px;
     background-color: var(--background-color-white-figma);
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 header .cabecalho-informacoes-contato div {
@@ -166,8 +163,6 @@ header .cabecalho-ux-acesso-links-diretos-de-acesso {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 header #cabecalho-ux-acesso-links-diretos-de-acesso-logos{
