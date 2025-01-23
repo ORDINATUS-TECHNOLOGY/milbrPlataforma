@@ -5,16 +5,16 @@
     Layout = "~/Pages/Shared/Layout.cshtml";
 
     @* VÁRIAVEIS DE AMBIENTE, AJUDANDO NA PESQUISA *@
-    ViewData["campo1"] = "RESIDENCIAIS";
     ViewData["campo2"] = "RURAIS";
     ViewData["campo3"] = "COMERCIAL";
     ViewData["campo4"] = "CORPORATIVO";
+    ViewData["campo5"] = "PÁGINA INICIAL";
 
     @* VARIAVEIS DE NAVEGAÇÃO ENTRE PAGES *@
-    ViewData["link1"] = "#planos-conteudo-imagem-planos-residenciais-titulo";
     ViewData["link2"] = "#planos-conteudo-imagem-planos-rurais-titulo";
     ViewData["link3"] = "#planos-conteudo-imagem-plano-comercial-titulo";
     ViewData["link4"] = "#planos-conteudo-imagem-plano-corporativo";
+    ViewData["link5"] = "/index";
 }
 
 <div id="planos-conteudo-responsividade">
@@ -71,7 +71,7 @@
                     </div>
 
                     <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora">
-                        <a href="#">
+                        <a href="https://api.whatsapp.com/send?phone=553535715000&text=Ol%C3%A1,%20eu%20vim%20pelo%20plano%20*TURBO*%20anunciado%20no%20site.%20Poderia%20me%20explicar%20melhor%20como%20funciona?%20%F0%9F%98%8A" target="_blank">
                             <button>ASSINE AGORA</button>
                         </a>
                     </div>
@@ -109,7 +109,7 @@
                     </div>
 
                     <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora">
-                        <a href="#">
+                        <a href="https://api.whatsapp.com/send?phone=553535715000&text=Ol%C3%A1,%20eu%20vim%20pelo%20plano%20*PRO*%20anunciado%20no%20site.%20Poderia%20me%20explicar%20melhor%20como%20funciona?%20%F0%9F%98%8A" target="_blank">
                             <button>ASSINE AGORA</button>
                         </a>
                     </div>
@@ -147,7 +147,7 @@
                     </div>
 
                     <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora">
-                        <a href="#">
+                        <a href="https://api.whatsapp.com/send?phone=553535715000&text=Ol%C3%A1,%20eu%20vim%20pelo%20plano%20*START*%20anunciado%20no%20site.%20Poderia%20me%20explicar%20melhor%20como%20funciona?%20%F0%9F%98%8A" target="_blank">
                             <button>ASSINE AGORA</button>
                         </a>
                     </div>
@@ -163,7 +163,7 @@
         @* PLANOS RURAIS *@
         <div id="planos-conteudo-imagem-planos-rurais">
             <div id="planos-conteudo-imagem-planos-rurais-titulo">
-                <h1>PLANOS RURAIS</h1>
+                <h1>PLANO RURAL</h1>
             </div>
 
             <div id="planos-conteudo-imagem-planos-rurais-conteudo">
@@ -186,19 +186,19 @@
                             </ul>
 
                             <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco">
-                                <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-int">
+                                @* <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-int">
                                     <h2>R$</h2>
                                     <h1>85</h1>
                                 </div>
                                 <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-float-mensal">
                                     <h2>,90</h2>
                                     <h2>/MENSAL</h2>
-                                </div>
+                                </div> *@
                             </div>
                         </div>
 
                         <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora">
-                            <a href="#">
+                            <a href="https://api.whatsapp.com/send?phone=553535715000&text=Ol%C3%A1,%20vim%20pelo%20site,%20gostaria%20de%20saber%20sobre%20os%20planos%20rurais%20dispon%C3%ADveis.%20%F0%9F%98%8A" target="_blank">
                                 <button>ASSINE AGORA</button>
                             </a>
                         </div>
@@ -206,7 +206,7 @@
                 </div>
 
                 <div id="planos-conteudo-imagem-planos-rurais-imagem-promocional">
-                    <img src="img/socialmedia/imagem-promocional-plano-rural.png" alt="planos-conteudo-imagem-planos-rurais-imagem-promocional.png" draggable="false">
+                    <img src="img/socialmedia/zonarural.jpg" alt="planos-conteudo-imagem-planos-rurais-imagem-promocional.png" draggable="false" style="border-radius: 4px;">
                     <div id="planos-conteudo-imagem-planos-rurais-imagem-promocional-descricoes">
                         <p id="planos-conteudo-imagem-planos-rurais-imagem-promocional-descricao">
                             <i class='bx bxs-circle'></i> Para planos com maior velocidade, consultar viabilidade técnica.
@@ -226,7 +226,7 @@
             </div>
 
             <div id="planos-conteudo-imagem-plano-comercial-conteudo">
-                <img src="img/socialmedia/imagem-promocional-plano-comercial.png" alt="planos-conteudo-imagem-plano-comercial-conteudo-png" draggable="false">
+                <img src="img/socialmedia/comercio.jpg" alt="planos-conteudo-imagem-plano-comercial-conteudo-png" draggable="false" style="border-radius: 4px;">
 
                 <div id="planos-conteudo-imagem-planos-residenciais-planos-plano">
                         <div class="planos-conteudo-fita">
@@ -248,19 +248,19 @@
                             </ul>
 
                             <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco">
-                                <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-int">
+                                @* <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-int">
                                     <h2>R$</h2>
                                     <h1>239</h1>
                                 </div>
                                 <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-precos-preco-float-mensal">
                                     <h2>,90</h2>
                                     <h2>/MENSAL</h2>
-                                </div>
+                                </div> *@
                             </div>
                         </div>
 
                         <div id="planos-conteudo-imagem-planos-residenciais-planos-plano-assine-agora">
-                            <a href="#">
+                            <a href="https://api.whatsapp.com/send?phone=553535715000&text=Ol%C3%A1,%20vim%20pelo%20site,%20gostaria%20de%20saber%20sobre%20os%20planos%20comerciais%20dispon%C3%ADveis.%20%F0%9F%98%8A" target="_blank">
                                 <button>ASSINE AGORA</button>
                             </a>
                         </div>
@@ -270,7 +270,7 @@
         
         @* PLANO CORPORATIVO *@
         <div id="planos-conteudo-imagem-plano-corporativo">
-            <img src="img/socialmedia/switchs.jpeg" alt="planos-conteudo-imagem-plano-corporativo-background-png" draggable="false" style="opacity: 60%;">
+            @* <img src="img/socialmedia/switchs.jpeg" alt="planos-conteudo-imagem-plano-corporativo-background-png" draggable="false" style="opacity: 60%;"> *@
 
             <h1>PLANO CORPORATIVO</h1>
 
@@ -280,12 +280,14 @@
                     <p>Consulte disponibilidade com nosso time de atendimento.</p>
 
                     <div id="planos-conteudo-imagem-plano-corporativo-conteudo-descricao-button">
-                        <button>FALE CONOSCO</button>
+                        <a href="https://api.whatsapp.com/send?phone=553535715000&text=Ol%C3%A1,%20vim%20pelo%20site,%20gostaria%20de%20saber%20sobre%20os%20planos%20corporativos%20dispon%C3%ADveis.%20%F0%9F%98%8A" target="_blank">
+                            <button>FALE CONOSCO</button>
+                        </a>
                     </div>
                 </div>
                 
                 <div id="planos-conteudo-imagem-plano-corporativo-conteudo-descricao-imagem">
-                    <img src="img/socialmedia/imagem-propaganda-corporativa.png" alt="planos-conteudo-imagem-plano-corporativo-png" draggable="false">
+                    <img src="img/socialmedia/corporativo.jpg" alt="planos-conteudo-imagem-plano-corporativo-png" draggable="false" style="border-radius: 4px;">
                 </div>
             </div>
         </div>

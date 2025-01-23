@@ -2,6 +2,17 @@
 @model webAppMilbr.Pages.Sobre
 @{
     Layout = "~/Pages/Shared/Layout.cshtml";
+
+    @* VÁRIAVEIS DE AMBIENTE, AJUDANDO NA PESQUISA *@
+    ViewData["campo3"] = "PLANOS";
+    ViewData["campo4"] = "SERVIÇOS";
+    ViewData["campo5"] = "PÁGINA INICIAL";
+
+    @* VARIAVEIS DE NAVEGAÇÃO ENTRE PAGES *@
+    ViewData["link3"] = "/planos";
+    ViewData["link4"] = "/processos";
+    ViewData["link5"] = "/index";
+
 }
 
 
