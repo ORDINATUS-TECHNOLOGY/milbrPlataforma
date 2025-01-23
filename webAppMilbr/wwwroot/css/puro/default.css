@@ -24,7 +24,6 @@
     
 }
 
-
 a {
     text-decoration: none;
     color: black;
@@ -85,7 +84,7 @@ header .cabecalho-informacoes-contato {
     height: 100%;
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.2fr 1fr 1fr 1fr 1.5fr;
     gap: 1px;
     padding-top: 4px;
     background-color: var(--background-color-white-figma);
@@ -101,8 +100,13 @@ header .cabecalho-informacoes-contato div {
     gap: 4px;
 }
 
+header .cabecalho-informacoes-contato div i {
+    font-size: 20px;
+    color: var(--color-letter-blue-normalHead);
+}
+
 header h3 {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bolder;
     color: var(--color-letter-blue-normalHead);
 }
@@ -145,8 +149,6 @@ header #cabecalho-informacoes-contato-youtube:hover {transform: scale(1.2);}
 
 
 /* --------------------- + FIM CABEÇALHO DE CIMA+ ------------------------- */
-
-
 
 /* CABEÇALHO DE BAIXO */
 
@@ -248,7 +250,6 @@ main .float-nav-top i {
 main .float-nav-top i:hover {
     color: rgb(182, 255, 237);
 }
-
 
 /* ------------ +++ ------------ */
 
