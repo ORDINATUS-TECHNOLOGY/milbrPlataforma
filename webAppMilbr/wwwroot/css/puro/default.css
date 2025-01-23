@@ -151,11 +151,10 @@ header #cabecalho-informacoes-contato-youtube:hover {transform: scale(1.2);}
 
 header #cabecalho-ux-acesso-links-diretos-de-acesso-responsividade-agente {
     width: 100%;
-    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1),
-    0px 3px 5px rgba(0, 0, 0, 0.15);
     background-color: var(--background-color-white-main);
     display: grid;
     place-items: center;
+    z-index: 4;
 }
 
 header .cabecalho-ux-acesso-links-diretos-de-acesso {
