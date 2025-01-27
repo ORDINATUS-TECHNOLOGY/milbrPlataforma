@@ -97,9 +97,9 @@ header .cabecalho-informacoes-contato div {
     gap: 4px;
 }
 
-header .cabecalho-informacoes-contato div i {
-    font-size: 20px;
-    color: var(--color-letter-blue-normalHead);
+header .cabecalho-informacoes-contato div img {
+    width: 20px;
+    height: 20px;
 }
 
 header h3 {
