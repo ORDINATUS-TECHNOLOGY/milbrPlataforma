@@ -259,7 +259,7 @@ main .float-nav-top i:hover {
     color: rgb(182, 255, 237);
 }
 
-main .float-nav-whatsapp {
+main #tremor {
     position: fixed;
     bottom: 5rem;
     right: 1rem;
@@ -270,13 +270,18 @@ main .float-nav-whatsapp {
     place-items: center;
 }
 
-main .float-nav-whatsapp i {
+main #tremor i {
     color: white;
     font-size: 2rem;
+    padding-bottom: 2px;
 }
 
-main .float-nav-whatsapp:hover {
+main #tremor:hover {
     background-color: #28D146;
+}
+
+main .shake {
+    animation: shake 0.3s infinite;
 }
 
 /* ------------ +++ ------------ */
@@ -423,6 +428,23 @@ footer #footer-rodape-credits-muzabin-letter h2 {
     color: var(--color-letter-gray-normalHead);
     font-size: 16px;
     font-weight: bolder;
+}
+
+
+/* ---------------- KEY FRAMES ---------------------- */
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 
