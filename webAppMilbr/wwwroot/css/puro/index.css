@@ -470,18 +470,19 @@ main #index-area-cliente-conteudo-redes-sociais {
 } 
 
 main #index-area-cliente-conteudo-redes-sociais-titulo {
-    width: 840px;
-    height: 105px;
+    width: 900px;
+    height: 130px;
     display: grid;
     place-items: center;
     background: var(--background-color-white-main);
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), /* Sombra principal suave */
                 0px 4px 6px rgba(0, 0, 0, 0.1);     
     border-radius: 2px;
+    text-align: center;
 }
 
 main #index-area-cliente-conteudo-redes-sociais-titulo h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     color: var(--color-letter-blue-normalHead);
 }
