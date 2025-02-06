@@ -128,8 +128,8 @@ main #index-area-cliente-conteudo-conhecer-planos-titulo h1 {
 main #index-area-cliente-conteudo-conhecer-planos-tipos-planos {
     width: 100%;
     height: 60px;
-    display: flex;
     gap: 1rem;
+    display: flex;
     align-items: center;
     justify-content: center;
 }

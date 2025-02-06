@@ -84,7 +84,7 @@ header .cabecalho-informacoes-contato {
     height: 100%;
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 0.7fr;
+    grid-template-columns: 1fr 2fr 1fr 1.3fr 1fr 1fr 1fr;
     gap: 1px;
     background-color: var(--background-color-white-figma);
 }
