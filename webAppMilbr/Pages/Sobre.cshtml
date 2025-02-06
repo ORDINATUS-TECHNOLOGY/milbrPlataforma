@@ -4,15 +4,18 @@
     Layout = "~/Pages/Shared/Layout.cshtml";
 
     @* VÁRIAVEIS DE AMBIENTE, AJUDANDO NA PESQUISA *@
-    ViewData["campo3"] = "PLANOS";
-    ViewData["campo4"] = "SERVIÇOS";
-    ViewData["campo5"] = "PÁGINA INICIAL";
+    ViewData["campo1"] = "PLANOS";
+    ViewData["campo2"] = "ÁREA DO CLIENTE";
+    ViewData["campo3"] = "SERVIÇOS";
+    ViewData["campo4"] = "SOBRE NÓS";
+    ViewData["campo5"] = "FAQ";
 
     @* VARIAVEIS DE NAVEGAÇÃO ENTRE PAGES *@
-    ViewData["link3"] = "/planos";
-    ViewData["link4"] = "/processos";
-    ViewData["link5"] = "/index";
-
+    ViewData["link1"] = "/index#index-area-cliente-conteudo-conhecer-planos-titulo";
+    ViewData["link2"] = "/index#index-area-cliente-conteudo-area-cliente-links-uteis-titulo";
+    ViewData["link3"] = "/processos";
+    ViewData["link4"] = "/sobre";
+    ViewData["link5"] = "/index#index-area-cliente-conteudo-perguntas-frequentes";
 }
 
 <div class="container-planos-responsividade">
