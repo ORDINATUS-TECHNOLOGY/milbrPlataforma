@@ -269,6 +269,11 @@ main #index-area-cliente-conteudo-conhecer-ofertas-geravel-residencial,
     text-align: center;
 }
 
+#plano-apresentacao-corpo-vantagens-list img {
+    height: 25px;
+    width: 25px;
+}
+
 .plano-apresentacao #plano-apresentacao-corpo-velocidade {
     width: 100%;
     height: auto;
@@ -519,7 +524,7 @@ main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao img {
     
 main #index-area-cliente-conteudo-perguntas-frequentes {
     width: 100%;
-    height: auto; min-height: 1200px;
+    height: auto; min-height: 800px;
     display: flex; flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -537,6 +542,7 @@ main #index-area-cliente-conteudo-perguntas-frequentes-titulo {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), /* Sombra principal suave */
                 0px 4px 6px rgba(0, 0, 0, 0.1);     
     border-radius: 2px;
+    margin-bottom: 1rem;
 }
 
 main #index-area-cliente-conteudo-perguntas-frequentes-titulo h1 {
@@ -597,6 +603,7 @@ main #faq-questao-resposta {
     opacity: 0;
     overflow: hidden;
     transition: height 0.3s ease, opacity 0.3s ease; /* Suavidade para aparecer/desaparecer */
+    background: #6CC7F1;
 }
 
 main #faq-questao-resposta p {

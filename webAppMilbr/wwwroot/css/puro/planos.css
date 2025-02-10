@@ -449,7 +449,7 @@ main #planos-conteudo-imagem-plano-corporativo-conteudo-descricao {
     width: 45%;
     display: flex; flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     padding-right: 1rem;
     padding-left: 4rem;
 }
