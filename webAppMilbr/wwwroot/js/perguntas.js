@@ -8,17 +8,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Alternar entre ícones
             if (isOpen) {
-                resposta.style.height = resposta.scrollHeight + 'px'; // Define a altura da resposta
-                icons[0].style.display = 'none';  // Esconde o ícone "mais"
-                icons[1].style.display = 'block'; // Exibe o ícone "menos"
+                resposta.style.height = resposta.scrollHeight + 'px';
+                icons[0].style.display = 'none';
+                icons[1].style.display = 'block';
                 item.setAttribute('aria-expanded', true);
-                resposta.style.display = 'block'; // Exibe a resposta
+                resposta.style.display = 'block';
             } else {
-                resposta.style.height = 0; // Define a altura para 0 ao fechar
-                icons[0].style.display = 'block'; // Exibe o ícone "mais"
-                icons[1].style.display = 'none'; // Esconde o ícone "menos"
+                resposta.style.height = 0;
+                icons[0].style.display = 'block';
+                icons[1].style.display = 'none';
                 item.setAttribute('aria-expanded', false);
-                resposta.style.display = 'none'; // Esconde a resposta
+                resposta.style.display = 'none';
             }
         });
     
