@@ -1,0 +1,6 @@
+#content-link-uteis-responsividade {
+    width: 100%;
+    height: auto;
+    display: grid; place-items: center;
+    background-color: var(--background-color-white-main);
+}

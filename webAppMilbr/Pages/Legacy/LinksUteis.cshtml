@@ -3,6 +3,19 @@
 
 @{
     Layout = "~/Pages/Shared/Layout.cshtml";
+
+    ViewData["campo1"] = "PLANOS";
+    ViewData["campo2"] = "ÁREA DO CLIENTE";
+    ViewData["campo3"] = "SERVIÇOS";
+    ViewData["campo4"] = "SOBRE NÓS";
+    ViewData["campo5"] = "FAQ";
+
+    @* VARIAVEIS DE NAVEGAÇÃO ENTRE PAGES *@
+    ViewData["link1"] = "#index-area-cliente-conteudo-conhecer-planos-titulo";
+    ViewData["link2"] = "#index-area-cliente-conteudo-area-cliente-links-uteis-titulo";
+    ViewData["link3"] = "/processos";
+    ViewData["link4"] = "/sobre";
+    ViewData["link5"] = "#index-area-cliente-conteudo-perguntas-frequentes";
 }
 
 <div id="content-link-uteis-responsividade"></div>
