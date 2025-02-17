@@ -4,3 +4,88 @@
     display: grid; place-items: center;
     background-color: var(--background-color-white-main);
 }
+
+#content-link-uteis-responsividade-limitador {
+    height: calc(100vh - 150px);
+    width: 1366px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-link-uteis-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 25rem;
+}
+
+#content-link-uteis-section-imagem {
+    width: 100px;
+    height: 100px;
+}
+
+#content-link-uteis-section-imagem img {
+    height: 100%;
+    width: 100%; 
+}
+
+#content-link-uteis-section-imagem i {
+    font-size: 8rem;
+}
+
+#content-link-uteis-section-titulo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#content-link-uteis-section-titulo h1 {
+    font-size: 30px;
+}
+
+#content-link-uteis-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-left: 4rem;
+}
+
+#content-link-uteis-section li {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#content-link-uteis-section-links i {
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: var(--color-letter-blue-masterHead);
+}
+
+#content-link-uteis-section a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#content-link-uteis-section a:hover {
+    color: rgb(61, 92, 117);
+    font-weight: bolder;
+}
+
+#content-link-uteis-section-links {
+    width: 100%;
+    height: auto;
+    text-align: start;
+}
