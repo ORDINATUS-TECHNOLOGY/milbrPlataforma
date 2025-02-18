@@ -454,9 +454,20 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 /* Celulares */
 
 @media (max-width: 720px) {
+    body {
+        width: 100%;
+        max-width: 720px;
+        overflow-x: hidden;
+    }
+
     header {
         width: 100%;
-        height: 52px;
+        height: 60px;
+    }
+
+    header #cabecalho-milbr {
+        width: 100%;
+        max-width: 720px;
     }
 
     header #cabecalho-milbr-responsividade-agente {
