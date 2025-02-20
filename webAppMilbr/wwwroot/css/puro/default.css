@@ -488,7 +488,6 @@ footer #footer-rodape-credits-muzabin-letter h2 {
     justify-content: stretch;
     align-items: center;
     gap: 1px;
-    background-color: red;
     padding-right: 1rem;
    }
 
@@ -506,8 +505,8 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
    /* ---- segunda barra ---- */
 
-   header #cabecalho-ux-acesso-links-diretos-de-acesso {
-    width: 100%;
+   header .cabecalho-ux-acesso-links-diretos-de-acesso {
+    width: 100%; max-width: 420px;
    }
 
    header #cabecalho-ux-acesso-links-diretos-de-acesso-logos { /* tirado logos, muito grandes */
@@ -528,22 +527,29 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
 
    /* ------------------------ = INDEX = ------------------ */
+
+   /* geral */
    main #index-area-cliente-responsividade {
-    width: 100%; max-width: 400px;
+    width: 100%; max-width: 420px;
    }
 
    main #index-area-cliente-conteudo {
-    width: 100%; max-width: 400px;
+    width: 100%; max-width: 420px;
    }
 
-   /* carrossel */
+    /* carrossel */
    main #index-area-cliente-conteudo-carrossel {
-    width: 100%; max-width: 400px;
+        width: 100%; max-width: 420px;
+        height: auto; max-height: 170px;
+        background: white;
     }
    
     main #index-area-cliente-conteudo-carrossel img {
-    width: 100%; max-width: 400px;
+        width: 100%; max-width: 420px;
+        height: 100%;
     }
+
+    /* planos */
 
 
 }
