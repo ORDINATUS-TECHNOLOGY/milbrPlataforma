@@ -58,7 +58,8 @@ body {
 /* ------------- ++ FORMATAÇÃO DO HEADER ++ ---------- */
 
 header {
-    width: 100vw; height: 115px;
+    width: 100%; max-width: 1366px; 
+    height: 115px;
     display: flex;
     flex-direction: column;
     gap: 1px;
@@ -314,7 +315,7 @@ footer #footer-responsividade-cima {
 }
 
 footer .footer-rodape-credits-milbr {
-    width: 1366px;
+    width: 100%; max-width: 1366px;
     height: 100%;
     display: grid;
     background-color: var(--background-color-blue-footer);
@@ -450,54 +451,6 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
 /* ------------------------------- MEDIA QUERIES ---------------------------- */
 
+@media (max-width: 480px) {}
 
-/* Celulares */
-
-@media (max-width: 720px) {
-    body {
-        width: 100%;
-        max-width: 720px;
-        overflow-x: hidden;
-    }
-
-    header {
-        width: 100%;
-        height: 60px;
-    }
-
-    header #cabecalho-milbr {
-        width: 100%;
-        max-width: 720px;
-    }
-
-    header #cabecalho-milbr-responsividade-agente {
-        display: none;
-    }
-
-    header #cabecalho-ux-acesso-links-diretos-de-acesso-logos {
-        display: none;
-    }
-
-    header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis {
-        margin-left: 2rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 4rem;
-    }
-    
-    header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis a {
-        font-size: 20px;
-    }
-
-    main {
-        width: 100%; max-width: 720px;
-    }
-
-
-    /* ------------------ INDEX ------------------ */
-    main #index-area-cliente-conteudo {
-        width: 100%; max-width: 720px;
-    }
-
-}
+@media (min-width: 481px) and (max-width: 768px) {}
