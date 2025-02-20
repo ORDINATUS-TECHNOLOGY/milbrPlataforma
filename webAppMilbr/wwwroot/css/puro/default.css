@@ -453,34 +453,37 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
 /* Celulares */
 
-@media (max-width: 720px) {
+@media (max-width: 420px) {
     body {
         width: 100%;
     }
 
    main { 
     width: 100%;
-    max-width: 720px;
+    max-width: 420px;
    }
 
    header {
-    width: 100%; max-width: 720px;
+    width: 100%; max-width: 420px;
    }
 
    /* ------------------------ = INDEX = ------------------ */
    main #index-area-cliente-responsividade {
-    width: 100%; max-width: 700px;
+    width: 100%; max-width: 400px;
    }
 
    main #index-area-cliente-conteudo {
-    width: 100%; max-width: 700px;
+    width: 100%; max-width: 400px;
    }
 
    /* carrossel */
    main #index-area-cliente-conteudo-carrossel {
-    width: 100%; max-width: 700px;
+    width: 100%; max-width: 400px;
     }
-
+   
+    main #index-area-cliente-conteudo-carrossel img {
+    width: 100%; max-width: 400px;
+    }
 
 
 }
