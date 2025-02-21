@@ -597,6 +597,10 @@ footer #footer-rodape-credits-muzabin-letter h2 {
             gap: 4rem;
         }
 
+        main #index-area-cliente-conteudo-conhecer-ofertas-geravel-residencial div:nth-child(2) {
+            margin-bottom: 0 !important;
+        }
+
         main #index-area-cliente-conteudo-conhecer-ofertas-geravel-rural {
             height: 100%;
             width: 100%;
