@@ -351,6 +351,7 @@ footer #footer-rodape-credits-milbr-suporte b {
 
 footer #footer-rodape-credits-milbr-sobre {
     height: 70%;
+    width: 100%;
     display: grid;
     place-items: center;
 }
@@ -453,7 +454,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
 /* ## CELULARES */
 
-@media (max-width: 420px) {
+@media (min-width: 400px) and (max-width: 420px) {
     body {
         width: 100% !important;
     }
@@ -483,13 +484,12 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
     header .cabecalho-informacoes-contato {
         width: 100%;
-        max-width: 420px;
+        max-width: 412px !important;
         height: 100%;
         display: flex;
         justify-content: stretch;
         align-items: center;
         gap: 1px;
-        padding-right: 1rem;
     }
 
     header .cabecalho-informacoes-contato div:nth-child(1) {} /*Links uteis navbar*/
@@ -873,7 +873,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         footer .footer-rodape-credits-milbr {
             width: 100%;
-            max-width: 420px !important;
+            max-width: 412px !important;
         }
         
         footer #footer-responsividade-baixo {
@@ -889,7 +889,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         footer #footer-rodape-credits-milbr-tables {
             height: auto;
-            width: 100% !important;
+            width: 100% !important; max-width: 412px !important;
         }
 
         footer #footer-rodape-credits-milbr-tables a {
