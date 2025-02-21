@@ -531,11 +531,11 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
    /* GERAL */
    main #index-area-cliente-responsividade {
-    width: 100%; max-width: 420px;
+    width: 100%; max-width: 412px;
    }
 
    main #index-area-cliente-conteudo {
-    width: 100%; max-width: 420px !important;
+    width: 100%; max-width: 412px !important;
    }
 
     /* carrossel */
@@ -758,11 +758,10 @@ footer #footer-rodape-credits-muzabin-letter h2 {
     main #index-area-cliente-conteudo-localizacao-responsividade {
         width: 100%; max-width: 420px;
         height: 1100px !important;
-        background-color: red;
     }
 
     main #index-area-cliente-conteudo-localizacao {
-        width: 420px !important; max-width: 420px;
+        width: 412px !important; max-width: 420px;
         margin-left: 0px; margin-right: 0px;
         height: 1100px !important; /* VERIFICAR DEPOIS O PORQUE 100% NÃO ENTRA */
         background-color: white;
@@ -770,6 +769,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         display: flex !important;
         flex-direction: column !important;
         justify-content: start !important;
+        box-shadow: none !important;
     }
 
     main #index-area-cliente-conteudo-localizacao-cidades {
@@ -823,7 +823,80 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         max-width: 400px !important;
     }
 
-    #index-area-cliente-conteudo-localizacao-mapas-geraveis-gps iframe {
+    main #index-area-cliente-conteudo-localizacao-mapas-geraveis-gps iframe {
         width: 100% !important;
+    }
+
+    /* footer */
+    footer {
+        width: 100%; 
+        max-width: 420px !important;
+        height: auto;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    footer #footer-responsividade-cima {
+        width: 100%;
+        max-width: 420px !important;
+        height: auto;
+    }
+
+    footer .footer-rodape-credits-milbr {
+        width: 100%;
+        max-width: 420px !important;
+    }
+    
+    footer #footer-responsividade-baixo {
+        width: 100%;
+        max-width: 420px !important;
+        height: auto;
+    }
+
+    footer .footer-rodape-credits-muzabin {
+        width: 100%;
+        max-width: 420px !important;
+    }
+
+    footer #footer-rodape-credits-milbr-tables {
+        height: auto;
+        width: 100% !important;
+    }
+
+    footer #footer-rodape-credits-milbr-tables a {
+        font-size: 20px;
+    }
+
+    footer #footer-rodape-credits-milbr-tables b {
+        font-size: 20px;
+    }
+
+    footer #footer-rodape-credits-muzabin-cnpj {
+        width: 95%;
+    }
+    
+    footer #footer-rodape-credits-muzabin-cnpj h2 {
+        font-size: 10px;
+    }
+
+    footer #footer-rodape-credits-muzabin-letter {
+        width: 95%;
+    }
+
+    footer #footer-rodape-credits-muzabin-letter h2 {
+        font-size: 10px;
+        margin-top: 1rem;
+    }
+
+    /* flutuantes */
+
+    .float-nav-top {
+        display: none !important;
+    }
+
+    .shake {
+        display: none !important;
     }
 }
