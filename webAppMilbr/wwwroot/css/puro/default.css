@@ -953,4 +953,157 @@ footer #footer-rodape-credits-muzabin-letter h2 {
             margin-top: 5rem;
         }
 
+        /* ------------------------ = SOBRE = ------------------ */
+        
+        /* carrossel */
+        main #container-planos-responsividade {
+            width: 100%; max-width: 420px;
+        }
+
+        main #container-planos-responsividade-limitador {
+            width: 100% !important; max-width: 420px !important;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+
+        main #container-planos-carrossel {
+            width: 100% !important; max-width: 420px !important;
+            height: auto;
+        }
+
+        main #container-planos-carrossel-background-letreiro-titulo {
+            width: 100%; max-width: 420px;
+            height: auto;
+        }
+        
+        main #container-planos-carrossel-background-letreiro-titulo h1 {
+            font-size: 3rem !important;
+            width: 380px !important;
+        }
+
+        main #container-planos-carrossel-background-predio {
+            display: none;
+        }
+
+        /* Começo do sobre nós */
+
+        main #container-planos-historia-empresa {
+            width: 100%;
+            max-width: 420px !important;
+        }
+
+        main #container-planos-historia-empresa {
+            display: flex !important;
+            flex-direction: column;
+            width: 380px !important;
+            height: 950px !important;
+            margin-bottom: 1rem;
+        }
+
+        main #container-planos-historia-empresa-texto {
+            order: 2 !important;
+        }
+
+        main #container-planos-historia-empresa-imagem {
+            order: 1 !important;
+            width: 100% !important; 
+            text-align: center !important;
+            height: auto !important;
+        }
+        
+        main #container-planos-historia-empresa-imagem img {
+            width: 390px !important;
+        }
+
+        main #container-planos-historia-empresa-texto-paragrafos {
+            width: 95% !important;
+            max-width: 420px;
+            height: auto !important;
+        }
+
+        main #container-planos-inicio-crescimento {
+            width: 100% !important;
+            max-width: 420px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        main #container-planos-inicio-crescimento-apresentacao {
+            height: 1200px !important;
+            width: 100% !important; max-width: 420px !important;
+            display: flex !important;
+            flex-direction: column;
+        }
+
+        main #container-planos-inicio-crescimento-imagem {
+            width: 100% !important;
+            text-align: center !important;
+            max-width: 400px !important;
+            display: grid !important;
+            place-items: center;
+        }
+
+        main #container-planos-inicio-crescimento-imagem img {
+            width: 100%;
+            max-width: 380px;
+        }
+
+        main #container-planos-inicio-crescimento-texto {
+            width: 100% !important;
+            max-width: 410px;
+            height: 1300px !important;
+            margin-left: 0px !important;
+            display: grid !important;
+            place-items: center;
+        }
+
+        main #container-planos-inicio-crescimento-texto-lista {
+            width: 380px !important;
+            height: auto;
+            display: grid !important;
+            place-items: center;
+        }
+
+        main #container-planos-inicio-crescimento-texto h2 {
+            font-size: 2rem;
+        }
+
+        main #container-planos-inicio-crescimento-desenvolvimento-e-conclusao {
+            height: auto !important;
+            width: 100% !important; 
+            max-width: 420px !important;
+            text-align: center;
+            display: grid !important;
+            place-items: center;
+        }
+
+        main #main #container-planos-inicio-crescimento-desenvolvimento-e-conclusao p {
+            margin-right: 0px !important;
+            width: 100% !important;
+            max-width: 400px !important;
+        }
+
+        main #container-planos-inicio-crescimento-desenvolvimento-e-conclusao-paragrafo-primeiro {
+            width: 380px !important;
+            display: grid !important;
+            place-items: center;
+        }
+
+        main #container-planos-inicio-crescimento-desenvolvimento-e-conclusao-paragrafo-segundo {
+            width: 380px !important;
+            display: grid !important;
+            place-items: center;
+        }
+
+        main #container-planos-logos-predio {
+            width: 100% !important;
+            height: auto;
+            max-width: 420px !important;
+        }
+
+        main #container-planos-logos-predio img {
+            width: 100% !important;
+        }
 }
