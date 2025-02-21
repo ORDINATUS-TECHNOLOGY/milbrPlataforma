@@ -6,7 +6,7 @@
 }
 
 #content-link-uteis-responsividade-limitador {
-    height: calc(100vh - 150px);
+    height: 1000px;
     width: 1366px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
