@@ -854,7 +854,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
             width: 100% !important;
         }
 
-        /* footer */
+        /* = footer =  */
         footer {
             width: 100% !important; 
             max-width: 420px !important;
@@ -915,6 +915,14 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         footer #footer-rodape-credits-muzabin-letter h2 {
             font-size: 10px;
             margin-top: 1rem;
+        }
+
+        footer #footer-rodape-credits-milbr-logos-faixa {
+            display: none !important;
+        }
+
+        footer #footer-rodape-credits-milbr-logos {
+            display: none !important;
         }
 
         /* flutuantes */
@@ -1105,5 +1113,129 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         main #container-planos-logos-predio img {
             width: 100% !important;
+        }
+
+        
+        /* ------------------------ = PLANOS = ------------------ */
+        main #planos-conteudo-responsividade {
+            width: 100% !important;
+            max-width: 420px !important;
+        }
+
+        main .planos-conteudo-responsividade-conteudo {
+            width: 100% !important;
+            max-width: 420px !important;
+        }
+
+        main #planos-conteudo-imagem-promocional {
+            width: 100% !important;
+            max-width: 420px !important;
+        }
+
+        main #planos-conteudo-imagem-promocional-texto {
+            width: 50% !important;
+        }
+
+        main #planos-conteudo-imagem-promocional-texto h1 {
+            font-size: 24px !important;
+            text-align: start !important;
+        }
+
+        main #planos-conteudo-imagem-promocional-texto h3 {
+            text-align: start !important;
+            font-size: 17px !important;
+        }
+
+        main #planos-conteudo-imagem-planos-residenciais {
+            width: 100% !important; max-width: 420px !important;
+            height: 2200px !important;
+            display: flex !important;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        main #planos-conteudo-imagem-planos-residenciais-titulo h1 {
+            font-size: 3rem !important;
+        }
+
+        main #planos-conteudo-imagem-planos-residenciais-planos {
+            height: auto;
+            max-width: 390px !important;
+            display: flex !important;
+            flex-direction: column;
+            gap: 3rem;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+
+        main #planos-conteudo-imagem-planos-residenciais-planos div:nth-child(2) {
+            margin-bottom: 0 !important;
+        }
+
+        main #planos-conteudo-imagem-planos-residenciais-observacao {
+            width: 100% !important;
+            height: 200px !important;
+            max-width: 400px !important;
+        }
+
+        /* rurais */
+
+        main #planos-conteudo-imagem-planos-rurais {
+            width: 100%; max-width: 420px !important;
+        }
+
+        main #planos-conteudo-imagem-planos-rurais-imagem-promocional {
+            display: none !important;
+        }
+
+        /* comercial */
+
+        main #planos-conteudo-imagem-plano-comercial {
+            width: 100% !important; max-width: 420px !important;
+        }
+
+        #planos-conteudo-imagem-plano-comercial-conteudo img {
+            display: none !important;
+        }
+
+        main #planos-conteudo-imagem-plano-comercial-titulo h1 {
+            font-size: 30px !important;
+        }
+
+        /* plano corporativo */
+
+        main #planos-conteudo-imagem-plano-corporativo {
+            width: 100% !important; max-width: 420px !important;
+            height: 500px !important;
+            display: grid !important;
+            place-items: center;
+        }
+
+        main #planos-conteudo-imagem-plano-corporativo h1 {
+            font-size: 40px !important;
+            text-align: center;
+        }
+       
+        main #planos-conteudo-imagem-plano-corporativo-conteudo {
+            width: 100% !important; max-width: 420px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 5rem !important;
+            height: 350px !important;
+        }
+
+        main #planos-conteudo-imagem-plano-corporativo-conteudo-imagem {
+            display: none !important;
+        }
+
+        main #planos-conteudo-imagem-plano-corporativo-conteudo-escrito {
+            width: 100% !important;
+            max-width: 320px !important;
+            text-align: start !important;
+        }
+
+        main #planos-conteudo-imagem-plano-corporativo-conteudo-escrito-titulo {
+            width: 100% !important; max-width: 300px !important;
+            font-size: 30px !important;
         }
 }
