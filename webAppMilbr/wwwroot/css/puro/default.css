@@ -535,7 +535,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
    }
 
    main #index-area-cliente-conteudo {
-    width: 100%; max-width: 420px;
+    width: 100%; max-width: 420px !important;
    }
 
     /* carrossel */
@@ -633,7 +633,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
     main #index-area-cliente-conteudo-vantagens-titulo {
         width: 100%; max-width: 370px;
-        height: 20rem !important;
+        height: 12rem !important;
         text-align: center;
     }
     
@@ -661,7 +661,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
     main #index-area-cliente-conteudo-area-cliente-links-uteis-titulo {
         width: 100%; max-width: 370px;
-        height: 20rem !important;
+        height: 10rem !important;
         text-align: center;
     }
     
@@ -690,7 +690,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
     main #index-area-cliente-conteudo-redes-sociais-titulo {
         width: 100%; max-width: 370px;
-        height: 20rem !important;
+        height: 10rem !important;
         text-align: center;
     }
    
@@ -716,7 +716,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
     main #index-area-cliente-conteudo-perguntas-frequentes {
         width: 100%; max-width: 420px;
-        height: 1200px !important;
+        height: 1000px !important;
     }
 
     main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao {
@@ -725,7 +725,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
     main #index-area-cliente-conteudo-perguntas-frequentes-titulo {
         width: 100%; max-width: 370px;
-        height: 20rem !important;
+        height: 10rem !important;
         text-align: center;
     }
 
@@ -752,5 +752,78 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
     main #faq-questao-resposta span {
         font-size: 0.9rem !important;
+    }
+
+    /* LOCALIZAÇÃO */
+    main #index-area-cliente-conteudo-localizacao-responsividade {
+        width: 100%; max-width: 420px;
+        height: 1100px !important;
+        background-color: red;
+    }
+
+    main #index-area-cliente-conteudo-localizacao {
+        width: 420px !important; max-width: 420px;
+        margin-left: 0px; margin-right: 0px;
+        height: 1100px !important; /* VERIFICAR DEPOIS O PORQUE 100% NÃO ENTRA */
+        background-color: white;
+        /* display */
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: start !important;
+    }
+
+    main #index-area-cliente-conteudo-localizacao-cidades {
+        width: 90% !important;
+        height: 230px !important;
+        display: flex !important; 
+        flex-direction: column !important;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main #index-area-cliente-conteudo-localizacao-cidades button{
+        width: 300px !important;
+        height: 50px !important;
+    }
+
+    main #index-area-cliente-conteudo-localizacao-mapas-geraveis {
+        height: 1800px !important; width: 95%;
+        gap: 1rem;
+    }
+
+    main #index-botao-cidade-selecionada-Muzambinho {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    main #index-botao-cidade-selecionada-CaboVerde {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    main #index-botao-cidade-selecionada-Juruaia {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    main #index-botao-cidade-selecionada-NovaResende {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    main #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes {
+        width: 380px !important;
+        margin-left: 0px !important;
+        order: 1 !important;
+    }
+
+    main #index-area-cliente-conteudo-localizacao-mapas-geraveis-gps {
+        order: 2 !important;
+        width: 100%;
+        max-width: 400px !important;
+    }
+
+    #index-area-cliente-conteudo-localizacao-mapas-geraveis-gps iframe {
+        width: 100% !important;
     }
 }
