@@ -774,11 +774,12 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         main #index-area-cliente-conteudo-localizacao-cidades {
             width: 90% !important;
-            height: 230px !important;
+            height: 250px !important;
             display: flex !important; 
             flex-direction: column !important;
             justify-content: space-between;
             align-items: center;
+            gap: 3px !important;
         }
 
         main #index-area-cliente-conteudo-localizacao-cidades button{
@@ -814,11 +815,9 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         main #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes {
             width: 380px !important;
             margin-left: 0px !important;
-            order: 1 !important;
         }
 
         main #index-area-cliente-conteudo-localizacao-mapas-geraveis-gps {
-            order: 2 !important;
             width: 100%;
             max-width: 400px !important;
         }

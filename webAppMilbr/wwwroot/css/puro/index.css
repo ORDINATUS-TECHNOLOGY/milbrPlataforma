@@ -550,19 +550,13 @@ main #index-area-cliente-conteudo-perguntas-frequentes-titulo h1 {
     color: var(--color-letter-blue-normalHead);
 }
 
-main #index-area-cliente-conteudo-perguntas-frequentes-lista {
-    width: 100%;
-    height: 90%;
-    padding-top: 10rem;
+/* Estilo do container principal */
+main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao {
+    width: 100%; height: auto;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-}
-
-/* Estilo do container principal */
-main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao {
-    width: 100%;
-    overflow: hidden;
     background-color: var(--color-letter-blue-normalHead);
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
