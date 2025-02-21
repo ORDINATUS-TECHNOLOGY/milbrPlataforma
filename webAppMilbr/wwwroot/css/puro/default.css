@@ -926,4 +926,31 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         #tremor {
             display: none !important;
         }
+
+
+        /* ------------------------ = Links Uteis = ------------------ */
+
+        main #content-link-uteis-responsividade {
+            width: 100% !important; 
+            max-width: 420px !important;
+        }
+
+        main #content-link-uteis-responsividade-limitador {
+            width: 100% !important; 
+            max-width: 420px !important;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            height: auto;
+            margin-bottom: 100px;
+        }
+
+        main #content-link-uteis-section-links ul {
+            padding-left: 0px !important;
+        }
+
+        main #content-link-uteis-section {
+            margin-top: 5rem;
+        }
+
 }
