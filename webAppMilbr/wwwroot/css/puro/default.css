@@ -461,19 +461,27 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
     main { 
         width: 100% !important;
-        max-width: 100% !important;
+        max-width: 100vw !important;
     }
 
     header {
-        width: 100% !important; max-width: 420px;
+        width: 100% !important; max-width: 100vw !important;
     }
 
     header #cabecalho-milbr-responsividade-agente {
         width: 100% !important; max-width: 420px;
     }
 
-    header #cabecalho-informacoes-contato {
+    header .cabecalho-informacoes-contato {
         width: 100% !important;
+    }
+    
+    header .cabecalho-informacoes-contato a {
+        font-size: 11px !important;
+    }
+    
+    header .cabecalho-informacoes-contato h3 {
+        font-size: 11px !important;
     }
 
     header #cabecalho-ux-acesso-links-diretos-de-acesso-responsividade-agente {
@@ -515,11 +523,12 @@ footer #footer-rodape-credits-muzabin-letter h2 {
     }
 
     header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis {
-        width: 100%; max-width: 420px;
+        width: 100%; max-width: 100vw !important;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        margin-right: 0px !important;
     }
 
         header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis a {
@@ -535,12 +544,12 @@ footer #footer-rodape-credits-muzabin-letter h2 {
     }
 
     main #index-area-cliente-conteudo {
-        width: 100% !important; max-width: 412px !important;
+        width: 100% !important; max-width: 100vw !important;
     }
 
         /* carrossel */
     main #index-area-cliente-conteudo-carrossel {
-            width: 100%; max-width: 420px;
+            width: 100% !important; max-width: 100vw !important;
             height: auto; max-height: 170px;
             background: white;
         }
@@ -729,6 +738,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao {
             display: grid;
             place-items: center ;
+            max-width: 100vw !important;
         }
 
         main #index-area-cliente-conteudo-redes-sociais-publicacoes img {
@@ -784,12 +794,16 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         /* LOCALIZAÇÃO */
         main #index-area-cliente-conteudo-localizacao-responsividade {
-            width: 100%; max-width: 420px;
+            width: 100%; max-width: 100vw !important;
             height: 1100px !important;
         }
 
+        main #index-area-cliente-conteudo-localizacao-titulo h1 {
+            font-size: 40px !important;
+        }
+
         main #index-area-cliente-conteudo-localizacao {
-            width: 412px !important; max-width: 420px;
+            width: 412px !important; max-width: 100vw;
             margin-left: 0px; margin-right: 0px;
             height: 1100px !important; /* VERIFICAR DEPOIS O PORQUE 100% NÃO ENTRA */
             background-color: white;
@@ -818,6 +832,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         main #index-area-cliente-conteudo-localizacao-mapas-geraveis {
             height: 1800px !important; width: 95%;
             gap: 1rem;
+
         }
 
         main #index-botao-cidade-selecionada-Muzambinho {
@@ -841,17 +856,20 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         }
 
         main #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes {
-            width: 380px !important;
+            width: 98% !important; max-width: 100vw;
             margin-left: 0px !important;
         }
 
+        main #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes p {
+            font-size: 13px !important;
+        }
+
         main #index-area-cliente-conteudo-localizacao-mapas-geraveis-gps {
-            width: 100%;
-            max-width: 400px !important;
+            width: 100%; max-width: 95vw !important;
         }
 
         main #index-area-cliente-conteudo-localizacao-mapas-geraveis-gps iframe {
-            width: 100% !important;
+            width: 100% !important; max-width: 98vw !important;
         }
 
         /* = footer =  */
@@ -965,11 +983,11 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         
         /* carrossel */
         main #container-planos-responsividade {
-            width: 100%; max-width: 420px;
+            width: 100%; max-width: 100vw !important;
         }
 
         main #container-planos-responsividade-limitador {
-            width: 100% !important; max-width: 420px !important;
+            width: 100% !important; max-width: 100vw !important;
             display: flex !important;
             flex-direction: column;
             justify-content: start;
@@ -977,12 +995,17 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         }
 
         main #container-planos-carrossel {
-            width: 100% !important; max-width: 420px !important;
+            width: 100% !important; max-width: 100vw !important;
             height: auto;
         }
 
+        main #container-planos-carrossel-background-letreiro {
+            max-width: 100vw !important;
+            padding-left: 0px !important;
+        }
+
         main #container-planos-carrossel-background-letreiro-titulo {
-            width: 100%; max-width: 420px;
+            width: 100%; max-width: 99vw !important;
             height: auto;
         }
         
@@ -991,38 +1014,55 @@ footer #footer-rodape-credits-muzabin-letter h2 {
             width: 380px !important;
         }
 
+        main #container-planos-carrossel-background-letreiro-titulo-background-compilado {
+            width: 100% !important;
+            max-width: 100vw !important;
+        }
+        
+        main #container-planos-carrossel-background-letreiro-titulo-background-compilado img {
+            max-width: 100vw !important;
+        }
+
         main #container-planos-carrossel-background-predio {
             display: none;
         }
 
         /* Começo do sobre nós */
 
-        main #container-planos-historia-empresa {
-            width: 100%;
-            max-width: 420px !important;
+        main #container-planos-titulo-historia {
+            max-width: 100vw !important;
+        }
+        
+        main #container-planos-titulo-historia h1 {
+            font-size: 40px !important;
         }
 
         main #container-planos-historia-empresa {
             display: flex !important;
             flex-direction: column;
-            width: 380px !important;
-            height: 950px !important;
+            height: 850px !important;
             margin-bottom: 1rem;
+            width: 100% !important;
+            max-width: 100vw !important;
         }
 
         main #container-planos-historia-empresa-texto {
+            display: grid !important;
+            flex-direction: column;
+            place-items: center !important;
             order: 2 !important;
         }
 
         main #container-planos-historia-empresa-imagem {
             order: 1 !important;
-            width: 100% !important; 
+            width: 100% !important; max-width: 100vw !important;
             text-align: center !important;
             height: auto !important;
         }
         
         main #container-planos-historia-empresa-imagem img {
             width: 390px !important;
+            max-width: 98vw !important;
         }
 
         main #container-planos-historia-empresa-texto-paragrafos {
@@ -1031,11 +1071,18 @@ footer #footer-rodape-credits-muzabin-letter h2 {
             height: auto !important;
         }
 
+        main #container-planos-historia-empresa-texto-paragrafos p {
+            font-size: 19px !important;
+        }
+
         main #container-planos-inicio-crescimento {
             width: 100% !important;
             max-width: 420px !important;
             padding-left: 0px !important;
             padding-right: 0px !important;
+            display: grid !important;
+            place-items: center;
+            flex-direction: column !important;
         }
 
         main #container-planos-inicio-crescimento-apresentacao {
@@ -1055,7 +1102,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         main #container-planos-inicio-crescimento-imagem img {
             width: 100%;
-            max-width: 380px;
+            max-width: 100vw !important;
         }
 
         main #container-planos-inicio-crescimento-texto {
@@ -1080,17 +1127,19 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         main #container-planos-inicio-crescimento-desenvolvimento-e-conclusao {
             height: auto !important;
-            width: 100% !important; 
+            width: 95% !important; 
             max-width: 420px !important;
             text-align: center;
             display: grid !important;
             place-items: center;
         }
 
-        main #main #container-planos-inicio-crescimento-desenvolvimento-e-conclusao p {
+        main #container-planos-inicio-crescimento-desenvolvimento-e-conclusao p {
             margin-right: 0px !important;
             width: 100% !important;
-            max-width: 400px !important;
+            max-width: 100vw !important;
+            font-size: 19px !important;
+            text-align: justify !important;
         }
 
         main #container-planos-inicio-crescimento-desenvolvimento-e-conclusao-paragrafo-primeiro {
@@ -1184,6 +1233,10 @@ footer #footer-rodape-credits-muzabin-letter h2 {
             width: 100%; max-width: 420px !important;
         }
 
+        main #planos-conteudo-imagem-planos-rurais-titulo h1 {
+            font-size: 35px !important;
+        }
+
         main #planos-conteudo-imagem-planos-rurais-imagem-promocional {
             display: none !important;
         }
@@ -1237,487 +1290,5 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         main #planos-conteudo-imagem-plano-corporativo-conteudo-escrito-titulo {
             width: 100% !important; max-width: 300px !important;
             font-size: 30px !important;
-        }
-}
-
-
-@media (min-width: 421px) and (max-width: 800px) {
-    body {
-        width: 100% !important;
-        display: grid !important;
-        place-items: center !important;
-    }
-
-    header {
-        width: 100% !important; max-width: 420px;
-    }
-
-    header #cabecalho-milbr-responsividade-agente {
-        width: 100% !important; max-width: 420px;
-    }
-
-    header #cabecalho-informacoes-contato {
-        width: 100% !important;
-    }
-
-    header #cabecalho-ux-acesso-links-diretos-de-acesso-responsividade-agente {
-        width: 100%; max-width: 420px;
-    }
-
-    /* ---- PRIMEIRA BARRA ---- */
-
-    header .cabecalho-informacoes-contato {
-        width: 100%;
-        max-width: 412px !important;
-        height: 100%;
-        display: flex;
-        justify-content: stretch;
-        align-items: center;
-        gap: 1px;
-    }
-
-    header .cabecalho-informacoes-contato div:nth-child(1) {} /*Links uteis navbar*/
-    header .cabecalho-informacoes-contato div:nth-child(2) {display: none;} /*vazio*/
-    header .cabecalho-informacoes-contato div:nth-child(3) {} /*trabalhe conosco email*/
-    header .cabecalho-informacoes-contato div:nth-child(4) {display: none;} /*sac email*/
-    header .cabecalho-informacoes-contato div:nth-child(5) {} /*sac numero*/
-    header .cabecalho-informacoes-contato div:nth-child(6) {} /*numero milbr*/
-
-
-    header .cabecalho-informacoes-contato #cabecalho-informacoes-contato-redes-sociais {
-        display: none;
-    }
-
-    /* ---- SEGUNDA BARRA ---- */
-
-    header .cabecalho-ux-acesso-links-diretos-de-acesso {
-        width: 100%; max-width: 420px;
-    }
-
-    header #cabecalho-ux-acesso-links-diretos-de-acesso-logos { /* tirado logos, muito grandes */
-        display: none;
-    }
-
-    header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis {
-        width: 100%; max-width: 420px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-        header #cabecalho-ux-acesso-links-diretos-de-acesso-clicaveis a {
-            font-size: 10px;
-        }
-
-
-    /* ------------------------ = INDEX = ------------------ */
-
-    /* GERAL */
-    main .index-area-cliente-responsividade {
-        width: 100% !important; 
-        display: grid !important;
-        place-items: center;
-    }
-
-    main #index-area-cliente-conteudo {
-        width: 100% !important; max-width: 412px !important;
-    }
-
-        /* carrossel */
-    main #index-area-cliente-conteudo-carrossel {
-            width: 100%; max-width: 420px;
-            height: auto; max-height: 170px;
-            background: white;
-        }
-    
-        main #index-area-cliente-conteudo-carrossel img {
-            width: 100%; max-width: 420px;
-            height: 100%;
-        }
-
-        /* planos */
-
-        main #index-area-cliente-conteudo-conhecer-planos {
-            width: 100%; max-width: 420px;
-            /* height: 2300px !important; */
-            height: auto !important;
-        }
-
-        main #index-area-cliente-conteudo-conhecer-planos-titulo {
-            height: auto;
-            width: 100%;
-            font-size: 20px;
-        }
-        
-        main #index-area-cliente-conteudo-conhecer-planos-titulo h1 {
-            font-size: 20px !important;
-            font-weight: bolder;
-        }
-
-        main #index-area-cliente-conteudo-conhecer-planos-tipos-planos {
-            height: 250px !important;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem !important;
-            position: relative !important;
-        }
-
-        main #index-area-cliente-conteudo-conhecer-planos-tipos-planos button {
-            height: 60px;
-        } 
-
-        main #index-area-cliente-conteudo-conhecer-ofertas {
-            width: 100%; max-width: 420px;
-            height: auto; 
-        }
-
-        main #index-area-cliente-conteudo-conhecer-ofertas-geravel-residencial {
-            display: flex;
-            width: 100%;
-            height: 1800px !important;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 4rem;
-        }
-
-        main #index-area-cliente-conteudo-conhecer-ofertas-geravel-residencial div:nth-child(2) {
-            margin-bottom: 0 !important;
-        }
-
-        main #index-area-cliente-conteudo-conhecer-ofertas-geravel-rural {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: start;
-        }
-
-        main #index-area-cliente-conteudo-conhecer-ofertas-geravel-comercial {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: start;
-        }
-
-        main #index-area-cliente-conteudo-conhecer-ofertas-geravel-corporativo {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: start;
-        }
-
-        /* VANTAGENS */
-        
-        main #index-area-cliente-conteudo-vantagens {
-            width: 100%; max-width: 420px;
-            height: 2400px !important;
-        }
-
-        main #index-area-cliente-conteudo-vantagens-titulo {
-            width: 100%; max-width: 370px;
-            height: 12rem !important;
-            text-align: center;
-        }
-        
-        main #index-area-cliente-conteudo-vantagens-titulo h1 {
-            font-size: 2.4rem !important;
-            padding-left: 2rem; padding-right: 2rem;
-        }
-
-        main #index-area-cliente-conteudo-vantagens-icones {
-            display: flex !important;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-            gap: 1rem;
-            height: 2000px !important;
-            padding-bottom: 4rem;
-        }
-
-        main .icone-icon {
-            display: grid;
-            place-content: center;
-        }
-
-        main #icone-titulo h2{
-            text-align: center;
-            width: auto !important;
-        }
-
-        main #icone-descricao {
-            text-align: center !important;
-        }
-
-        /* ÀREA DO CLIENTE */
-
-        main #index-area-cliente-conteudo-area-cliente {
-            width: 100%; max-width: 420px;
-            height: 1300px !important;
-        }
-
-        main #index-area-cliente-conteudo-area-cliente-links-uteis-titulo {
-            width: 100%; max-width: 370px;
-            height: 10rem !important;
-            text-align: center;
-        }
-        
-        main #index-area-cliente-conteudo-area-cliente-links-uteis-titulo h1 {
-            font-size: 2.4rem !important;
-            padding-left: 2rem; padding-right: 2rem;
-        }
-
-        main #index-area-cliente-conteudo-area-cliente-links-uteis {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr) !important;
-            justify-content: space-between;
-            align-items: center; 
-            height: 1000px !important;
-            margin-bottom: 2rem;
-        }
-
-        /* REDES SOCIAIS */
-        
-        main #index-area-cliente-conteudo-redes-sociais {
-            width: 100%; max-width: 420px;
-            height: 1700px !important;
-            display: flex !important;
-            flex-direction: column;
-        }
-
-        main #index-area-cliente-conteudo-redes-sociais-titulo {
-            width: 100%; max-width: 370px;
-            height: 10rem !important;
-            text-align: center;
-        }
-    
-        main #index-area-cliente-conteudo-redes-sociais-titulo h1 {
-            font-size: 2.4rem !important;
-            padding-left: 2rem; padding-right: 2rem;
-        }
-
-        main #index-area-cliente-conteudo-redes-sociais-publicacoes {
-            height: 1400px !important;
-            display: flex !important;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            gap: 3rem;
-        }
-
-        main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao {
-            display: grid;
-            place-items: center ;
-        }
-
-        main #index-area-cliente-conteudo-redes-sociais-publicacoes img {
-            width: 350px !important;
-            height: 420px !important;
-        }
-
-        main #index-area-cliente-conteudo-redes-sociais-publicacoes div:nth-child(2){
-            margin-bottom: 0 !important;
-        }
-
-        /* FAQ */
-
-        main #index-area-cliente-conteudo-perguntas-frequentes {
-            width: 100%; max-width: 420px;
-            height: 1000px !important;
-        }
-
-        main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao {
-            border-radius: 0px !important;
-        }
-
-        main #index-area-cliente-conteudo-perguntas-frequentes-titulo {
-            width: 100%; max-width: 370px;
-            height: 10rem !important;
-            text-align: center;
-        }
-
-        main #index-area-cliente-conteudo-perguntas-frequentes-titulo h1 {
-            font-size: 2.4rem !important;
-            padding-left: 2rem; padding-right: 2rem;
-        }
-
-        main #faq-questao-titulo h1 {
-            font-size: 1.2rem !important;
-        }
-
-        main #faq-questao-resposta {
-            font-size: 0.9rem !important;
-        }
-        
-        main #faq-questao-resposta a {
-            font-size: 0.9rem !important;
-        }
-        
-        main #faq-questao-resposta p {
-            font-size: 0.9rem !important;
-        }
-
-        main #faq-questao-resposta span {
-            font-size: 0.9rem !important;
-        }
-
-        /* LOCALIZAÇÃO */
-        main #index-area-cliente-conteudo-localizacao-responsividade {
-            width: 100%; max-width: 420px;
-            height: 1100px !important;
-        }
-
-        main #index-area-cliente-conteudo-localizacao {
-            width: 412px !important; max-width: 420px;
-            margin-left: 0px; margin-right: 0px;
-            height: 1100px !important; /* VERIFICAR DEPOIS O PORQUE 100% NÃO ENTRA */
-            background-color: white;
-            /* display */
-            display: flex !important;
-            flex-direction: column !important;
-            justify-content: start !important;
-            box-shadow: none !important;
-        }
-
-        main #index-area-cliente-conteudo-localizacao-cidades {
-            width: 90% !important;
-            height: 250px !important;
-            display: flex !important; 
-            flex-direction: column !important;
-            justify-content: space-between;
-            align-items: center;
-            gap: 3px !important;
-        }
-
-        main #index-area-cliente-conteudo-localizacao-cidades button{
-            width: 300px !important;
-            height: 50px !important;
-        }
-
-        main #index-area-cliente-conteudo-localizacao-mapas-geraveis {
-            height: 1800px !important; width: 95%;
-            gap: 1rem;
-        }
-
-        main #index-botao-cidade-selecionada-Muzambinho {
-            display: flex !important;
-            flex-direction: column !important;
-        }
-
-        main #index-botao-cidade-selecionada-CaboVerde {
-            display: flex !important;
-            flex-direction: column !important;
-        }
-
-        main #index-botao-cidade-selecionada-Juruaia {
-            display: flex !important;
-            flex-direction: column !important;
-        }
-
-        main #index-botao-cidade-selecionada-NovaResende {
-            display: flex !important;
-            flex-direction: column !important;
-        }
-
-        main #index-area-cliente-conteudo-localizacao-mapas-geraveis-informacoes {
-            width: 380px !important;
-            margin-left: 0px !important;
-        }
-
-        main #index-area-cliente-conteudo-localizacao-mapas-geraveis-gps {
-            width: 100%;
-            max-width: 400px !important;
-        }
-
-        main #index-area-cliente-conteudo-localizacao-mapas-geraveis-gps iframe {
-            width: 100% !important;
-        }
-
-        /* = footer =  */
-        footer {
-            width: 100% !important; 
-            max-width: 420px !important;
-            height: auto;
-        }
-
-        footer img {
-            display: none;
-        }
-
-        footer #footer-responsividade-cima {
-            width: 100% !important;
-            max-width: 100% !important;
-            height: auto;
-        }
-
-        footer .footer-rodape-credits-milbr {
-            width: 100%;
-            max-width: 412px !important;
-        }
-        
-        footer #footer-responsividade-baixo {
-            width: 100% !important;
-            max-width: 100% !important;
-            height: auto;
-        }
-
-        footer .footer-rodape-credits-muzabin {
-            width: 100%;
-            max-width: 420px !important;
-        }
-
-        footer #footer-rodape-credits-milbr-tables {
-            height: auto;
-            width: 100% !important; max-width: 412px !important;
-        }
-
-        footer #footer-rodape-credits-milbr-tables a {
-            font-size: 20px;
-        }
-
-        footer #footer-rodape-credits-milbr-tables b {
-            font-size: 20px;
-        }
-
-        footer #footer-rodape-credits-muzabin-cnpj {
-            width: 95%;
-        }
-        
-        footer #footer-rodape-credits-muzabin-cnpj h2 {
-            font-size: 10px;
-        }
-
-        footer #footer-rodape-credits-muzabin-letter {
-            width: 95%;
-        }
-
-        footer #footer-rodape-credits-muzabin-letter h2 {
-            font-size: 10px;
-            margin-top: 1rem;
-        }
-
-        footer #footer-rodape-credits-milbr-logos-faixa {
-            display: none !important;
-        }
-
-        footer #footer-rodape-credits-milbr-logos {
-            display: none !important;
-        }
-
-        /* flutuantes */
-
-        .float-nav-top {
-            display: none !important;
-        }
-
-        #tremor {
-            display: none !important;
         }
 }
