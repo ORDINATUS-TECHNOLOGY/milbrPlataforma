@@ -1303,9 +1303,11 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         }
 
         main #planos-conteudo-imagem-plano-corporativo-conteudo-escrito {
-            width: 100% !important;
+            width: 90% !important;
             max-width: 100vw !important;
             text-align: start !important;
+            padding-left: 0px !important;
+            margin-left: 10%;
         }
 
         main #planos-conteudo-imagem-plano-corporativo-conteudo-escrito-titulo {
