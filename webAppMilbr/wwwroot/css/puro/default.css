@@ -314,7 +314,7 @@ footer #footer-responsividade-cima {
 }
 
 footer .footer-rodape-credits-milbr {
-    width: 1366px;
+    width: 1366px; max-width: 1366px;
     height: 100%;
     display: grid;
     background-color: var(--background-color-blue-footer);
@@ -875,7 +875,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         /* = footer =  */
         footer {
             width: 100% !important; 
-            max-width: 420px !important;
+            max-width: 100vw !important;
             height: auto;
         }
 
@@ -885,13 +885,13 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         footer #footer-responsividade-cima {
             width: 100% !important;
-            max-width: 100% !important;
+            max-width: 100vw !important;
             height: auto;
         }
 
         footer .footer-rodape-credits-milbr {
             width: 100%;
-            max-width: 412px !important;
+            max-width: 100vw !important;
         }
         
         footer #footer-responsividade-baixo {
@@ -907,7 +907,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         footer #footer-rodape-credits-milbr-tables {
             height: auto;
-            width: 100% !important; max-width: 412px !important;
+            width: 100% !important; max-width: 100vw !important;
         }
 
         footer #footer-rodape-credits-milbr-tables a {
@@ -1202,7 +1202,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         main #planos-conteudo-imagem-planos-residenciais {
             width: 100% !important; max-width: 420px !important;
-            height: 2200px !important;
+            height: 2300px !important;
             display: flex !important;
             flex-direction: column;
             gap: 1rem;
@@ -1214,12 +1214,14 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         main #planos-conteudo-imagem-planos-residenciais-planos {
             height: auto;
-            max-width: 390px !important;
+            max-width: 100vw !important;
             display: flex !important;
             flex-direction: column;
             gap: 3rem;
             justify-content: center !important;
             align-items: center !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
         }
 
         main #planos-conteudo-imagem-planos-residenciais-planos div:nth-child(2) {
@@ -1227,9 +1229,19 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         }
 
         main #planos-conteudo-imagem-planos-residenciais-observacao {
-            width: 100% !important;
-            height: 200px !important;
-            max-width: 400px !important;
+            width: 90% !important;
+            height: 120px !important;
+            max-width: 100vw !important;
+            padding-left: 0px !important;
+            /* display */
+            display: grid;
+            place-items: center;
+        }
+
+        main #planos-conteudo-imagem-planos-residenciais-observacao p {
+            font-size: 12px !important;
+            margin-left: 10px;
+            margin-top: 12px !important;
         }
 
         /* rurais */
@@ -1246,18 +1258,22 @@ footer #footer-rodape-credits-muzabin-letter h2 {
             display: none !important;
         }
 
+        main #planos-conteudo-imagem-planos-residenciais-planos-plano {
+            width: 80vw !important;
+        }
+
         /* comercial */
 
         main #planos-conteudo-imagem-plano-comercial {
-            width: 100% !important; max-width: 420px !important;
-        }
-
-        #planos-conteudo-imagem-plano-comercial-conteudo img {
-            display: none !important;
+            width: 100% !important; max-width: 100vw !important;
         }
 
         main #planos-conteudo-imagem-plano-comercial-titulo h1 {
             font-size: 30px !important;
+        }
+
+        main #planos-conteudo-imagem-plano-comercial-conteudo-imagem-pos {
+            display: none;
         }
 
         /* plano corporativo */
@@ -1288,7 +1304,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         main #planos-conteudo-imagem-plano-corporativo-conteudo-escrito {
             width: 100% !important;
-            max-width: 320px !important;
+            max-width: 100vw !important;
             text-align: start !important;
         }
 
@@ -1296,4 +1312,120 @@ footer #footer-rodape-credits-muzabin-letter h2 {
             width: 100% !important; max-width: 300px !important;
             font-size: 30px !important;
         }
+
+        /* ------------------------ = PROCESSOS = ------------------ */
+
+        main .responsividade-agente-processos {
+            width: 100% !important;
+            max-width: 100vw !important;
+
+        }
+
+        main #aside-milbr-tv-responsividade-agente {
+            width: 100% !important;
+            max-width: 100vw !important;
+            height: auto !important;
+        }
+
+        main .aside-milbr-tv {
+            width: 100% !important;
+            max-width: 100vw !important;
+            display: flex !important;
+            flex-direction: column !important;
+            height: 3000px;
+            align-items: center;
+
+        }
+
+        main #aside-milbr-tv-imagem-esquerda {
+            width: 100% !important;
+            height: auto !important;
+            max-width: 100vw;
+            padding-bottom: 2rem;
+        }
+       
+        main #aside-milbr-tv-imagem-esquerda img {
+            width: 100% !important;
+            height: auto;
+        }
+        
+        main #aside-milbr-tv-beneficios {
+            width: 100% !important;
+            max-width: 100vw !important;
+        }
+
+        main #aside-milbr-tv-beneficios-titulo h1 {
+            font-size: 30px !important;
+        }
+
+        main #aside-milbr-tv-beneficios-subtitulo p {
+            font-size: 20px !important;
+        }
+
+        main #aside-milbr-tv-beneficios-subtitulo2 h2 {
+            font-size: 20px !important;
+        }
+
+        main #aside-milbr-tv-beneficios-lista p {
+            font-size: 20px !important;
+        }
+
+        main #aside-milbr-tv-beneficios-finalizacao p {
+            font-size: 15px !important;
+        }
+
+        main #aside-milbr-tv-beneficios-finalizacao {
+            margin-bottom: 20px !important;
+        }
+
+        /* TELEFONIA */
+
+        main #aside-milbr-td-responsividade-agente {
+            width: 100% !important;
+            max-width: 100vw !important;
+            height: auto !important;
+        }
+
+        main #aside-milbr-td-telefonia {
+            width: 100% !important;
+            max-width: 100vw !important;
+            /* DISPLAY */
+            display: flex !important;
+            flex-direction: column !important;
+            height: auto !important;
+        }
+
+        main #aside-milbr-td-telefonia-vantagens {
+            width: 100% !important; max-width: 100vw !important;
+            height: 400px !important;
+        }
+
+        main #aside-milbr-td-telefonia-vantagens-titulo {
+            width: 95% !important;
+            max-width: 100vw !important;
+            padding-left: 2%;
+        }
+        
+        main #aside-milbr-td-telefonia-vantagens-subtitulo {
+            width: 95% !important;
+            max-width: 100vw !important;
+            padding-left: 2%;
+        }
+
+        main #aside-milbr-td-telefonia-vantagens p { font-size: 20px !important;}
+        main #aside-milbr-td-telefonia-vantagens h2 { font-size: 20px !important;}
+        main #aside-milbr-td-telefonia-vantagens-lista-titulo { padding-left: 2%;}
+        main #aside-milbr-td-telefonia-vantagens-lista-topicos p {font-size: 18px !important;}
+        main #aside-milbr-td-telefonia-vantagens-lista-topicos {padding-left: 1%;}
+
+        main #aside-milbr-td-telefonia-portabilidade {
+            height: auto !important;
+            width: 100% !important; max-width: 100vw !important;
+            margin-top: 1rem;
+        }
+
+        main #aside-milbr-td-telefonia-portabilidade img {
+            width: 100% !important; height: 100% !important;
+        }
+
 }

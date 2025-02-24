@@ -390,8 +390,13 @@ main #planos-conteudo-imagem-plano-comercial-conteudo {
     align-items: center;
 }
 
-main #planos-conteudo-imagem-plano-comercial-conteudo img {
+main #planos-conteudo-imagem-plano-comercial-conteudo-imagem-pos {
     width: 600px; height: 550px;
+}
+
+main #planos-conteudo-imagem-plano-comercial-conteudo-imagem-pos img {
+    width: 100%;
+    height: 100%;
 }
 
 /* CUIDANDO DO ELEMENTOR */
