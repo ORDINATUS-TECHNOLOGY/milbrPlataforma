@@ -1334,7 +1334,6 @@ footer #footer-rodape-credits-muzabin-letter h2 {
             flex-direction: column !important;
             height: 3000px;
             align-items: center;
-
         }
 
         main #aside-milbr-tv-imagem-esquerda {
@@ -1352,31 +1351,55 @@ footer #footer-rodape-credits-muzabin-letter h2 {
         main #aside-milbr-tv-beneficios {
             width: 100% !important;
             max-width: 100vw !important;
+            padding-left: 0px !important;
+            /* display */
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center;
         }
 
         main #aside-milbr-tv-beneficios-titulo h1 {
             font-size: 30px !important;
+            margin-left: 2%;
+            width: 98%;
+        }
+
+        main #aside-milbr-tv-beneficios-subtitulo {
+            max-width: 100vw !important;
+            margin-left: 2% !important;
+            width: 98%;
         }
 
         main #aside-milbr-tv-beneficios-subtitulo p {
             font-size: 20px !important;
         }
 
+        main #aside-milbr-tv-beneficios-subtitulo2 {
+            width: 98% !important;
+        }
+
         main #aside-milbr-tv-beneficios-subtitulo2 h2 {
             font-size: 20px !important;
+            width: 100% !important;
+        }
+
+        main #aside-milbr-tv-beneficios-lista {
+            width: 96% !important;
         }
 
         main #aside-milbr-tv-beneficios-lista p {
             font-size: 20px !important;
+        }
+        
+        main #aside-milbr-tv-beneficios-finalizacao {
+            margin-bottom: 20px !important;
+            width: 98%;
         }
 
         main #aside-milbr-tv-beneficios-finalizacao p {
             font-size: 15px !important;
         }
 
-        main #aside-milbr-tv-beneficios-finalizacao {
-            margin-bottom: 20px !important;
-        }
 
         /* TELEFONIA */
 
@@ -1414,9 +1437,15 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         main #aside-milbr-td-telefonia-vantagens p { font-size: 20px !important;}
         main #aside-milbr-td-telefonia-vantagens h2 { font-size: 20px !important;}
-        main #aside-milbr-td-telefonia-vantagens-lista-titulo { padding-left: 2%;}
+        main #aside-milbr-td-telefonia-vantagens-lista-titulo { padding-left: 2% !important; max-width: 100vw !important; width: 90% !important;}
         main #aside-milbr-td-telefonia-vantagens-lista-topicos p {font-size: 18px !important;}
         main #aside-milbr-td-telefonia-vantagens-lista-topicos {padding-left: 1%;}
+
+        main .aside-milbr-td-telefonia-vantagens-finalizacao {
+            width: 95% !important;
+            max-width: 100vw !important;
+            margin-left: 1rem;
+        }
 
         main #aside-milbr-td-telefonia-portabilidade {
             height: auto !important;
