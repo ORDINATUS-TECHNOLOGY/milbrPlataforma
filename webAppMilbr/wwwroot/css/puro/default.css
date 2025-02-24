@@ -454,7 +454,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
 /* ## CELULARES */
 
-@media (min-width: 300px) and (max-width: 420px) {
+@media (min-width: 300px) and (max-width: 430px) {
     body {
         width: 100% !important;
     }
@@ -485,7 +485,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
     }
 
     header #cabecalho-ux-acesso-links-diretos-de-acesso-responsividade-agente {
-        width: 100%; max-width: 420px;
+        width: 100%; max-width: 100vw;
     }
 
     /* ---- PRIMEIRA BARRA ---- */
@@ -902,7 +902,7 @@ footer #footer-rodape-credits-muzabin-letter h2 {
 
         footer .footer-rodape-credits-muzabin {
             width: 100%;
-            max-width: 420px !important;
+            max-width: 100vw !important;
         }
 
         footer #footer-rodape-credits-milbr-tables {
