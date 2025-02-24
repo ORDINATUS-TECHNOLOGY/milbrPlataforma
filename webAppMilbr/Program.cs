@@ -22,4 +22,5 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-app.Run("https://0.0.0.0:8075");
+// 7070 para ambiente de desenvolvimento e 8075 para produção
+app.Run("https://0.0.0.0:7070"); 

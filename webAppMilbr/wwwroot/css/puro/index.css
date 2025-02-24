@@ -125,6 +125,12 @@ main #index-area-cliente-conteudo-conhecer-planos-titulo h1 {
     color: var(--color-letter-blue-normalHead);
 }
 
+main #index-area-cliente-conteudo-conhecer-planos-titulo h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-letter-blue-normalHead);
+}
+
 main #index-area-cliente-conteudo-conhecer-planos-tipos-planos {
     width: 100%;
     height: 60px;
@@ -137,11 +143,13 @@ main #index-area-cliente-conteudo-conhecer-planos-tipos-planos {
 main #index-area-cliente-conteudo-conhecer-planos-tipos-planos button {
     font-size: 27px;
     color: var(--background-color-white-main);
-    font-weight: bolder;
-    background-color: #4DA4DD;
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+    /* background-color: #4DA4DD; */
+    background-color: #6cc7f1;
     border-radius: 10px;
-    height: 55px;
-    width: 210px;
+    height: 50px;
+    width: 265px;
     cursor: pointer;
 }
 
