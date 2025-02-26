@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="~/css/puro/sobre.css">     <!-- SOBRE NÓS-->
   <link rel="stylesheet" href="~/css/puro/planos.css">    <!-- PLANOS -->
   <link rel="stylesheet" href="~/css/puro/index.css">     <!-- HOME -->
+  <!--- AOS --->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
   @* LEGADOS *@
   <link rel="stylesheet" href="~/css/puro/promocoes.css"> <!-- PROMOÇÕES ANTIGAS -->
   <link rel="stylesheet" href="~/css/puro/links.css">     <!-- LINKS ÚTEIS AO USUÁRIO -->
@@ -141,5 +145,14 @@
     <script src="js/perguntas.js"></script>
     <script src="js/links.js"></script>
     <script src="js/whatsapp.js"></script>
+    
+    <!---- AOS IMPORT --->
+    <script>
+      AOS.init({
+        once: true, // A animação acontece só uma vez
+        duration: 800 // Duração da animação em ms
+      });
+    </script>
+
   </body>
 </html>
