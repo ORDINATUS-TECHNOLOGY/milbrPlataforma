@@ -399,7 +399,7 @@ main #index-area-cliente-conteudo-area-cliente {
     height: 620px;
     display: flex; flex-direction: column;
     align-items: center;
-    background-color: var(--background-color-white-second);
+    background-color: #aee0f7;
 }
 
 
@@ -454,7 +454,6 @@ main #index-area-cliente-conteudo-area-cliente-links-uteis-clicaveis {
     place-items: center;
     gap: 1rem;
     width: 100%; height: 100%;
-    background-color: #6cc7f18f;
 }
 
 main #index-area-cliente-conteudo-area-cliente-links-uteis-acessiveis-click {
@@ -604,29 +603,64 @@ main #index-area-cliente-conteudo-perguntas-frequentes {
     width: 100%;
     height: auto;
     display: flex; flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 4rem;
-    padding-bottom: 1rem;
-    background-color: var(--background-color-white-second);
+    background: #aee0f7;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-main #index-area-cliente-conteudo-perguntas-frequentes-titulo {
-    width: 840px;
-    height: 105px;
+main #index-area-cliente-conteudo-faq-titulo {
+    width: 100%;
+    height: 185px;
     display: grid;
     place-items: center;
-    background: var(--background-color-white-main);
+    background: #d1d1d1;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), /* Sombra principal suave */
                 0px 4px 6px rgba(0, 0, 0, 0.1);     
     border-radius: 2px;
+}
+
+main #index-area-cliente-conteudo-faq-titulo h1 {
+    font-size: 45px;
+    color: var(--color-letter-blue-normalHead);
+    font-weight: bolder;
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-responsividade {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 4rem;
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-lista {
+    height: auto;
+    width: 100%;
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-titulo {
+    height: 105px;
+    display: grid;
+    border-radius: 2px;
     margin-bottom: 5rem;
+    padding-left: 5rem;
 }
 
 main #index-area-cliente-conteudo-perguntas-frequentes-titulo h1 {
-    font-size: 50px;
-    font-weight: bolder;
+    font-size: 70px;
+    font-weight: 400;
+    color: white;
+    width: 95%;
+    margin-top: 2rem;
+    overflow-wrap: break-word;
+}
+
+main #index-area-cliente-conteudo-perguntas-frequentes-titulo h2 {
+    font-size: 28px;
+    text-align: start;
     color: var(--color-letter-blue-normalHead);
+    font-family: "Montserrat", Sans-serif;
+    font-weight: bolder;
 }
 
 /* Estilo do container principal */
@@ -636,11 +670,8 @@ main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    background-color: var(--color-letter-blue-normalHead);
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    transition: height 0.3s ease, padding 0.3s ease; /* Transição suave ao abrir/fechar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease, padding 0.3s ease;
+    border-top: 1px solid #6CC7F1;
 }
 
 main #faq-questao-titulo {
@@ -653,20 +684,21 @@ main #faq-questao-titulo {
 }
 
 main #faq-questao-titulo h1 {
-    color: var(--background-color-white-main);
-    font-size: 24px;
+    color: var(--color-letter-blue-normalHead);
+    font-size: 27px;
     font-weight: bolder;
     margin: 0;
+    margin-top: 3rem;
 }
 
 main #faq-questao-titulo i {
-    color: var(--background-color-white-main);
+    color: var(--color-letter-blue-normalHead);
     font-size: 4rem;
     transition: transform 0.3s ease; /* Suavidade para a rotação */
 }
 
 main #faq-questao-resposta {
-    color: var(--background-color-white-main);
+    color: black;
     font-size: 20px;
     line-height: 1.5;
     padding: 1rem;
@@ -676,15 +708,16 @@ main #faq-questao-resposta {
     overflow: hidden;
     transition: height 0.3s ease, opacity 0.3s ease; /* Suavidade para aparecer/desaparecer */
     background: #6CC7F1;
+    margin-top: 3rem;
 }
 
 main #faq-questao-resposta p {
-    color: var(--background-color-white-main);
+    color: black;
     font-size: 20px;
 }
 
 main #faq-questao-resposta i {
-    color: var(--background-color-white-main);
+    color: black;
     font-size: 7px;
 }
 
@@ -692,7 +725,7 @@ main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao.open #f
     height: auto; /* Altura automática */
     opacity: 1; 
     padding: 1rem;
-    background-color: var(--new-color-here); /* Adicione a cor desejada */
+    background-color: #aee0f7;
 }
 
 main #index-area-cliente-conteudo-perguntas-frequentes-lista-faq-questao.open #faq-questao-titulo i {
