@@ -22,4 +22,5 @@ main #container-conteudos-promocionais-responsividade {
 main #container-conteudos-promocionais-responsividade img {
     width: 300px;
     height: 400px;
+    margin-top: 1rem;
 }
