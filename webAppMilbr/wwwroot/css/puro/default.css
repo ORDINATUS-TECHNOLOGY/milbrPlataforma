@@ -945,6 +945,130 @@ footer #footer-rodape-credits-muzabin-cnpj h2, #footer-rodape-credits-muzabin-le
 
         /* = footer =  */
         
+        footer {
+            width: 100% !important;
+            max-width: 100vw !important;
+            display: flex !important;
+            flex-direction: column !important;
+            height: 1800px !important;
+        }
+
+        footer #footer-responsividade-cima {
+            width: 100% !important;
+            max-width: 100vw !important;
+            height: auto !important;
+            padding-top: 10rem;
+        }
+        
+        footer #footer-responsividade-cima-responsividade {
+            display: flex !important;
+            flex-direction: column !important;
+            height: 1500px !important;
+            width: 100% !important;
+            height: 100%;
+            max-width: 100vw !important;
+        }
+
+        footer #footer-cima-logos {
+            order: 2 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important; 
+            align-items: center !important;
+            gap: 3rem !important;
+            height: 400px;
+        }
+
+        footer #footer-cima-logos-redes {
+            width: 100% !important;
+            max-width: 100vw !important;
+            display: flex !important;
+            gap: 3rem;
+            align-items: center !important;
+        }
+
+        footer #footer-cima-logos img {
+            width: 130px !important;
+            height: 130px !important;
+        }
+
+        footer #footer-cima-produtos {
+            order: 1 !important;
+            height: 400px !important;
+        }
+
+        footer #footer-cima-produtos-titulo {
+            width: 100% !important;
+            max-width: 100vw !important;
+            text-align: center !important;
+        }
+
+        footer #footer-cima-produtos-titulo h1 {
+            font-size: 18px !important;
+            font-family: "Poppins", Sans-serif !important;
+        }
+
+        footer #footer-cima-produtos-logos {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 2rem;
+            margin-top: 4rem;
+            justify-content: center !important;
+            width: 100% !important;
+            align-items: center !important;
+        }
+
+        footer #footer-cima-produtos-logos img {
+            width: 170px !important;
+            height: 70px !important;
+        }
+
+        footer #footer-cima-planos {
+            order: 4 !important;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+
+        footer #footer-cima-servicos {
+            order: 3 !important;
+            height: auto !important;
+            margin-bottom: 2rem;
+        }
+
+        footer #footer-cima-servicos i {
+            font-weight: bolder;
+        }
+
+        footer #footer-cima-contato {
+            order: 5 !important;
+            height: 230px;
+            margin-bottom: 4rem;
+        }
+
+        footer #footer-responsividade-baixo {
+            width: 100% !important;
+            max-width: 100vw !important;
+            height: 200px !important;
+        }
+
+        footer #footer-rodape-credits-muzabin-cnpj {
+            width: 90% !important;
+        }
+        
+        footer #footer-rodape-credits-muzabin-letter {
+            width: 90% !important;
+        }
+
+        footer #footer-rodape-credits-muzabin-cnpj h2 {
+            font-size: 12px !important;
+            text-align: center;
+        }
+
+        footer #footer-rodape-credits-muzabin-letter h2 {
+            font-size: 12px !important;
+            text-align: center;
+            margin-top: 1rem;
+        }
 
         /* flutuantes */
 
