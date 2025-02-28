@@ -12,16 +12,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 #content-link-uteis-section {
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    margin-top: 25rem;
+    margin-top: 12rem;
 }
 
 #content-link-uteis-section-imagem {

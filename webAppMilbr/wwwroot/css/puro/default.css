@@ -371,9 +371,18 @@ footer #footer-cima-planos {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
 }
 
-footer #footer-cima-planos h3, #footer-cima-servicos a, #footer-cima-contato-baixo a {
+footer #footer-responsividade-cima-responsividade a {
+    cursor: pointer;
+}
+
+footer #footer-responsividade-cima-responsividade a:hover {
+    color: rgb(148, 128, 128);
+}
+
+footer #footer-cima-planos a, #footer-cima-servicos a, #footer-cima-contato-baixo a {
     color: white;
     font-size: 16px;
     font-family: "Poppins", Sans-serif;
@@ -1091,6 +1100,7 @@ footer #footer-rodape-credits-muzabin-cnpj h2, #footer-rodape-credits-muzabin-le
             gap: 1rem;
             height: auto;
             margin-bottom: 100px;
+            align-items: center !important;
         }
 
         main #content-link-uteis-section-links ul {
