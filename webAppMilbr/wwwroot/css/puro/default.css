@@ -785,12 +785,13 @@ footer #footer-rodape-credits-muzabin-cnpj h2, #footer-rodape-credits-muzabin-le
         main #index-area-cliente-conteudo-redes-sociais-publicacoes-publicacao {
             display: grid;
             place-items: center ;
-            max-width: 80vw !important;
+            max-width: 240px !important;
         }
 
         main #index-area-cliente-conteudo-redes-sociais-publicacoes img {
             height: 420px !important;
-            max-width: 100% !important;
+            max-width: 99vw !important;
+            width: 100% !important;
         }
 
         main #index-area-cliente-conteudo-redes-sociais-publicacoes div:nth-child(2){
