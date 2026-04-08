@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.HttpOverrides;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,7 +15,13 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
+
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -25,4 +33,4 @@ app.MapRazorPages();
 // 7070 para ambiente de desenvolvimento e 8075 para produção
 // app.Run("https://0.0.0.0:7070"); 
 // app.Run("https://0.0.0.0:8075"); 
-app.Run("https://localhost:8075"); 
+app.Run("http://0.0.0.0:8075");
