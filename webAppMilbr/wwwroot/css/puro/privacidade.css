@@ -67,7 +67,7 @@ main .politicas-e-privacidade-milbr-blocos {
     margin-top: 2rem;
 }
 
-main #politicas-e-privacidade-milbr-bloco {
+main .politicas-e-privacidade-milbr-bloco {
     background: (var(--background-color-blue-master));
     display: flex;
     flex-direction: column;
@@ -101,25 +101,27 @@ main .politicas-e-privacidade-milbr-bloco-head h2 {
     font-weight: bolder;
 }
 
-main #politicas-e-privacidade-milbr-bloco-paragrafos {
+main .politicas-e-privacidade-milbr-bloco-paragrafos {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     text-align: justify;
+    padding: 0 1rem 2rem 1rem;
 }
 
-main #politicas-e-privacidade-milbr-bloco-paragrafos p {
+main .politicas-e-privacidade-milbr-bloco-paragrafos p {
     font-size: 1.2rem;
     color: rgb(53, 53, 53);
+    line-height: 1.7rem;
 }
 
-main #politicas-e-privacidade-milbr-bloco-paragrafos span {
+main .politicas-e-privacidade-milbr-bloco-paragrafos span {
     font-size: 1.4rem;
     color: var(--background-color-blue-footer);
-    height: auto;
     padding-bottom: 1rem;
-    border-bottom: 1px solid rgb(133, 133, 133);
+    border-bottom: 1px solid rgba(197, 197, 197, 0.753);
     font-weight: bolder;
+    margin-top: 1rem;
 }
