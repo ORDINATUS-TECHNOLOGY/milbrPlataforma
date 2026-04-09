@@ -2,7 +2,15 @@ using Microsoft.AspNetCore.HttpOverrides;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Logging.AddSimpleConsole(options =>
+{
+    options.SingleLine = true;
+    options.TimestampFormat = "";
+});
+
 // Add services to the container.
+builder.Logging.AddFilter("Microsoft", LogLevel.None);
+builder.Logging.AddFilter("System", LogLevel.None);
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
@@ -20,7 +28,25 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
     ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
 });
 
-app.UseHttpsRedirection();
+// MELHORA NA LEITURA DE LOGS
+app.Use(async (context, next) =>
+{
+    await next();
+
+    var path = context.Request.Path.Value?.ToLower() ?? "";
+
+    if (!path.StartsWith("/img") &&
+        !path.StartsWith("/css") &&
+        !path.StartsWith("/js") &&
+        !path.StartsWith("/lib") &&
+        !path.Contains("."))
+    {
+        var ip = context.Connection.RemoteIpAddress?.ToString();
+        var status = context.Response.StatusCode;
+
+        Console.WriteLine($"IP {ip} acessou {path} [{status}]");
+    }
+});
 
 app.UseStaticFiles();
 

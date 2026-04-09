@@ -58,6 +58,9 @@ body {
 /* ------------- ++ FORMATAÇÃO DO HEADER ++ ---------- */
 
 header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
     width: 100vw; height: 115px;
     display: flex;
     flex-direction: column;
@@ -231,6 +234,7 @@ main {
     height: auto;
     background-color: var(--background-color-white-figma);
     position: relative;
+    margin-top: 115px;
 }
 
 
